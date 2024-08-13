@@ -1,85 +1,570 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/castle-on-saltovka/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    
-    <script type="module" crossorigin src="/castle-on-saltovka/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/castle-on-saltovka/assets/index-10c40100.css">
-  </head>
-  <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/svg+xml" href="/castle-on-saltovka/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reliable</title>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
+
+        
+      <link rel="stylesheet" href="/castle-on-saltovka/assets/index-54f49a1f.css">
+    </head>
+
+<body>
+    <header class="header">
+    <div class="container">
+        <div class="container-logo">
+            <a href="./index.html" 
+                class="header-logo">
+                    <svg 
+                    class="header-icon" 
+                    width="50" 
+                    height="42">
+                        <use href="/castle-on-saltovka/assets/icons-71fe76a9.svg#icon-Logo-tablet"></use>
+                    </svg>
+                </a>
+        </div>
+        <nav class="header-nav">
+            <ul class="header-nav-list">
+                <li class="header-nav-item">
+                    <a href="#" class="header-nav-link">Головна</a>
+                </li>
+                <li class="header-nav-item">
+                    <a href="#" class="header-nav-link">Каталог</a>
+                </li>
+                <li class="header-nav-item">
+                    <a href="#" class="header-nav-link">Оптовий продаж</a>
+                </li>
+                <li class="header-nav-item">
+                    <a href="#" class="header-nav-link">Про нас</a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="menu">
+            <button 
+            class="menu-button" 
+            type="button" 
+            data-menu-open >
+                <svg 
+                Class="menu-icon" 
+                width="24" 
+                height="24">
+                <use href="./images/icons.svg#icon-menu"></use></svg>
+            </button>
+        </nav>
+
+        <div class="menu-heart-basket">
+            <button 
+            class="menu-button-heart" 
+            type="button">
+                <svg 
+                Class="menu-icon" 
+                width="32" 
+                height="32">
+                <use href="./images/icons.svg#icon-shopping-cart"></use></svg>
+            </button>
+
+            <button 
+            class="menu-button-basket" 
+            type="button">
+                <svg 
+                Class="menu-icon" 
+                width="32" 
+                height="32">
+                <use href="./images/icons.svg#icon-heart"></use></svg>
+            </button>
+        </div>
+    </div>
+
+    <!----------menu-mobal--is-open----------->
+    <div class="modal-menu-overlay" data-menu>
+        <div class="container container-menu-nav-address">
+            <button 
+            class="menu-close" 
+            type="button"
+            data-menu-close>
+                <svg 
+                Class="menu-close-icon" 
+                width="24" 
+                height="24">
+                <use href="./images/icons.svg#icon-close"></use></svg>
+            </button>
+
+            <button class="mobal-menu-button" type="button">
+                <svg 
+                Class="menu-icon" 
+                width="32" 
+                height="32">
+                <use href="./images/icons.svg#icon-heart"></use></svg>
+            </button>
+
+            <button class="mobal-menu-button hopping-cart" type="button">
+                <svg 
+                Class="menu-icon" 
+                width="32" 
+                height="32">
+                <use href="./images/icons.svg#icon-shopping-cart"></use></svg>
+            </button>
+
+            <div class="menu-line"></div>
+
+            <nav class="menu-mobal-nav">
+                <ul class="menu-mobal-list">
+                    <li class="menu-mobal-item">
+                        <a href="#" class="menu-mobal-link">Головна</a>
+                    </li>
+                    <li class="menu-mobal-item">
+                        <a href="#" class="menu-mobal-link">Каталог</a>
+                    </li>
+                    <li class="menu-mobal-item">
+                        <a href="#" class="menu-mobal-link">Оптовий продаж</a>
+                    </li>
+                    <li class="menu-mobal-item">
+                        <a href="#" class="menu-mobal-link">Про нас</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <address class="menu-mobal-address">
+                <ul class="menu-mobal-address-list">
+                    <li class="menu-mobal-address-item">
+                        <svg 
+                            class="icon-li-phone" 
+                            width="18" 
+                            height="18">
+                        <use href="./images/icons.svg#icon-phone"></use></svg>
+                        <a href="tel:+110001111111" class="menu-link-contacts">+11 (000) 111-11-11</a>
+                    </li>
+                    <li class="menu-mobal-address-item menu-item-width">
+                        <a href="#" class="menu-mobal-link-contacts">Зворотний дзвінок</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
+    </div>
 </header>
 
+    <main>
+        <section class="section-premium">
+    <div class="container">
+        <h2 class="visually-hidden">Преміальне</h2>
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/castle-on-saltovka/assets/javascript-8dac5379.svg" alt="" />
-    </section>
+        <div class="img-model-price">
 
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
+            <picture>
+                <source media="(min-width:1158px)" 
+                srcset="./images/BankingAppPC-1.jpg 1x, ./images/BankingAppPC-2.jpg 2x">
+                <source 
+                media="(min-width:768px)" 
+                srcset="./images/ВрізнийЗручкою/tablet/Rectangle.png 1x, ./images/ВрізнийЗручкою/tablet/Rectangle@2x.png 2x"
+                width="360">
+                <source 
+                media="(max-width:768px)"
+                srcset="./images/ВрізнийЗручкою/mobile/GoldenSoftGS-200Z-5.png 1x, ./images/ВрізнийЗручкою/mobile/GoldenSoftGS-200Z-5@2x.png 2x">
+                <img
+                src="./images/ВрізнийЗручкою/mobile/GoldenSoftGS-200Z-5.png"
+                alt="door lock" 
+                width="264" 
+                class="foto">
+            </picture>
 
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
+            <div class="model-price">
+                <h3 class="model"><span>Golden Soft</span> GS-200Z-5 для офісу</h3>
+                
+                <p class="model-text">Замок дверний електронний Golden Soft GS-200Z-5 має розкішний глянсовий блиск, чіткі лінії, красиві форми.</p>
+                <p class="model-text model-text-bottom">Підходить для встановлення на дерев'яні/міжкімнатні двері.</p>
+                <p class="price">
+                    <span class="price-text">Ціна</span> <span class="price-sum">5000 грн.</span>
+                </p>
+        
+                <button
+                type="button" 
+                class="button-addition">Додати до кошика
+                </button>
+            </div>
+        </div>
+            
+
+        <div class="container-anime">
+            <button 
+                type="button" 
+                class="button">
+                <svg 
+                Class="icon-chevron-left" 
+                width="20" 
+                height="20">
+                <use href="./images/icons.svg#icon-chevron-left"></use></svg>
+            </button>
+
+            <ul class="anime-ball-hoop">
+                <li class="anime-ball">
+                    <svg 
+                    Class="ball-icon" 
+                    width="4" 
+                    height="4">
+                    <use href="./images/icons.svg#icon-circle"></use></svg>
+                </li>
+                <li class="anime-ball">
+                    <svg 
+                    Class="ball-icon-max" 
+                    width="6" 
+                    height="6">
+                    <use href="./images/icons.svg#icon-circle"></use></svg>
+                </li>
+                <li class="anime-hoop">
+                    <svg 
+                    Class="hoop-icon" 
+                    width="20" 
+                    height="20">
+                    <use href="./images/icons.svg#icon-circle-thin"></use></svg>
+                </li>
+                <li class="anime-ball">
+                    <svg 
+                    Class="ball-icon" 
+                    width="4" 
+                    height="4">
+                    <use href="./images/icons.svg#icon-circle"></use></svg>
+                </li>
+            </ul>
+            <button 
+            type="button" 
+            class="button">
+            <svg 
+            Class="icon-chevron-tright" 
+            width="20" 
+            height="20">
+            <use href="./images/icons.svg#icon-chevron-tright"></use></svg>
+            </button>
+        </div>
     </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/castle-on-saltovka/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
-  </div>
 </section>
+        <section class="section-experience">
+    <div class="container">
+        <h2 class="visually-hidden">Наш досвіт</h2>
 
+        <ul class="experience">
+            <li class="number-text"><span class="number">100 000</span> <span class="text">Щасливих клієнтів</span></li>
+            <li class="number-text"><span class="number">1245</span> <span class="text">Продуктів на вибір</span></li>
+            <li class="number-text"><span class="number">372</span> <span class="text">Продажів на день</span></li>
+            <li class="number-text"><span class="number">20</span> <span class="text">Років на ринку</span></li>
+        </ul>
+    </div>
+</section>
+        <section class="section-why">
+    <div class="container">
 
-    
-  </body>
+        <h2 class="title-gs">Чому GoldenService?</h2>
+        <ul class="advantages-list">
+            <li class="advantages-item">
+                <div class="list-icon">
+                    <svg class="icon-li" width="64" height="64">
+                        <use href="./images/icons.svg#icon-product-return"></use></svg>
+                </div>
+                <p class="text">Повернення подвоєної вартості кожного замку у разі брака</p>
+            </li>
+            <li class="advantages-item">
+                <div class="list-icon">
+                    <svg class="icon-li" width="64" height="64">
+                        <use href="./images/icons.svg#icon-evaluate"></use>
+                    </svg>
+                </div>
+                <p class="text">Наносимо ваш логотип компанії на наш продукт</p>
+            </li>
+            <li class="advantages-item">
+                <div class="list-icon">
+                    <svg class="icon-li" width="64" height="64">
+                        <use href="./images/icons.svg#icon-product-return"></use>
+                    </svg>
+                </div>
+                <p class="text">Повернення подвоєної вартості кожного замку у разі брака</p>
+            </li>
+        </ul>
+    </div>
+</section>
+        <section class="section-categories">
+    <div class="container">
+
+        <h2 class="title-four">Категорії</h2>
+        <ul class="list-four">
+            <li class="item-four">
+                <picture>
+                    <source 
+                    media="(max-width:767px)"
+                    srcset="./images/ДляГотелів/mobile/фото.jpg 1x, ./images/ДляГотелів/mobile/фото2x.jpg 2x">
+                    <img 
+                    src="./images/ДляГотелів/mobile/фото.jpg" 
+                    alt="lock"
+                    width="161"
+                    class="foto-four">
+                </picture>
+                <p class="text-four">Для готелів</p>
+            </li>
+            <li class="item-four">
+                <picture>
+                    <source 
+                    media="(max-width:767px)"
+                    srcset="./images/ДляШафок/mobile/Навесний.jpg 1x, ./images/ДляШафок/mobile/Навесний@2x.jpg 2x">
+                    <img 
+                    src="./images/ДляШафок/mobile/Навесний.jpg" 
+                    alt="lock"
+                    width="161"
+                    class="foto-four">
+                </picture>
+                <p class="text-four">Для шафок</p>
+            </li>
+            <li class="item-four">
+                <picture>
+                    <source 
+                    media="(max-width:767px)"
+                    srcset="./images/ДляОфісів/mobile/Rectangle.jpg 1x, ./images/ДляОфісів/mobile/Rectangle@2x.jpg 2x">
+                    <img 
+                    src="./images/ДляОфісів/mobile/Rectangle.jpg" 
+                    alt="lock"
+                    width="161"
+                    class="foto-four">
+                </picture>
+                <p class="text-four">Для офісів</p>
+            </li>
+            <li class="item-four">
+                <picture>
+                    <source 
+                    media="(max-width:767px)"
+                    srcset="./images/Аксесуари/mobile/РучкаФото.jpg 1x, ./images/Аксесуари/mobile/РучкаФото@2x.jpg 2x">
+                    <img 
+                    src="./images/Аксесуари/mobile/РучкаФото.jpg" 
+                    alt="lock"
+                    width="161"
+                    class="foto-four">
+                </picture>
+                <p class="text-four text-four-bottom">Аксесуари</p>
+            </li>
+        </ul>
+
+        <button type="button" class="button-addition button-four">Усі категорії</button>
+    </div>
+</section>
+        <section class="section-popular">
+    <div class="container">
+
+        <h2 class="title-five">Наші популярні продукти</h2>
+        <ul class="list-five">
+            <li class="item-five">
+                <img
+                srcset="./images/ДляГотелів/mobile/GoldenSoft.jpg 1x, ./images/ДляГотелів/mobile/GoldenSoft@2x.jpg 2x"
+                src="./images/ДляГотелів/mobile/GoldenSoft.jpg"
+                alt="lock" 
+                width="288" 
+                class="foto-five">
+                <div class="text-price-five">
+                    <p class="text-five">Дверний Замок Golden Soft для готелю</p>
+                    <p class="price-five">1000 грн.</p>
+                </div>
+            </li>
+            <li class="item-five">
+                <img
+                srcset="./images/ДляГотелів/mobile/GoldenSoftотеля.jpg 1x, ./images/ДляГотелів/mobile/GoldenSoftотеля@2x.jpg 2x"
+                src="./images/ДляГотелів/mobile/GoldenSoftотеля.jpg"
+                alt="lock" 
+                width="288" 
+                class="foto-five">
+                <div class="text-price-five">
+                    <p class="text-five">Дверний Замок Golden Soft для готелю</p>
+                    <p class="price-five">1000 грн.</p>
+                </div>
+            </li>
+            <li class="item-five">
+                <img
+                srcset="./images/ДляОфісів/mobile/RectFive.jpg 1x, ./images/ДляОфісів/mobile/RectFive@2x.jpg 2x"
+                src="./images/ДляОфісів/mobile/RectFive.jpg"
+                alt="lock" 
+                width="288" 
+                class="foto-five">
+                <div class="text-price-five">
+                    <p class="text-five">Дверний Замок Golden Soft для готелю</p>
+                    <p class="price-five">1000 грн.</p>
+                </div>
+            </li>
+            <li class="item-five">
+                <img
+                srcset="./images/ДляОфісів/mobile/GoldenSoftoОфіс.jpg 1x, ./images/ДляОфісів/mobile/GoldenSoftoОфіс2x.jpg 2x"
+                src="./images/ДляОфісів/mobile/GoldenSoftoОфіс.jpg"
+                alt="lock" 
+                width="288" 
+                class="foto-five">
+                <div class="text-price-five">
+                    <p class="text-five">Дверний Замок Golden Soft для готелю</p>
+                    <p class="price-five">1000 грн.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+        <section class="section-call-back">
+    <div class="container">
+
+        <h2 class="title-six">Ми Вам передзвонимо</h2>
+        <p class="text-six">Якщо у вас виникли питання або проблеми, заповніть форму і ми Вам передзвонимо.</p>
+
+        <form class="form" name="issue_report_form" autocomplete="off">
+            <label class="form-label"  for="user-name"></label>
+            <input class="form-input"
+            type="text"
+            name="user-name"
+            id="user-name"
+            placeholder="Ваше ім'я"/>
+
+            <label class="form-label" for="user-phone"></label>
+                <input class="form-input"
+                type="tel"
+                name="phone"
+                id="user-phone"
+                autocomplete="on"
+                placeholder="Ваш номер телефону"/>
+
+            <button class="button-addition button-four" type="submit">Відправити</button>
+        </form>
+    </div>
+</section>
+    </main>
+    <footer class="footer">
+    <div class="container">
+        <div class="logo-network">
+            <a href="./index.html" 
+            class="logo">
+                <svg 
+                class="icon-li" 
+                width="70" 
+                height="57">
+                    <use href="./images/icons.svg#icon-Logo"></use>
+                </svg>
+            </a>
+
+            <ul class="list-network">
+                <li class="item-network">
+                    <a href="#" 
+                    target="_blank" 
+                    class="link-network">
+                        <svg 
+                        Class="icon" 
+                        width="24" 
+                        height="24">
+                        <use href="./images/icons.svg#icon-instagram">
+                        </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="item-network">
+                    <a href="#" 
+                    target="_blank" 
+                    class="link-network">
+                        <svg 
+                        Class="icon" 
+                        width="24" 
+                        height="24">
+                        <use href="./images/icons.svg#icon-Twitter">
+                        </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="item-network">
+                    <a href="#" 
+                    target="_blank" 
+                    class="link-network">
+                        <svg 
+                        Class="icon" 
+                        width="24" 
+                        height="24">
+                        <use href="./images/icons.svg#icon-facebook">
+                        </use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container-nav-address">
+            <nav class="page-nav">
+
+                <p class="title-page-nav">Навігація</p>
+                <ul class="list-page-nav">
+                    <li class="item-page-nav">
+                        <a href="#" class="link">Головна</a>
+                    </li>
+                    <li class="item-page-nav">
+                        <a href="#" class="link">Каталог</a>
+                    </li>
+                    <li class="item-page-nav">
+                        <a href="#" class="link">Оптовий продаж</a>
+                    </li>
+                    <li class="item-page-nav">
+                        <a href="#" class="link">Про нас</a>
+                    </li>
+                </ul>
+
+                <div class="other">
+                    <p class="title-contacts">Інше</p>
+
+                        <ul class="list-contacts contacts-bottom">
+                            <li class="item-contacts">
+                                <a href="#" class="link-contacts">Доставка і оплата</a>
+                            </li>
+                            <li class="item-contacts">
+                                <a href="#" class="link-contacts">Гарантії</a>
+                            </li>
+                            <li class="item-contacts contacts-bottom">
+                                <a href="#" class="link-contacts">Повернення товару</a>
+                            </li>
+                        </ul>
+                </div>
+            </nav>
+
+            <address class="contacts">
+                <div class="container-tel-email">
+                    
+                    <p class="title-contacts">Наші контакти</p>
+                    <ul class="list-contacts">
+                        <li class="item-contacts">
+                            <p class="text-contacts">Телефони</p>
+                            <a href="tel:+110001111111" class="link-contacts">+11 (000) 111-11-11</a>
+                        </li>
+                        <li class="item-contacts">
+                            <a href="tel:+110001111111" class="link-contacts">+11 (000) 111-11-11</a>
+                        </li>
+                        <li class="item-contacts">
+                            <p class="text-contacts">Телефони</p>
+                            <a href="mailto:info@devstudio.com" class="link-contacts">info@devstudio.com</a>
+                        </li>
+                        <li class="item-contacts">
+                            <a href="mailto:info@devstudio.com" class="link-contacts">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="our-address">
+                    <p class="title-contacts">Нашa Адреса</p>
+                        <ul class="list-contacts contacts-bottom">
+                            <li class="item-contacts address-contacts">
+                                <a href="#" class="link-contacts">Україна м. Харків вул. Спортивна, 5</a>
+                            </li>
+                            <li class="item-contacts address-contacts contacts-bottom">
+                                <a href="#" class="link-contacts">Українa м. Полтава вул. Соборна, 1</a>
+                            </li>
+                        </ul>
+                </div>
+            </address>
+        </div>
+    </div>
+</footer>
+
+    <script src="./js/modal.js" defer></script>
+    <script src="./js/menu.js" defer></script>
+
+</body>
 </html>

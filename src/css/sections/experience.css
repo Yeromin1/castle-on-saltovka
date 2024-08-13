@@ -1,0 +1,47 @@
+.section-experience {
+    background-color: #F2F8FF;
+    padding: 30px 0px;
+}
+
+.section-experience .container {
+    padding: 0px 31px;
+}
+
+.experience {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 20px;
+    justify-content: center;
+}
+
+.number-text {
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+}
+
+.number-text:nth-child(2n) {
+    min-width: 142px;
+}
+
+.number {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.42;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: grey;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .section-experience {
+        padding: 40px 0px;
+    }
+}

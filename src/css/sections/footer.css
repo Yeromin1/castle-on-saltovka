@@ -1,0 +1,114 @@
+.footer {
+    background-color: #0D2436;
+    padding-top: 32px;
+    padding-bottom: 24px;
+}
+
+.container {
+}
+
+.logo-network {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.logo {
+}
+
+.icon-li {
+}
+
+.list-network {
+    display: flex;
+    gap: 24px;
+}
+
+.item-network {
+
+}
+
+.link-network {
+}
+
+.link-network .icon {
+    fill: #FFFFFF;
+}
+
+.container-nav-address {
+    display: flex;
+    gap: 40px;
+}
+
+.page-nav {
+}
+
+.title-page-nav,
+.title-contacts {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.list-page-nav {
+    margin-bottom: 76px;
+}
+
+.item-page-nav,
+.item-contacts,
+.text-contacts {
+    margin-bottom: 12px;
+}
+
+.item-page-nav .link,
+.list-contacts .link-contacts {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #FFFFFF;
+}
+
+.contacts {
+    font-style: normal;
+}
+
+.container-tel-email {
+
+}
+
+.title-contacts {
+}
+
+.list-contacts {
+    margin-bottom: 24px;
+}
+
+.item-contacts {
+    min-width: 127px;
+}
+
+.address-contacts {
+    max-width: 140px;
+}
+
+.text-contacts {
+    font-weight: 300;
+    font-size: 12px;
+    color: #C4CDD5;
+}
+
+.link-contacts {
+}
+
+.other {
+}
+
+.our-address {
+}
+
+.contacts-bottom {
+    margin-bottom: 0;
+}

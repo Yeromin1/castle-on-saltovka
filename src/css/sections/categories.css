@@ -1,0 +1,41 @@
+.section-categories {
+    padding: 40px 0px;
+}
+
+.container {
+
+}
+
+.title-four {
+    font-size: 22px;
+    line-height: 1.55;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.list-four {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 20px;
+}
+
+.item-four {
+
+}
+
+.foto-four {
+    margin-bottom: 12px;
+}
+
+.text-four {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.text-four-bottom {
+    margin-bottom: 24px;
+}
+
+.button-four {
+    margin-bottom: 0;
+}

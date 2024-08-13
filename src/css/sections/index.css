@@ -1,0 +1,53 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: black;
+    background-color: #FFFFFF;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    max-width: 375px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+@media (max-width: 374px) {
+
+    .experience,
+    .list-four {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .menu-item-width {
+        max-width: 97px;
+    }
+}
+
+@media (max-width: 337px) {
+    .container-nav-address {
+        gap: 20px;
+    }
+}
+
+/*------------@media-768px-------------*/
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 0 20px;
+    }
+
+}

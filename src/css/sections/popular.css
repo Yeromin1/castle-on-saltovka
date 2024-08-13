@@ -1,0 +1,45 @@
+.section-popular {
+    padding-bottom: 36px;
+}
+
+.container {
+    
+}
+
+.title-five {
+    font-size: 22px;
+    line-height: 1.55;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.list-five {
+    display: flex;
+    overflow: overlay;
+    gap: 30px;
+}
+
+.item-five {
+    min-width: 288px;
+    box-shadow: inset -1px 0 0 0 #EAEAEA, inset 1px 0 0 0 #EAEAEA, inset 0 -1px 0 0 #EAEAEA;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.foto-five {
+}
+
+.text-price-five {
+    padding: 10px 12px;
+}
+
+.text-five {
+    font-size: 16px;
+    line-height: 1.62;
+    color: #454F5B;
+    margin-bottom: 10px;
+}
+
+.price-five {
+    font-weight: 600;
+    font-size: 20px;
+}

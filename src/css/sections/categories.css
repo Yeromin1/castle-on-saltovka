@@ -6,36 +6,89 @@
 
 }
 
-.title-four {
+.title-categories {
     font-size: 22px;
     line-height: 1.55;
     text-align: center;
     margin-bottom: 24px;
 }
 
-.list-four {
+.list-categories {
     display: flex;
     flex-wrap: wrap;
     gap: 24px 20px;
+    margin-bottom: 24px;
 }
 
-.item-four {
+.item-categories {
 
 }
 
-.foto-four {
+.foto-categories {
     margin-bottom: 12px;
 }
 
-.text-four {
+.text-categories {
     font-size: 14px;
     line-height: 1.71;
 }
 
-.text-four-bottom {
-    margin-bottom: 24px;
+.btn-item-categories {
+display: none;
 }
 
-.button-four {
+.button-categories {
     margin-bottom: 0;
+}
+
+
+@media (min-width: 768px) {
+    .title-categories {
+        font-size: 33px;
+    line-height: 1.41;
+    margin-bottom: 48px;
+    }
+
+    .list-categories {
+        gap: 28px;
+        margin-bottom: 30px;
+    }
+
+    .item-categories {
+        position: relative;
+    }
+
+    .foto-categories {
+        margin: 0;
+    }
+
+    .text-categories {
+        position: absolute;
+        bottom: 60px;
+        left: 20px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.55;
+    }
+
+    .btn-item-categories {
+        display: block;
+        position: absolute;
+        width: 130px;
+        height: 30px;
+        border: 1px solid #454F5B;
+        border-radius: 2px;
+        font-size: 12px;
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .button-categories {
+        min-width: 130px;
+        height: 30px;
+    }
+
+    .container .button-categories {
+        margin: 0 auto;
+    }
 }

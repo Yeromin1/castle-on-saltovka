@@ -36,12 +36,28 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    color: grey;
+    color: #454F5B;
     text-align: center;
 }
 
 @media (min-width: 768px) {
     .section-experience {
         padding: 40px 0px;
+    }
+
+    .experience  {
+        gap: 30px;
+    }
+
+    .number {
+        font-size: 32px;
+        line-height: 1.19;
+    }
+
+    .text {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.62;
+        
     }
 }

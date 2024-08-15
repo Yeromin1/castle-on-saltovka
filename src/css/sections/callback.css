@@ -7,14 +7,14 @@
 
 }
 
-.title-six {
+.title-call-back {
     font-size: 22px;
     line-height: 1.55;
     margin-bottom: 16px;
     text-align: center;
 }
 
-.text-six {
+.text-call-back {
     font-size: 14px;
     line-height: 1.71;
     text-align: center;
@@ -43,4 +43,42 @@
 
 .input-bottom {
     margin-bottom: 24px;
+}
+
+
+@media (min-width: 768px) {
+    .section-call-back {
+        padding: 50px 0px;
+    }
+
+    .form-call-back {
+        text-align: center;
+    }
+
+    .form-input {
+        max-width: 170px;
+        height: 40px;
+        margin: 0;
+        margin-right: 24px;
+    }
+
+    .button-addition {
+        font-size: 14px;
+        min-width: 150px;
+        height: 40px;
+        margin: 0 auto;
+    }
+
+    .title-call-back {
+        font-size: 33px;
+        line-height: 1.41;
+        margin-bottom: 24px;
+    }
+
+    .text-call-back {
+        font-size: 16px;
+        line-height: 1.62;
+        max-width: 430px;
+        margin: 0 auto 24px;
+    }
 }

@@ -43,3 +43,17 @@
     font-weight: 600;
     font-size: 20px;
 }
+
+
+@media (min-width: 768px) {
+    .section-popular {
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+
+    .title-five {
+        font-size: 33px;
+        line-height: 1.41;
+        margin-bottom: 44px;
+    }
+}

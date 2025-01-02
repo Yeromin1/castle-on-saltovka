@@ -1,59 +1,85 @@
 .section-popular {
-    padding-bottom: 36px;
+  padding-bottom: 36px;
 }
 
 .container {
-    
 }
 
 .title-five {
-    font-size: 22px;
-    line-height: 1.55;
-    text-align: center;
-    margin-bottom: 24px;
+  font-size: 22px;
+  line-height: 1.55;
+  text-align: center;
+  margin-bottom: 24px;
 }
 
 .list-five {
-    display: flex;
-    overflow: overlay;
-    gap: 30px;
+  display: flex;
+  overflow: overlay;
+  gap: 30px;
 }
 
 .item-five {
-    min-width: 288px;
-    box-shadow: inset -1px 0 0 0 #EAEAEA, inset 1px 0 0 0 #EAEAEA, inset 0 -1px 0 0 #EAEAEA;
-    border-radius: 0px 0px 4px 4px;
+  min-width: 288px;
+  box-shadow: inset -1px 0 0 0 #eaeaea, inset 1px 0 0 0 #eaeaea,
+    inset 0 -1px 0 0 #eaeaea;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .foto-five {
 }
 
 .text-price-five {
-    padding: 10px 12px;
+  padding: 10px 12px;
 }
 
 .text-five {
-    font-size: 16px;
-    line-height: 1.62;
-    color: #454F5B;
-    margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.62;
+  color: #454f5b;
+  margin-bottom: 10px;
 }
 
 .price-five {
-    font-weight: 600;
-    font-size: 20px;
+  font-weight: 600;
+  font-size: 20px;
 }
 
-
 @media (min-width: 768px) {
-    .section-popular {
-        padding-top: 20px;
-        padding-bottom: 60px;
-    }
+  .section-popular {
+    padding-bottom: 60px;
+  }
 
-    .title-five {
-        font-size: 33px;
-        line-height: 1.41;
-        margin-bottom: 44px;
-    }
+  .title-five {
+    font-size: 33px;
+    line-height: 1.41;
+    margin-bottom: 44px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .section-popular {
+    padding-bottom: 96px;
+  }
+
+  .container {
+  }
+
+  .title-five {
+    font-size: 44px;
+    text-align: left;
+    margin-bottom: 64px;
+  }
+
+  .list-five {
+  }
+  .item-five {
+  }
+  .foto-five {
+  }
+  .text-price-five {
+  }
+  .text-five {
+  }
+  .price-five {
+  }
 }

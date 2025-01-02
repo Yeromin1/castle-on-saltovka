@@ -1,6 +1,7 @@
 .header {
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header .container {
@@ -12,6 +13,17 @@
 .container-logo,
 .header-nav {
   display: none;
+}
+
+.header-address {
+  display: none;
+}
+
+.header-list-contacts {
+}
+.header-item-contacts {
+}
+.header-tel {
 }
 
 .menu {
@@ -32,9 +44,8 @@
 .menu-button-basket,
 .menu-button-heart {
   padding: 17px 0px;
-  fill: #454F5B;
+  fill: #454f5b;
 }
-
 
 /*-------menu-mobal---------*/
 .modal-menu-overlay {
@@ -43,7 +54,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   z-index: 99;
   opacity: 0;
   visibility: hidden;
@@ -58,7 +69,6 @@
 }
 
 .modal-menu-overlay .container {
-  
 }
 
 .modal-menu-overlay .container-menu-nav-address {
@@ -74,14 +84,14 @@
 .menu-close {
   position: absolute;
   top: 23px;
-  fill: #161C24;
+  fill: #161c24;
 }
 
 .mobal-menu-button {
   position: absolute;
   top: 17px;
   right: 16px;
-  fill: #454F5B;
+  fill: #454f5b;
 }
 
 .hopping-cart {
@@ -108,35 +118,33 @@
   min-width: 3255px;
   border-radius: 50px;
   padding: 1px;
-  background-color: #C4CDD5;
+  background-color: #c4cdd5;
   left: -1440px;
   top: 70px;
 }
 
 .menu-mobal-nav {
-
 }
 
 .menu-mobal-list {
-
 }
 
 .menu-mobal-item {
   margin-bottom: 16px;
-  border-bottom: 1px solid #EAEAEA;
+  border-bottom: 1px solid #eaeaea;
   padding-bottom: 16px;
 }
 
 .menu-mobal-link {
   font-size: 16px;
   line-height: 1.62;
-  color: #454F5B;
+  color: #454f5b;
 }
 
 .menu-mobal-address {
 }
 
-.menu-mobal-address-list{
+.menu-mobal-address-list {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -147,50 +155,138 @@
 }
 
 .icon-li-phone {
-  fill: #4295E4;
+  fill: #4295e4;
   position: absolute;
 }
 
 .menu-mobal-address-item .menu-link-contacts {
   font-size: 14px;
-  color: #454F5B;
+  color: #454f5b;
   padding-left: 26px;
 }
 
 .menu-mobal-link-contacts {
-font-weight: 600;
-font-size: 16px;
-line-height: 1.62;
-letter-spacing: 0.12em;
-text-decoration: underline;
-text-decoration-skip-ink: none;
-color: #4295E4;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.12em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4295e4;
 }
-
 
 @media (min-width: 768px) {
   .menu {
-      display: none;
+    display: none;
   }
 
   .container-logo,
   .header-nav {
-  display: block;
+    display: block;
   }
 
   .header-nav-list {
-      display: flex;
-      gap: 32px;
-      padding: 29px 0px;
+    display: flex;
+    gap: 32px;
+    padding: 29px 0px;
   }
 
   .header-nav-link {
-  font-weight: 300;
-  font-size: 20px;
-  color: #161C24;
+    font-weight: 300;
+    font-size: 20px;
+    color: #161c24;
   }
 
   .menu-heart-basket {
-      gap: 24px;
+    gap: 24px;
+  }
+}
+
+@media (min-width: 1158px) {
+  .header {
+  }
+  .container {
+  }
+  .container-logo {
+  }
+  .header-logo {
+  }
+  .header-icon {
+  }
+  .header-nav {
+  }
+  .header-nav-list {
+  }
+  .header-nav-item {
+  }
+  .header-nav-link {
+  }
+
+  .header-address {
+    display: block;
+    font-style: normal;
+  }
+
+  .header-list-contacts {
+  }
+
+  .header-item-contacts {
+  }
+
+  .header-tel {
+    font-size: 18px;
+    color: grey;
+  }
+
+  .menu {
+  }
+  .menu-button {
+  }
+  .menu-icon {
+  }
+
+  .menu-heart-basket {
+    gap: 32px;
+  }
+
+  .menu-button-heart {
+  }
+  .menu-button-basket {
+  }
+  .modal-menu-overlay {
+  }
+  .container-menu-nav-address {
+  }
+  .menu-close {
+  }
+  .menu-close-icon {
+  }
+  .mobal-menu-button {
+  }
+  .hopping-cart {
+  }
+  .menu-line {
+  }
+  .menu-mobal-nav {
+  }
+  .menu-mobal-list {
+  }
+  .menu-mobal-item {
+  }
+  .menu-mobal-link {
+  }
+  .menu-mobal-address {
+  }
+  .menu-mobal-address-list {
+  }
+  .menu-mobal-address-item {
+  }
+  .icon-li-phone {
+  }
+  .menu-link-contacts {
+  }
+  .menu-item-width {
+  }
+  .menu-mobal-link-contacts {
   }
 }

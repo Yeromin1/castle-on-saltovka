@@ -5,11 +5,18 @@
 .container {
 }
 
+.container-titie-five {
+  margin-bottom: 24px;
+}
+
+.btn-popular {
+  display: none;
+}
+
 .title-five {
   font-size: 22px;
   line-height: 1.55;
   text-align: center;
-  margin-bottom: 24px;
 }
 
 .list-five {
@@ -49,10 +56,13 @@
     padding-bottom: 60px;
   }
 
+  .container-titie-five {
+    margin-bottom: 44px;
+  }
+
   .title-five {
     font-size: 33px;
     line-height: 1.41;
-    margin-bottom: 44px;
   }
 }
 
@@ -64,10 +74,33 @@
   .container {
   }
 
+  .container-titie-five {
+    margin-bottom: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .container-btn-popular {
+    display: flex;
+    gap: 40px;
+  }
+
+  .btn-popular {
+    display: contents;
+    /* height: 40px;
+    width: 40px; */
+  }
+
+  .btn-popular .icon-chevron-left,
+  .btn-popular .icon-chevron-tright {
+    width: 40px;
+    height: 40px;
+  }
+
   .title-five {
     font-size: 44px;
     text-align: left;
-    margin-bottom: 64px;
   }
 
   .list-five {

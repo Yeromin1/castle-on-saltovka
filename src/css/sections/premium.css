@@ -64,7 +64,9 @@
   justify-content: space-between;
 }
 
-.icon-chevron-left {
+.icon-chevron-left:active,
+.icon-chevron-tright:active {
+  fill: #c4cdd5;
 }
 
 .anime-ball-hoop {
@@ -222,4 +224,13 @@
   }
   .icon-chevron-tright {
   }
+}
+
+/* basicLightbox Библиотека*/
+.basicLightbox__placeholder > img:first-child:last-child {
+  width: revert-layer;
+}
+
+.basicLightbox {
+  background: rgba(0, 0, 0, 0.8);
 }

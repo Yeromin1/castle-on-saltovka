@@ -93,7 +93,7 @@
 
 .anime-hoop {
   position: absolute;
-  left: 20px;
+  left: 32%;
 }
 
 .hoop-icon {
@@ -218,8 +218,12 @@
   }
   .ball-icon-max {
   }
+
   .anime-hoop {
+    left: 33%;
+    top: 5%;
   }
+
   .hoop-icon {
   }
   .icon-chevron-tright {

@@ -129,8 +129,7 @@
   }
 
   .logo-network {
-    display: grid;
-    gap: 144px;
+    flex-direction: column;
   }
 
   .logo {

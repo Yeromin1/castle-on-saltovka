@@ -92,6 +92,14 @@
     font-size: 12px;
     bottom: 20px;
     left: 20px;
+    transition-property: color, background-color, border;
+  }
+
+  .btn-item-categories:active,
+  .btn-item-categories:focus {
+    background-color: #2e81d0;
+    color: white;
+    border: none;
   }
 
   .btn-categories {
@@ -143,6 +151,17 @@
     line-height: 1.62;
     width: 220px;
     height: 50px;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+    /* transition-delay: 100ms; */
+  }
+
+  .btn-item-categories:hover {
+    background-color: #2e81d0;
+    color: white;
+    border: none;
+    /* transform: scale(1.1); */
+    /* transform: rotate(180deg); */
   }
 
   .button-addition {

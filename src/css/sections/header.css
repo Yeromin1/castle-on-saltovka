@@ -47,6 +47,14 @@
   fill: #454f5b;
 }
 
+.menu-button-heart:active,
+.menu-button-heart:focus,
+.menu-button-basket:active,
+.menu-button-basket:focus {
+  fill: #2e81d0;
+  transform: scale(1.1);
+}
+
 /*-------menu-mobal---------*/
 .modal-menu-overlay {
   position: fixed;
@@ -175,6 +183,13 @@
   color: #4295e4;
 }
 
+.button:active,
+.button:focus {
+  background-color: #4295e4;
+  border-radius: 3px;
+  fill: #ffffff;
+}
+
 @media (min-width: 768px) {
   .menu {
     display: none;
@@ -197,6 +212,11 @@
     color: #161c24;
   }
 
+  .header-nav-link:active,
+  .header-nav-link:focus {
+    color: #2e81d0;
+  }
+
   .menu-heart-basket {
     gap: 24px;
   }
@@ -211,15 +231,20 @@
   }
   .header-logo {
   }
-  .header-icon {
+
+  .header-icon:hover {
+    transform: scale(1.15);
   }
+
   .header-nav {
   }
   .header-nav-list {
   }
   .header-nav-item {
   }
-  .header-nav-link {
+
+  .header-nav-link:hover {
+    color: #2e81d0;
   }
 
   .header-address {
@@ -238,6 +263,12 @@
     color: grey;
   }
 
+  .header-tel:hover,
+  .header-tel:focus,
+  .header-tel:active {
+    color: #2e81d0;
+  }
+
   .menu {
   }
   .menu-button {
@@ -249,8 +280,12 @@
     gap: 32px;
   }
 
-  .menu-button-heart {
+  .menu-button-heart:hover,
+  .menu-button-basket:hover {
+    fill: #2e81d0;
+    transform: scale(1.15);
   }
+
   .menu-button-basket {
   }
   .modal-menu-overlay {
@@ -283,6 +318,18 @@
   }
   .icon-li-phone {
   }
+
+  .button {
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+  }
+
+  .button:hover {
+    background-color: #4295e4;
+    border-radius: 3px;
+    fill: #ffffff;
+  }
+
   .menu-link-contacts {
   }
   .menu-item-width {

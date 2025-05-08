@@ -71,7 +71,6 @@
 
 .anime-ball-hoop {
   display: flex;
-  position: relative;
   min-width: 60px;
   justify-content: space-between;
 }
@@ -92,11 +91,19 @@
 }
 
 .anime-hoop {
-  position: absolute;
-  left: 32%;
+  position: relative;
+  width: 5px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #4295e4;
+  top: 8px;
 }
 
 .hoop-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .icon-chevron-tright {
@@ -220,8 +227,7 @@
   }
 
   .anime-hoop {
-    left: 33%;
-    top: 5%;
+    top: 9px;
   }
 
   .hoop-icon {

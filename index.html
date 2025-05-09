@@ -26,7 +26,7 @@
     />
 
     
-    <link rel="stylesheet" href="/castle-on-saltovka/assets/index-d772dd1e.css">
+    <link rel="stylesheet" href="/castle-on-saltovka/assets/index-51842f99.css">
   </head>
 
   <body>
@@ -448,30 +448,32 @@
       <section class="section-callback">
   <div class="container">
     <h2 class="title-callback">Ми Вам передзвонимо</h2>
+
     <p class="text-callback">
       Якщо у вас виникли питання або проблеми, заповніть форму і ми Вам
       передзвонимо.
     </p>
 
-    <form class="form-callback" name="issue_report_form" autocomplete="off">
-      <label class="form-label" for="user-name"></label>
-      <input
-        class="form-input"
-        type="text"
-        name="user-name"
-        id="user-name"
-        placeholder="Ваше ім'я"
-      />
+    <form class="form-callback" name="issue_report_form" autocomplete="on">
+      <label class="form-label">
+        <input
+          class="form-input"
+          type="text"
+          name="user-name"
+          placeholder="Ваше ім'я"
+          required
+        />
+      </label>
 
-      <label class="form-label" for="user-phone"></label>
-      <input
-        class="form-input"
-        type="tel"
-        name="phone"
-        id="user-phone"
-        autocomplete="on"
-        placeholder="Ваш номер телефону"
-      />
+      <label class="form-label">
+        <input
+          class="form-input"
+          type="tel"
+          name="phone"
+          placeholder="Ваш номер телефону"
+          required
+        />
+      </label>
 
       <button class="btn-four" type="submit">Відправити</button>
     </form>

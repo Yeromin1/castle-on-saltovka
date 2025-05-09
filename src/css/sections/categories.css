@@ -116,7 +116,7 @@
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media (min-width: 1158px) {
   .section-categories {
     padding: 100px 0px;
   }

@@ -158,7 +158,7 @@
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media (min-width: 1158px) {
   .section-premium {
     padding: 50px 0px;
   }

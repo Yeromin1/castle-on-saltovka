@@ -96,6 +96,20 @@
   .btn-popular .icon-chevron-tright {
     width: 40px;
     height: 40px;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+  }
+
+  .btn-popular .icon-chevron-tright:hover,
+  .btn-popular .icon-chevron-left:hover {
+    background-color: #4295e4;
+    border-radius: 3px;
+    fill: #ffffff;
+  }
+
+  .btn-popular .icon-chevron-left:active,
+  .btn-popular .icon-chevron-tright:active {
+    fill: #c4cdd5;
   }
 
   .title-five {

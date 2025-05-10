@@ -11,10 +11,7 @@
 }
 
 .container-logo,
-.header-nav {
-  display: none;
-}
-
+.header-nav,
 .header-address {
   display: none;
 }
@@ -45,14 +42,6 @@
 .menu-button-heart {
   padding: 17px 0px;
   fill: #454f5b;
-}
-
-.menu-button-heart:active,
-.menu-button-heart:focus,
-.menu-button-basket:active,
-.menu-button-basket:focus {
-  fill: #2e81d0;
-  transform: scale(1.1);
 }
 
 /*-------menu-mobal---------*/
@@ -183,13 +172,6 @@
   color: #4295e4;
 }
 
-.button:active,
-.button:focus {
-  background-color: #4295e4;
-  border-radius: 3px;
-  fill: #ffffff;
-}
-
 @media (min-width: 768px) {
   .menu {
     display: none;
@@ -210,11 +192,6 @@
     font-weight: 300;
     font-size: 20px;
     color: #161c24;
-  }
-
-  .header-nav-link:active,
-  .header-nav-link:focus {
-    color: #2e81d0;
   }
 
   .menu-heart-basket {
@@ -243,7 +220,8 @@
   .header-nav-item {
   }
 
-  .header-nav-link:hover {
+  .header-nav-link:hover,
+  .header-tel:hover {
     color: #2e81d0;
   }
 
@@ -261,12 +239,6 @@
   .header-tel {
     font-size: 18px;
     color: grey;
-  }
-
-  .header-tel:hover,
-  .header-tel:focus,
-  .header-tel:active {
-    color: #2e81d0;
   }
 
   .menu {
@@ -317,17 +289,6 @@
   .menu-mobal-address-item {
   }
   .icon-li-phone {
-  }
-
-  .button {
-    transition-duration: 250ms;
-    transition-timing-function: ease-in-out;
-  }
-
-  .button:hover {
-    background-color: #4295e4;
-    border-radius: 3px;
-    fill: #ffffff;
   }
 
   .menu-link-contacts {

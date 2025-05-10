@@ -208,6 +208,11 @@
   }
   .item-network {
   }
+
+  .item-network:hover {
+    transform: scale(1.25);
+  }
+
   .link-network {
   }
   .icon {
@@ -249,6 +254,12 @@
   }
   .link-contacts {
   }
+
+  .item-page-nav .link:hover,
+  .item-contacts .link-contacts:hover {
+    color: #2e81d0;
+  }
+
   .contacts {
   }
   .container-tel-email {

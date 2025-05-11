@@ -24,6 +24,11 @@
 .form {
 }
 
+.form-callback {
+  display: grid;
+  gap: 16px;
+}
+
 .form-label {
 }
 
@@ -33,7 +38,6 @@
   font-size: 14px;
   line-height: 1.71;
   color: #454f5b;
-  margin-bottom: 16px;
   background-color: #eaeaea;
   border-radius: 4px;
   border: none;
@@ -66,21 +70,20 @@
   }
 
   .form-callback {
-    text-align: center;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
   }
 
   .form-input {
     max-width: 170px;
     height: 40px;
-    margin: 0;
-    margin-right: 24px;
   }
 
   .btn-four {
     font-size: 14px;
     min-width: 150px;
     height: 40px;
-    margin: 0 auto;
   }
 
   .title-callback {

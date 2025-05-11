@@ -124,10 +124,11 @@
 }
 
 .menu-mobal-list {
+  display: grid;
+  gap: 16px;
 }
 
 .menu-mobal-item {
-  margin-bottom: 16px;
   border-bottom: 1px solid #eaeaea;
   padding-bottom: 16px;
 }
@@ -196,6 +197,11 @@
 
   .menu-heart-basket {
     gap: 24px;
+  }
+
+  .menu-button-basket,
+  .menu-button-heart {
+    padding: 23px 0;
   }
 }
 

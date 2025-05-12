@@ -30,11 +30,11 @@ body {
   }
 }
 
-@media (max-width: 375px) {
+/* @media (max-width: 375px) {
   .menu-item-width {
     max-width: 97px;
   }
-}
+} */
 
 @media (max-width: 337px) {
   .container-nav-address {

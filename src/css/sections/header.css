@@ -70,7 +70,7 @@
 
 .modal-menu-overlay .container-menu-nav-address {
   box-shadow: none;
-  padding-top: 94px;
+  padding-top: 70px;
   padding-bottom: 40px;
   align-items: normal;
   flex-direction: column;
@@ -111,13 +111,14 @@
 }
 
 .menu-line {
-  position: absolute;
-  min-width: 3255px;
+  width: 100%; /* или фиксированная ширина, например 300px */
+  max-width: 100vw; /* ограничить шириной окна */
   border-radius: 50px;
-  padding: 1px;
+  height: 2px;
   background-color: #c4cdd5;
-  left: -1440px;
+  left: 0;
   top: 70px;
+  position: absolute;
 }
 
 .menu-mobal-nav {
@@ -131,6 +132,10 @@
 .menu-mobal-item {
   border-bottom: 1px solid #eaeaea;
   padding-bottom: 16px;
+}
+
+.menu-mobal-item:first-child {
+  padding: 24px 0 16px;
 }
 
 .menu-mobal-link {
@@ -171,6 +176,11 @@
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4295e4;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
 }
 
 @media (min-width: 768px) {

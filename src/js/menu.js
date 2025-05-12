@@ -1,5 +1,3 @@
-'use strict';
-
 (() => {
   const refs = {
     // Додати атрибут data-menu-open на кнопку відкриття

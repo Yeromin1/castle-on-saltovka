@@ -158,6 +158,10 @@
   position: relative;
 }
 
+.menu-mobal-address-item:first-child {
+  width: 235px;
+}
+
 .icon-li-phone {
   fill: #4295e4;
   position: absolute;

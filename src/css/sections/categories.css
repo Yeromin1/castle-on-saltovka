@@ -17,6 +17,7 @@
   flex-wrap: wrap;
   gap: 24px 20px;
   margin-bottom: 24px;
+  justify-content: center;
 }
 
 .item-categories {

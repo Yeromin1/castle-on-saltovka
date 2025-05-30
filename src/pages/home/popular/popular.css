@@ -130,3 +130,12 @@
   .price-five {
   }
 }
+
+/* basicLightbox Библиотека*/
+.basicLightbox__placeholder > img:first-child:last-child {
+  width: revert-layer;
+}
+
+.basicLightbox {
+  background: rgba(0, 0, 0, 0.8);
+}

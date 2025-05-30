@@ -1,0 +1,10 @@
+@import url('../global/reset.css');
+@import url('../global/index.css');
+@import url('../../components/header/header.css');
+@import url('../../pages/home/premium/premium.css');
+@import url('../../pages/home/experience/experience.css');
+@import url('../../pages/home/why/why.css');
+@import url('../../pages/home/categories/categories.css');
+@import url('../../pages/home/popular/popular.css');
+@import url('../../pages/home/callback/callback.css');
+@import url('../../components/footer/footer.css');

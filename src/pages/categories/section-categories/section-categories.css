@@ -1,0 +1,47 @@
+.pages-section-categories {
+}
+.container {
+}
+.nav-section-categories {
+}
+
+.list-nav-section-categories {
+  display: flex;
+  align-items: center;
+  padding: 24px 0 12px;
+  gap: 4px;
+}
+
+.icon-home {
+}
+.item-nav-section-categories {
+}
+
+.item-nav-section-categories:nth-child(1n):not(:last-child) {
+  color: #575757;
+}
+
+.item-nav-section-categories:nth-child(2n):not(:last-child) {
+  display: none;
+}
+
+.link-nav-section-categories {
+  font-size: 14px;
+  line-height: 186%;
+  color: #9d9d9d;
+}
+
+.title-section-categories {
+}
+.list-section-categories {
+}
+.item-section-categories {
+}
+.foto-section-categories {
+}
+.gallery {
+}
+.text-section-categories {
+}
+.btn-section-categories {
+}

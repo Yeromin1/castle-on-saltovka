@@ -1,4 +1,5 @@
 @import url('../global/reset.css');
 @import url('../global/index.css');
 @import url('../../components/header/header.css');
+@import url('../../pages/categories/section-categories/section-categories.css');
 @import url('../../components/footer/footer.css');

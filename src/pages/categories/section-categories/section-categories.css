@@ -32,16 +32,38 @@
 }
 
 .title-section-categories {
+  font-size: 22px;
+  line-height: 1.55;
+  text-align: center;
+  margin-bottom: 24px;
 }
+
 .list-section-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px 20px;
+  margin-bottom: 32px;
 }
+
 .item-section-categories {
 }
 .foto-section-categories {
 }
 .gallery {
 }
+
 .text-section-categories {
+  max-width: 155px;
 }
+
 .btn-section-categories {
+  min-width: 100%;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  background-color: #4295e4;
+  border-radius: 4px;
+  margin-bottom: 40px;
 }

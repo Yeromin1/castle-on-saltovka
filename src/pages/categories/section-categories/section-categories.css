@@ -2,34 +2,6 @@
 }
 .container {
 }
-.nav-section-categories {
-}
-
-.list-nav-section-categories {
-  display: flex;
-  align-items: center;
-  padding: 24px 0 12px;
-  gap: 4px;
-}
-
-.icon-home {
-}
-.item-nav-section-categories {
-}
-
-.item-nav-section-categories:nth-child(1n):not(:last-child) {
-  color: #575757;
-}
-
-.item-nav-section-categories:nth-child(2n):not(:last-child) {
-  display: none;
-}
-
-.link-nav-section-categories {
-  font-size: 14px;
-  line-height: 186%;
-  color: #9d9d9d;
-}
 
 .title-section-categories {
   font-size: 22px;
@@ -38,15 +10,10 @@
   margin-bottom: 24px;
 }
 
-.list-section-categories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px 20px;
-  margin-bottom: 32px;
+.list-categories {
 }
 
-.item-section-categories {
+.item-categories {
 }
 
 .foto-section-categories {
@@ -60,14 +27,7 @@
   max-width: 155px;
 }
 
-.pages-section-categories .container .btn-categories {
-  /* min-width: 100%;
-  height: 50px;
-  font-weight: 500;
-  font-size: 16px;
-  color: white;
-  background-color: #4295e4;
-  border-radius: 4px; */
+.btn-categories {
   margin-bottom: 40px;
 }
 
@@ -76,29 +36,10 @@
   }
   .container {
   }
-  .nav-section-categories {
-  }
-
-  .list-nav-section-categories {
-    padding: 20px 0 40px;
-  }
 
   .home-logo {
   }
   .icon-home {
-  }
-
-  .item-nav-section-categories:first-child {
-    display: none;
-  }
-
-  .item-nav-section-categories:nth-child(2n):not(:last-child) {
-    display: block;
-  }
-
-  .link-nav-categories {
-    line-height: 1.62;
-    color: #141414;
   }
 
   .title-section-categories {
@@ -107,12 +48,12 @@
     margin-bottom: 40px;
   }
 
-  .list-section-categories {
+  .list-categories {
     margin-bottom: 50px;
     gap: 35px 19px;
   }
 
-  .item-section-categories {
+  .item-categories {
   }
   .foto-section-categories {
   }
@@ -123,12 +64,8 @@
     max-width: none;
   }
 
-  .pages-section-categories .container .btn-categories {
+  .btn-categories {
     margin: 0 auto 70px;
-    /* display: block;
-    font-size: 14px;
-    min-width: 150px;
-    height: 40px; */
   }
 }
 
@@ -155,11 +92,11 @@
     margin-bottom: 64px;
   }
 
-  .list-section-categories {
+  .list-categories {
     gap: 50px 30px;
   }
 
-  .item-section-categories {
+  .item-categories {
   }
   .foto-section-categories {
   }
@@ -168,9 +105,7 @@
   .text-section-categories {
   }
 
-  .pages-section-categories .container .btn-categories {
+  .btn-categories {
     margin: 0 auto 100px;
-    /* min-width: 220px;
-    font-size: 16px; */
   }
 }

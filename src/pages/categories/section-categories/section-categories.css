@@ -48,8 +48,11 @@
 
 .item-section-categories {
 }
+
 .foto-section-categories {
+  margin-bottom: 12px;
 }
+
 .gallery {
 }
 
@@ -57,13 +60,117 @@
   max-width: 155px;
 }
 
-.btn-section-categories {
-  min-width: 100%;
+.pages-section-categories .container .btn-categories {
+  /* min-width: 100%;
   height: 50px;
   font-weight: 500;
   font-size: 16px;
   color: white;
   background-color: #4295e4;
-  border-radius: 4px;
+  border-radius: 4px; */
   margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .pages-section-categories {
+  }
+  .container {
+  }
+  .nav-section-categories {
+  }
+
+  .list-nav-section-categories {
+    padding: 20px 0 40px;
+  }
+
+  .home-logo {
+  }
+  .icon-home {
+  }
+
+  .item-nav-section-categories:first-child {
+    display: none;
+  }
+
+  .item-nav-section-categories:nth-child(2n):not(:last-child) {
+    display: block;
+  }
+
+  .link-nav-categories {
+    line-height: 1.62;
+    color: #141414;
+  }
+
+  .title-section-categories {
+    font-size: 33px;
+    line-height: 1.41;
+    margin-bottom: 40px;
+  }
+
+  .list-section-categories {
+    margin-bottom: 50px;
+    gap: 35px 19px;
+  }
+
+  .item-section-categories {
+  }
+  .foto-section-categories {
+  }
+  .gallery {
+  }
+
+  .text-section-categories {
+    max-width: none;
+  }
+
+  .pages-section-categories .container .btn-categories {
+    margin: 0 auto 70px;
+    /* display: block;
+    font-size: 14px;
+    min-width: 150px;
+    height: 40px; */
+  }
+}
+
+@media (min-width: 1158px) {
+  .pages-section-categories {
+  }
+  .container {
+  }
+  .nav-section-categories {
+  }
+  .list-nav-section-categories {
+  }
+  .home-logo {
+  }
+  .icon-home {
+  }
+  .item-nav-section-categories {
+  }
+  .link-nav-section-categories {
+  }
+
+  .title-section-categories {
+    font-size: 44px;
+    margin-bottom: 64px;
+  }
+
+  .list-section-categories {
+    gap: 50px 30px;
+  }
+
+  .item-section-categories {
+  }
+  .foto-section-categories {
+  }
+  .gallery {
+  }
+  .text-section-categories {
+  }
+
+  .pages-section-categories .container .btn-categories {
+    margin: 0 auto 100px;
+    /* min-width: 220px;
+    font-size: 16px; */
+  }
 }

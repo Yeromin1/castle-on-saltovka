@@ -1,8 +1,3 @@
-.pages-section-categories {
-}
-.container {
-}
-
 .title-section-categories {
   font-size: 22px;
   line-height: 1.55;
@@ -10,17 +5,8 @@
   margin-bottom: 24px;
 }
 
-.list-categories {
-}
-
-.item-categories {
-}
-
 .foto-section-categories {
   margin-bottom: 12px;
-}
-
-.gallery {
 }
 
 .text-section-categories {
@@ -32,16 +18,6 @@
 }
 
 @media (min-width: 768px) {
-  .pages-section-categories {
-  }
-  .container {
-  }
-
-  .home-logo {
-  }
-  .icon-home {
-  }
-
   .title-section-categories {
     font-size: 33px;
     line-height: 1.41;
@@ -51,13 +27,6 @@
   .list-categories {
     margin-bottom: 50px;
     gap: 35px 19px;
-  }
-
-  .item-categories {
-  }
-  .foto-section-categories {
-  }
-  .gallery {
   }
 
   .text-section-categories {
@@ -70,23 +39,6 @@
 }
 
 @media (min-width: 1158px) {
-  .pages-section-categories {
-  }
-  .container {
-  }
-  .nav-section-categories {
-  }
-  .list-nav-section-categories {
-  }
-  .home-logo {
-  }
-  .icon-home {
-  }
-  .item-nav-section-categories {
-  }
-  .link-nav-section-categories {
-  }
-
   .title-section-categories {
     font-size: 44px;
     margin-bottom: 64px;
@@ -94,15 +46,6 @@
 
   .list-categories {
     gap: 50px 30px;
-  }
-
-  .item-categories {
-  }
-  .foto-section-categories {
-  }
-  .gallery {
-  }
-  .text-section-categories {
   }
 
   .btn-categories {

@@ -2,9 +2,6 @@
   padding-top: 40px;
 }
 
-.container {
-}
-
 .title-gs {
   text-align: center;
   font-size: 22px;
@@ -28,9 +25,6 @@
 .advantages-item .list-icon {
   text-align: center;
   margin-bottom: 16px;
-}
-
-.icon-li {
 }
 
 .advantages-item .text {

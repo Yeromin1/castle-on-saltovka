@@ -3,9 +3,6 @@
   padding: 32px 0px;
 }
 
-.container {
-}
-
 .title-callback {
   font-size: 22px;
   line-height: 1.55;
@@ -21,15 +18,9 @@
   margin-bottom: 24px;
 }
 
-.form {
-}
-
 .form-callback {
   display: grid;
   gap: 16px;
-}
-
-.form-label {
 }
 
 .form-input {
@@ -57,12 +48,6 @@
 .form-input::placeholder {
   color: #454f5b;
 }
-
-/* .btn-four:disabled {
-  background-color: #eaeaea;
-  cursor: not-allowed;
-  color: #454f5b;
-} */
 
 @media (min-width: 768px) {
   .section-callback {
@@ -105,18 +90,8 @@
     padding: 60px 0px;
   }
 
-  .container {
-  }
-
   .title-callback {
     font-size: 44px;
-  }
-
-  .text-callback {
-  }
-  .form-callback {
-  }
-  .form-label {
   }
 
   .form-input {

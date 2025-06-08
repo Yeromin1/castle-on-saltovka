@@ -3,9 +3,6 @@
   background-color: rgb(251, 251, 251);
 }
 
-.section-premium .container {
-}
-
 .foto {
   margin: 0 auto 20px;
   border-radius: 5px;
@@ -106,9 +103,6 @@
   transform: translate(-50%, -50%);
 }
 
-.icon-chevron-tright {
-}
-
 @media screen and (min-width: 768px) {
   .img-model-price {
     display: flex;
@@ -158,33 +152,14 @@
     padding: 50px 0px;
   }
 
-  .container {
-  }
-  .visually-hidden {
-  }
-
   .img-model-price {
     gap: 165px;
     margin-bottom: 90px;
   }
 
-  .foto {
-  }
-  .model-price {
-  }
-
   .model {
     margin-bottom: 20px;
     font-size: 44px;
-  }
-
-  .model-text {
-  }
-  .model-text-bottom {
-  }
-  .price {
-  }
-  .price-text {
   }
 
   .price-sum {
@@ -222,25 +197,12 @@
     height: 30px;
   }
 
-  .anime-ball-hoop {
-  }
-
   .anime-ball {
     display: ruby;
   }
 
-  .ball-icon {
-  }
-  .ball-icon-max {
-  }
-
   .anime-hoop {
     top: 9px;
-  }
-
-  .hoop-icon {
-  }
-  .icon-chevron-tright {
   }
 }
 

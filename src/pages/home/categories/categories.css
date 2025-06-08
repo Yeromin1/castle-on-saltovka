@@ -2,17 +2,11 @@
   padding: 40px 0px;
 }
 
-.container {
-}
-
 .title-categories {
   font-size: 22px;
   line-height: 1.55;
   text-align: center;
   margin-bottom: 24px;
-}
-
-.item-categories {
 }
 
 .foto-categories {
@@ -79,9 +73,6 @@
     padding: 100px 0px;
   }
 
-  .container {
-  }
-
   .title-categories {
     font-size: 44px;
     margin-bottom: 64px;
@@ -89,9 +80,6 @@
 
   .list-categories {
     margin-bottom: 50px;
-  }
-
-  .item-categories {
   }
 
   .foto-categories {
@@ -120,8 +108,5 @@
     border: none;
     /* transform: scale(1.1); */
     /* transform: rotate(180deg); */
-  }
-
-  .button-addition {
   }
 }

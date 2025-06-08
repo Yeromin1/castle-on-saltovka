@@ -58,24 +58,11 @@
 }
 
 @media (min-width: 1158px) {
-  .section-experience {
-  }
-  .container {
-  }
-  .visually-hidden {
-  }
-
   .experience {
     gap: 82px;
   }
 
   .number-text {
     gap: 16px;
-  }
-
-  .number {
-  }
-
-  .text {
   }
 }

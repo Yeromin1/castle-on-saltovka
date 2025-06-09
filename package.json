@@ -17,6 +17,7 @@
   "author": "Dmytro Yeromin <eremin.dmitriy@ukr.net>",
   "license": "ISC",
   "dependencies": {
+    "accordion-js": "^3.4.1",
     "basiclightbox": "^5.0.4",
     "validator": "^13.15.15",
     "vite-plugin-full-reload": "^1.0.5",

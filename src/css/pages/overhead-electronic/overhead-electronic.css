@@ -2,6 +2,7 @@
 @import url('../../global/index.css');
 @import url('../../../components/header/header.css');
 @import url('../../../components/page-route/page-route.css');
+@import url('../../../components/filter/filter.css');
 @import url('../../../pages/catalog/overhead-electronic/overhead/overhead.css');
 @import url('../../../pages/home/callback/callback.css');
 @import url('../../../components/footer/footer.css');

@@ -2,14 +2,47 @@
 }
 .container {
 }
+
+.container-icon-title {
+  display: flex;
+  align-items: center;
+  gap: 115px;
+  box-shadow: inset 0 -1px 0 0 #c4cdd5;
+  padding: 24px 0 24px;
+  margin-bottom: 24px;
+}
+
+.btn-close-filter {
+  transform: rotate(90deg);
+}
+
+.filter-title {
+}
+
+.header .container,
+.list-nav-section-categories {
+}
+
 .filter-section {
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 16px;
 }
+
 .filter-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 20px;
 }
+
 .icon {
+  transform: rotate(-90deg);
 }
+
 .filter-content {
 }
+
 .price-inputs {
 }
 .price-slider {

@@ -25,9 +25,9 @@
 })();
 
 // filter.html
-const filterToggleBtn = document.querySelector('.btn-categories');
-const filterMenu = document.querySelector('[dat-menu]');
-const filterCloseBtn = document.querySelector('.btn-close-filter');
+const filterToggleBtn = document.querySelector('[filter-menu-open]');
+const filterMenu = document.querySelector('[filter-menu]');
+const filterCloseBtn = document.querySelector('[filter-menu-close]');
 
 filterToggleBtn.addEventListener('click', function () {
   filterMenu.classList.add('is-open');

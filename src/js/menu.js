@@ -1,3 +1,4 @@
+// header.html
 (() => {
   const refs = {
     // Додати атрибут data-menu-open на кнопку відкриття
@@ -22,3 +23,18 @@
     document.body.classList.toggle('no-scroll');
   }
 })();
+
+// filter.html
+const filterToggleBtn = document.querySelector('.btn-categories');
+const filterMenu = document.querySelector('[dat-menu]');
+const filterCloseBtn = document.querySelector('.btn-close-filter');
+
+filterToggleBtn.addEventListener('click', function () {
+  filterMenu.classList.add('is-open');
+  document.documentElement.classList.add('no-scroll');
+});
+
+filterCloseBtn.addEventListener('click', function () {
+  filterMenu.classList.remove('is-open');
+  document.documentElement.classList.remove('no-scroll');
+});

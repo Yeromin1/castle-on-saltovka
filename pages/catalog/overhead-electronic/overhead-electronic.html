@@ -28,7 +28,7 @@
     
     <script type="module" crossorigin src="/castle-on-saltovka/commonHelpers3.js"></script>
     <link rel="modulepreload" crossorigin href="/castle-on-saltovka/assets/menu-712f75c0.js">
-    <link rel="stylesheet" href="/castle-on-saltovka/assets/overhead-electronic-4a6eacd4.css">
+    <link rel="stylesheet" href="/castle-on-saltovka/assets/overhead-electronic-d7f546ea.css">
   </head>
 
   <body>
@@ -185,9 +185,17 @@
   </div>
 </section>
 
-      <section class="filter">
+      <!----------menu-mobal--is-open----------->
+<section class="filter modal-menu-overlay is-open" data-menu>
   <div class="container">
-    <h3>Фільтр</h3>
+    <div class="container-icon-title">
+      <button type="button" class="btn-close-filter" data-menu-close>
+        <svg class="icon" width="14" height="8">
+          <use href="/castle-on-saltovka/assets/icons-d91987f9.svg#icon-arr-down"></use>
+        </svg>
+      </button>
+      <h3 class="filter-title">Фільтр</h3>
+    </div>
 
     <div class="filter-section">
       <button class="filter-toggle" data-target="price-content">
@@ -216,19 +224,45 @@
           <use href="/castle-on-saltovka/assets/icons-d91987f9.svg#icon-arr-down"></use>
         </svg>
       </button>
-      <div class="filter-content" id="features-content" hidden>
-        <label><input type="checkbox" /> Електронні кодові замки </label>
-        <label><input type="checkbox" /> Біометричні замки </label>
-        <label><input type="checkbox" /> Замок з відбитком</label>
-        <label><input type="checkbox" /> Замок із безконтактною карткою </label>
-        <label><input type="checkbox" /> Програмовані замки </label>
-        <label><input type="checkbox" /> Замки на батарейках </label>
-        <label><input type="checkbox" /> Замки з віддаленим доступом </label>
-        <label><input type="checkbox" /> Bluetooth замки </label>
-        <label><input type="checkbox" /> Електронні замки для квартири </label>
-        <label><input type="checkbox" /> Замки для скляних дверей </label>
-        <label><input type="checkbox" /> Електронні циліндри </label>
-      </div>
+      <ul class="filter-content" id="features-content" hidden>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Електронні кодові замки </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Біометричні замки </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Замок з відбитком</label>
+        </li>
+        <li class="filter-item">
+          <label
+            ><input type="checkbox" /> Замок із безконтактною карткою
+          </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Програмовані замки </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Замки на батарейках </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Замки з віддаленим доступом </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Bluetooth замки </label>
+        </li>
+        <li class="filter-item">
+          <label
+            ><input type="checkbox" /> Електронні замки для квартири
+          </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Замки для скляних дверей </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Електронні циліндри </label>
+        </li>
+      </ul>
     </div>
 
     <!-- Колір -->
@@ -239,22 +273,53 @@
           <use href="/castle-on-saltovka/assets/icons-d91987f9.svg#icon-arr-down"></use>
         </svg>
       </button>
-      <div class="filter-content" id="color-content" hidden>
-        <label><input type="checkbox" /> Сатиновий хром </label>
-        <label><input type="checkbox" /> Полірований хром </label>
-        <label><input type="checkbox" /> Нержавіюча сталь</label>
-        <label><input type="checkbox" /> Нікель </label>
-        <label><input type="checkbox" /> Шліфований нікель </label>
-        <label><input type="checkbox" /> Золото </label>
-        <label><input type="checkbox" /> Латунь </label>
-        <label><input type="checkbox" /> Антикварна латунь </label>
-        <label><input type="checkbox" /> Чорний матовий </label>
-        <label><input type="checkbox" /> Графіт </label>
-        <label><input type="checkbox" /> Бронза </label>
-        <label><input type="checkbox" /> Масляна бронза </label>
-        <label><input type="checkbox" /> Білий </label>
-        <label><input type="checkbox" /> Сірий </label>
-      </div>
+      <ul class="filter-content" id="color-content" hidden>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Сатиновий хром </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Полірований хром </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Полірований хром </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Нержавіюча сталь</label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Нікель </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Шліфований нікель </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Золото </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Латунь </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Антикварна латунь </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Чорний матовий </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Графіт </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Бронза </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Масляна бронза </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Білий </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Сірий </label>
+        </li>
+      </ul>
     </div>
 
     <!-- Матеріал -->
@@ -265,18 +330,38 @@
           <use href="/castle-on-saltovka/assets/icons-d91987f9.svg#icon-arr-down"></use>
         </svg>
       </button>
-      <div class="filter-content" id="material-content" hidden>
-        <label><input type="checkbox" /> Сталь </label>
-        <label><input type="checkbox" /> Бронза </label>
-        <label><input type="checkbox" /> Латунь</label>
-        <label><input type="checkbox" /> Алюміній </label>
-        <label><input type="checkbox" /> Чавун </label>
-        <label><input type="checkbox" /> Нержавіюча сталь </label>
-        <label><input type="checkbox" /> Цинковий сплав </label>
-        <label><input type="checkbox" /> Пластик </label>
-        <label><input type="checkbox" /> Мідь </label>
-        <label><input type="checkbox" /> Титан </label>
-      </div>
+      <ul class="filter-content" id="material-content" hidden>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Сталь </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Бронза </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Латунь</label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Алюміній </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Чавун </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Нержавіюча сталь </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Цинковий сплав </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Пластик </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Мідь </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Титан </label>
+        </li>
+      </ul>
     </div>
 
     <!-- Тип дверей -->
@@ -287,15 +372,29 @@
           <use href="/castle-on-saltovka/assets/icons-d91987f9.svg#icon-arr-down"></use>
         </svg>
       </button>
-      <div class="filter-content" id="door-type-content" hidden>
-        <label><input type="checkbox" /> Вхідні двері </label>
-        <label><input type="checkbox" /> Межкомнатні двері </label>
-        <label><input type="checkbox" /> Розсувні двері</label>
-        <label><input type="checkbox" /> Скляні двері </label>
-        <label><input type="checkbox" /> Дерев’яні двері </label>
-        <label><input type="checkbox" /> Металеві двері </label>
-        <label><input type="checkbox" /> Балконні двері </label>
-      </div>
+      <ul class="filter-content" id="door-type-content" hidden>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Вхідні двері </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Межкомнатні двері </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Розсувні двері</label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Скляні двері </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Дерев’яні двері </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Металеві двері </label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" /> Балконні двері </label>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
@@ -303,7 +402,7 @@
       <section>
   <div class="container">
     <h3 class="title-overhead">Накладні електронні замки</h3>
-    <button type="button" class="btn-categories">Фільтр</button>
+    <button type="button" class="btn-categories" data-menu-open>Фільтр</button>
     <ul class="list-overhead">
       <li class="item-overhead">
         <a href="#">

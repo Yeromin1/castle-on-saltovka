@@ -94,3 +94,51 @@
 
 .filter-button {
 }
+
+@media (min-width: 768px) {
+  .filter {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .filter .container {
+    flex-direction: column-reverse;
+  }
+
+  .container {
+  }
+  .filter-container {
+  }
+  .container-icon-title {
+  }
+  .btn-close-filter {
+  }
+  .icon-close {
+  }
+  .filter-title {
+  }
+  .filter-section {
+  }
+  .filter-toggle {
+  }
+  .icon-filter {
+  }
+  .filter-content {
+  }
+  .price-inputs {
+  }
+  .price-slider {
+  }
+  .filter-item {
+  }
+  .filter-button {
+  }
+  .btn-categories {
+  }
+
+  .filter-button .btn-categories:not(:last-child) {
+    display: none;
+  }
+}

@@ -86,7 +86,7 @@
 .filter-button .btn-categories:last-child {
   color: black;
   background-color: white;
-  border: 1px solid #add7ff;
+  border: 1px solid var(--light-blue);
   font-weight: 400;
   line-height: 1.62;
   margin-bottom: 24px;
@@ -109,30 +109,66 @@
 
   .container {
   }
+
   .filter-container {
+    border: 1px solid var(--light-grey);
+    border-radius: 2px;
+    padding: 24px;
+    width: 288px;
+    gap: 12px;
   }
+
   .container-icon-title {
+    padding: 0;
+    box-shadow: none;
+    margin: 0;
   }
+
   .btn-close-filter {
+    display: none;
   }
+
   .icon-close {
   }
+
   .filter-title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.45;
   }
+
   .filter-section {
   }
+
   .filter-toggle {
+    padding-bottom: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
   }
+
   .icon-filter {
+    fill: var(--light-grey);
   }
+
+  .icon-filter-animation {
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: rotate(0deg);
+    fill: var(--main);
+  }
+
   .filter-content {
   }
   .price-inputs {
   }
   .price-slider {
   }
+
   .filter-item {
+    font-size: 14px;
+    line-height: 1.71;
   }
+
   .filter-button {
   }
   .btn-categories {
@@ -140,5 +176,12 @@
 
   .filter-button .btn-categories:not(:last-child) {
     display: none;
+  }
+
+  .filter-button .btn-categories:last-child {
+    padding: 7px 72px;
+    width: 288px;
+    margin: 0 0 24px;
+    font-size: 16px;
   }
 }

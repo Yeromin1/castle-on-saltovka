@@ -1,5 +1,15 @@
 :root {
-  --white: #f0f0f0;
+  --white: #ffffff;
+  --black: #161c24;
+  --grey: #454f5b;
+  --light-grey: #c4cdd5;
+  --grey: #454f5b;
+  --stroke: #eaeaea;
+  --primary: #00999e;
+  --main: #4295e4;
+  --light-blue: #add7ff;
+  --text-disable: #e44286;
+  --bg-light: #f2f8ff;
 }
 
 body {

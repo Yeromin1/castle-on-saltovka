@@ -63,6 +63,12 @@
 .icon-filter {
   transform: rotate(-90deg);
   fill: #454f5b;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-filter-animation {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: rotate(0deg);
 }
 
 .filter-content {

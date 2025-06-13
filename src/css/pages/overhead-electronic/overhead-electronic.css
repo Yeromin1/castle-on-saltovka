@@ -10,7 +10,5 @@
 @media (min-width: 768px) {
   .container-filter-overhead {
     display: flex;
-    /* flex-direction: column; */
-    /* align-items: flex-start; */
   }
 }

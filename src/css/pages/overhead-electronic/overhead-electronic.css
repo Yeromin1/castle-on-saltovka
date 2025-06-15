@@ -9,7 +9,7 @@
 
 @media (min-width: 768px) {
   .filter {
-    max-width: 288px;
+    max-width: 250px;
   }
 
   .filter .container {
@@ -23,5 +23,9 @@
 
   .filter-popularity-input {
     width: 194px;
+  }
+
+  .filter-container {
+    width: 250px;
   }
 }

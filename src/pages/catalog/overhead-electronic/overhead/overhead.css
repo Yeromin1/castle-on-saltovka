@@ -62,7 +62,7 @@
 
 @media (min-width: 768px) {
   .overhead .container {
-    max-width: 0;
+    max-width: 460px;
     padding: 0;
   }
 
@@ -73,21 +73,23 @@
   }
 
   .list-overhead {
+    display: flex;
     flex-wrap: wrap;
-    gap: 24px 19px;
+    gap: 24px 15px;
     margin-bottom: 24px;
     justify-content: flex-start;
   }
 
   .item-overhead {
+    width: 221px;
   }
+
   .foto-overhead {
   }
   .gallery {
   }
 
   .text-overhead {
-    width: 230px;
   }
 
   .price {

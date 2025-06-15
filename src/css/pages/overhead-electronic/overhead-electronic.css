@@ -8,7 +8,20 @@
 @import url('../../../components/footer/footer.css');
 
 @media (min-width: 768px) {
+  .filter {
+    max-width: 288px;
+  }
+
+  .filter .container {
+    margin: 0;
+  }
+
   .container-filter-overhead {
     display: flex;
+    gap: 20px;
+  }
+
+  .filter-popularity-input {
+    width: 194px;
   }
 }

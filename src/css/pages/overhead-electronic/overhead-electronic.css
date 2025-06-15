@@ -8,6 +8,10 @@
 @import url('../../../components/footer/footer.css');
 
 @media (min-width: 768px) {
+  .cont-overhead {
+    max-width: 695px;
+  }
+
   .filter {
     max-width: 250px;
   }
@@ -27,5 +31,21 @@
 
   .filter-container {
     width: 250px;
+  }
+
+  .filter-button .btn-categories:last-child {
+    display: block;
+    width: 250px;
+    height: 40px;
+  }
+
+  .title-overhead,
+  .overhead-electronic-title {
+    font-size: 28px;
+    line-height: 1.5;
+  }
+
+  .overhead-electronic-title {
+    margin-bottom: 32px;
   }
 }

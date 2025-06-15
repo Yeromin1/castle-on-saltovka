@@ -61,11 +61,6 @@
 }
 
 @media (min-width: 768px) {
-  .overhead .container {
-    max-width: 460px;
-    padding: 0;
-  }
-
   .title-overhead {
   }
   .btn-categories {

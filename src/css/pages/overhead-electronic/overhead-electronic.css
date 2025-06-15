@@ -8,6 +8,9 @@
 @import url('../../../components/footer/footer.css');
 
 @media (min-width: 768px) {
+  .container {
+    position: relative;
+  }
   .cont-overhead {
     max-width: 695px;
   }
@@ -23,6 +26,12 @@
   .container-filter-overhead {
     display: flex;
     gap: 20px;
+    padding-top: 78px;
+  }
+
+  .filter-popularity {
+    display: grid;
+    justify-content: flex-end;
   }
 
   .filter-popularity-input {
@@ -39,13 +48,19 @@
     height: 40px;
   }
 
-  .title-overhead,
-  .overhead-electronic-title {
+  .title-overhead {
     font-size: 28px;
     line-height: 1.5;
+    position: absolute;
+    top: 0px;
+    right: 50%;
+    padding: 0;
+    margin: 0;
   }
 
   .overhead-electronic-title {
     margin-bottom: 32px;
+    font-size: 28px;
+    line-height: 1.5;
   }
 }

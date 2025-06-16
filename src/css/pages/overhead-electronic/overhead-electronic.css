@@ -40,12 +40,21 @@
 
   .filter-container {
     width: 250px;
+    margin-bottom: 40px;
   }
 
   .filter-button .btn-categories:last-child {
     display: block;
     width: 250px;
     height: 40px;
+  }
+
+  .list-overhead {
+    margin-bottom: 0;
+  }
+
+  .item-overhead:last-child {
+    margin-bottom: 24px;
   }
 
   .title-overhead {
@@ -58,9 +67,48 @@
     margin: 0;
   }
 
+  .text-overhead {
+    font-size: 16px;
+    line-height: 1.62;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
   .overhead-electronic-title {
     margin-bottom: 32px;
     font-size: 28px;
     line-height: 1.5;
+  }
+}
+
+@media (min-width: 1158px) {
+  /* .container-filter-overhead {
+    justify-content: flex-end;
+  } */
+
+  /* .filter {
+    max-width: 403px;
+  } */
+
+  .title-overhead {
+    right: 67%;
+  }
+
+  .item-overhead {
+    width: 270px;
+  }
+
+  .list-overhead {
+    gap: 24px 19px;
+  }
+
+  .cont-overhead {
+    max-width: 848px;
+  }
+
+  .item-overhead:last-child {
+    margin-bottom: 30px;
   }
 }

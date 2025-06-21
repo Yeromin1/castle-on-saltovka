@@ -1,16 +1,13 @@
-.list-nav-section-categories {
-  display: flex;
-  align-items: center;
-  padding: 24px 0 12px;
-  gap: 4px;
+.item-nav-section-categories:first-child {
+  display: inline-block;
 }
 
-.item-nav-section-categories:nth-child(1n):not(:last-child) {
-  color: #575757;
+.item-nav-section-categories:nth-child(3) {
+  display: inline-block;
 }
 
-.item-nav-section-categories:nth-child(2n):not(:last-child) {
-  display: none;
+.item-nav-section-categories:nth-child(4) {
+  display: inline-block;
 }
 
 .link-nav-section-categories {

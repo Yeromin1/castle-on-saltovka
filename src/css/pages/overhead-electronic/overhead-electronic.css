@@ -84,14 +84,6 @@
 }
 
 @media (min-width: 1158px) {
-  /* .container-filter-overhead {
-    justify-content: flex-end;
-  } */
-
-  /* .filter {
-    max-width: 403px;
-  } */
-
   .title-overhead {
     right: 67%;
   }
@@ -110,5 +102,9 @@
 
   .item-overhead:last-child {
     margin-bottom: 30px;
+  }
+
+  .item-overhead:hover {
+    transform: scale(1.05);
   }
 }

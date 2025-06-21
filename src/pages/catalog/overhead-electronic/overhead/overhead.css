@@ -9,9 +9,6 @@
   margin-bottom: 24px;
 }
 
-.filter-popularity {
-}
-
 .filter-popularity-input {
   border: 1px solid var(--light-grey);
   padding: 7px 16px;
@@ -26,17 +23,8 @@
   justify-content: center;
 }
 
-.item-overhead {
-}
-
 .item-overhead:last-child {
   margin-bottom: 40px;
-}
-
-.foto-overhead {
-}
-
-.gallery {
 }
 
 .description-overhead {
@@ -61,8 +49,6 @@
 }
 
 @media (min-width: 768px) {
-  .title-overhead {
-  }
   .btn-categories {
     display: none;
   }
@@ -77,35 +63,5 @@
 
   .item-overhead {
     width: 221px;
-  }
-
-  .foto-overhead {
-  }
-  .gallery {
-  }
-
-  .text-overhead {
-  }
-
-  .price {
-  }
-}
-
-@media (min-width: 1158px) {
-  .title-overhead {
-  }
-  .btn-categories {
-  }
-  .list-overhead {
-  }
-  .item-overhead {
-  }
-  .foto-overhead {
-  }
-  .gallery {
-  }
-  .text-overhead {
-  }
-  .price {
   }
 }

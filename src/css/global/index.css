@@ -69,6 +69,18 @@ body {
   gap: 4px;
 }
 
+.item-nav-section-categories:first-child {
+  display: inline-block;
+}
+
+.item-nav-section-categories:nth-child(3) {
+  display: inline-block;
+}
+
+.item-nav-section-categories:nth-child(4) {
+  display: inline-block;
+}
+
 .item-nav-section-categories {
   display: none;
 }
@@ -114,12 +126,22 @@ body {
     padding: 0 20px;
   }
 
+  /*-------section-categories---------*/
   .btn-categories {
     margin: 0 auto;
     display: block;
     font-size: 14px;
     min-width: 150px;
     height: 40px;
+  }
+
+  /*-------section-page-route---------*/
+  .item-nav-section-categories:first-child {
+    display: none;
+  }
+
+  .item-nav-section-categories:nth-child(2n):not(:last-child) {
+    display: block;
   }
 }
 

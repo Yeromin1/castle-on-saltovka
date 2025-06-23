@@ -7,7 +7,7 @@
 .list-characteristics {
   display: flex;
   overflow: overlay;
-  gap: 30px;
+  gap: 16px;
 }
 
 .item-characteristics {
@@ -17,4 +17,67 @@
   height: 100%;
 }
 .gallery {
+}
+
+.number-characteristics {
+  font-size: 12px;
+  line-height: 1.75;
+  letter-spacing: 0.05em;
+  color: var(--grey);
+  margin: 16px 0 16px;
+}
+
+.title-characteristics {
+  font-size: 22px;
+  line-height: 1.45;
+  margin-bottom: 16px;
+}
+
+.list-selection {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.container-selection {
+  display: flex;
+  gap: 8px;
+}
+
+.title-selection {
+  font-size: 14px;
+  line-height: 1.71;
+  margin-bottom: 8px;
+}
+.item-selection {
+  font-size: 14px;
+  line-height: 171%;
+  color: var(--grey);
+  display: grid;
+  align-items: center;
+}
+
+.icon-checkbox {
+  width: 14px;
+  height: 14px;
+  fill: var(--main);
+}
+
+.list-color {
+  display: flex;
+  gap: 12px;
+}
+
+.title-color {
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.item-color {
+}
+.icon-item-color {
+  width: 24px;
+  height: 24px;
+  fill: var(--light-grey);
+  margin-bottom: 16px;
 }

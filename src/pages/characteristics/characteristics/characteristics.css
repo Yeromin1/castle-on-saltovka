@@ -1,4 +1,4 @@
-/* overflow: overlay; */
+/*-----img------- */
 .characteristics {
 }
 .container {
@@ -19,6 +19,7 @@
 .gallery {
 }
 
+/*---------code-number-------------*/
 .number-characteristics {
   font-size: 12px;
   line-height: 1.75;
@@ -63,14 +64,15 @@
   fill: var(--main);
 }
 
-.list-color {
-  display: flex;
-  gap: 12px;
-}
-
+/*---------color-------------*/
 .title-color {
   line-height: 1.5;
   margin-bottom: 8px;
+}
+
+.list-color {
+  display: flex;
+  gap: 12px;
 }
 
 .item-color {
@@ -82,6 +84,7 @@
   margin-bottom: 16px;
 }
 
+/*---------equipment-------------*/
 .container-equipment {
 }
 .title-equipment {
@@ -113,6 +116,7 @@
 
 .icon-close.rotated {
   transform: rotate(0deg);
+  fill: var(--main);
 }
 
 .list-equipment {
@@ -136,4 +140,57 @@
 .item-equipment:active {
   color: var(--main);
   background-color: #f7fbfe;
+}
+
+/*-----------acc-------------*/
+.acc-container {
+  margin-bottom: 27px;
+}
+
+.ac {
+  border: none !important;
+  margin: 0 !important;
+}
+
+.is-active {
+  background-color: #f6f7f9 !important;
+  border-radius: 10px;
+}
+
+.ac .ac-header .ac-trigger {
+  display: flex;
+  padding: 8px 16px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ac .ac-trigger::after {
+  content: none !important;
+}
+
+.ac .ac-header .ac-trigger:focus {
+  color: black;
+}
+
+.ac-panel {
+}
+
+.text-acc {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--grey);
+  padding: 0 16px 16px 16px;
+}
+
+.ac .icon-close {
+  transition: transform 0.3s ease;
+}
+
+.ac.is-active .icon-close {
+  transform: rotate(0deg);
+  fill: var(--main);
 }

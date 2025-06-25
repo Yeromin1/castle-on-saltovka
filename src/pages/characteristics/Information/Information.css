@@ -1,22 +1,30 @@
 .container {
 }
 .tabs {
+  margin-bottom: 40px;
 }
 
 .tab-buttons {
   display: flex;
-  gap: 10px;
-  margin-bottom: 10px;
+  gap: 16px;
+  margin-bottom: 24px;
 }
 
 .tab-btn {
-  padding: 8px 16px;
+  padding-bottom: 8px;
   cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 14px;
+  position: relative;
+  border-bottom: 2px solid transparent;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
 }
 
 .tab-btn.active {
-  background-color: #007bff;
-  color: white;
+  border-bottom: 3px solid var(--main);
 }
 
 .list-tab {
@@ -49,4 +57,56 @@
   width: 105px;
   align-items: center;
   display: grid;
+}
+
+/*-----------description-------------*/
+.list-tab {
+}
+
+.description-tab {
+  margin-bottom: 16px;
+}
+
+.gallery {
+}
+
+.text-description {
+  margin-bottom: 8px;
+}
+
+.text-description:nth-of-type(2) {
+  margin-bottom: 16px;
+}
+
+.text-description,
+.item-description {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--grey);
+}
+
+.title-description {
+  line-height: 1.62;
+  margin-bottom: 12px;
+}
+
+.list-description {
+}
+
+.item-container-description {
+  display: flex;
+  gap: 8px;
+}
+
+.item-container-description:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.item-container-description:last-child {
+  margin-bottom: 16px;
+}
+
+.item-description {
+}
+.icon-checkbox {
 }

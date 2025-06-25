@@ -1,0 +1,52 @@
+.container {
+}
+.tabs {
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tab-btn {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.list-tab {
+  display: none;
+}
+
+.list-tab.active {
+  display: block;
+}
+
+.item-tab {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 12px;
+}
+
+.item-tab:nth-child(odd) {
+  background: #fafafa;
+  border-radius: 4px;
+}
+
+.item-span-tab {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.67;
+  color: var(--grey);
+  width: 105px;
+  align-items: center;
+  display: grid;
+}

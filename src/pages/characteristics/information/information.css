@@ -108,6 +108,7 @@
 }
 
 /*----------- feedback-------------*/
+
 .review {
   border-bottom: 1px solid #ccc;
   padding: 10px 0;
@@ -201,6 +202,8 @@
 
 .list-reviews {
 }
+.icon-star {
+}
 
 .item-review-name {
   font-weight: 600;
@@ -216,6 +219,18 @@
 
 .item-stars-view {
 }
+
+.icon-star {
+  stroke: var(--light-grey);
+  stroke-width: 1.5;
+  fill: none;
+}
+
+.icon-star.filled {
+  fill: orange;
+  stroke: none;
+}
+
 .review-name {
 }
 .stars-view {

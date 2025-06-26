@@ -87,9 +87,18 @@ function renderReviews() {
       <ul class="list-review">
         <li class="item-review-name">${review.name}</li>
         <li class="item-review-date">${review.date}</li>
-        <li class="item-stars-view">${'★'.repeat(review.rating)}${'☆'.repeat(
-      5 - review.rating
-    )}</li>
+        <li class="item-stars-view">
+          ${Array.from(
+            { length: 5 },
+            (_, i) => `
+            <svg class="icon-star ${
+              i < review.rating ? 'filled' : 'outlined'
+            }" width="20" height="20">
+              <use href="/img/icons.svg#icon-frame"></use>
+            </svg>
+          `
+          ).join('')}
+        </li>
       </ul>
       <p>${review.comment}</p>
 

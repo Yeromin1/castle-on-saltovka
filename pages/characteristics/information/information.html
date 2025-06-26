@@ -3,8 +3,8 @@
     <div class="tabs">
       <div class="tab-buttons">
         <button class="tab-btn active" data-tab="specs">Характеристики</button>
-        <button class="tab-btn" data-tab="description">Описание</button>
-        <button class="tab-btn" data-tab="reviews">Отзывы</button>
+        <button class="tab-btn" data-tab="description">Опис</button>
+        <button class="tab-btn" data-tab="reviews">Відгуки</button>
       </div>
 
       <ul class="list-tab active" id="specs">
@@ -137,13 +137,45 @@
         </p>
       </div>
 
-      <div class="list-tab" id="reviews">
-        <p>
-          Et feugiat eu scelerisque nulla mattis. At et enim dui mauris. Nisi,
-          hendrerit dictum sequat tristique sed. Est ultrices etiam in lorem
-          nulla a. Et feugiat eu scelerisque nulla mattis. At et enim dui
-          mauris.
-        </p>
+      <!------------ feedback ------------>
+      <div class="container-feedback" id="reviews">
+        <button class="btn-categories" id="openModalBtn">
+          Залишити відгук
+        </button>
+
+        <div id="reviewsContainer"></div>
+        <button
+          class="btn-more-feedback"
+          id="showMoreBtn"
+          style="display: none"
+        >
+          Показати ще
+        </button>
+
+        <!-- Модальное окно -->
+        <div id="reviewModal" class="modal-feedback">
+          <div class="modal-content">
+            <span id="closeModalBtn">&times;</span>
+            <h3>Залишити відгук</h3>
+            <form id="reviewForm">
+              <div class="stars" id="starRating"></div>
+              <!-- <div class="stars" id="starRating">★★★★★</div> -->
+              <input
+                type="text"
+                class="input-feedback"
+                id="nameInput"
+                placeholder="Введіть Ваше ім'я"
+                required
+              />
+              <textarea
+                id="commentInput"
+                placeholder="Введіть Ваш коментар"
+                required
+              ></textarea>
+              <button type="submit">Залишити відгук</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </div>

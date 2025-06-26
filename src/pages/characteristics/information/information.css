@@ -20,7 +20,7 @@
 
 .tab-btn.active {
   border-bottom: 3px solid var(--main);
-  padding-bottom: 6px;
+  padding-bottom: 5px;
 }
 
 .list-tab {

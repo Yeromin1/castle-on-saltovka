@@ -94,7 +94,7 @@ function renderReviews() {
             <svg class="icon-star ${
               i < review.rating ? 'filled' : 'outlined'
             }" width="20" height="20">
-              <use href="../../../img/icons.svg#icon-frame"></use>
+              <use href="/img/icons.svg#icon-frame"></use>
             </svg>
           `
           ).join('')}

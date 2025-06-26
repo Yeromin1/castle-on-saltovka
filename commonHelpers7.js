@@ -5,7 +5,7 @@ import"./assets/menu-f265ad14.js";import{A as S}from"./assets/vendor-ef9e0552.js
         <li class="item-stars-view">
           ${Array.from({length:5},(s,l)=>`
             <svg class="icon-star ${l<t.rating?"filled":"outlined"}" width="20" height="20">
-              <use href="/img/icons.svg#icon-frame"></use>
+              <use href="../../../img/icons.svg#icon-frame"></use>
             </svg>
           `).join("")}
         </li>

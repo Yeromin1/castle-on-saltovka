@@ -102,10 +102,10 @@ function renderReviews() {
       </ul>
       <p class="text-review-comment">${review.comment}</p>
 
-      <a href="#" class="reply-btn" data-id="${review.id}">Відповісти</a> |
-      <a href="#" class="toggle-comments" data-id="${
+      <button class="reply-btn" data-id="${review.id}">Відповісти</button>
+      <button class="toggle-comments" data-id="${
         review.id
-      }">Коментарі (${commentCount})</a>
+      }">Коментарі (${commentCount})</button>
 
       <div class="comments" style="display: none;">
         ${review.comments

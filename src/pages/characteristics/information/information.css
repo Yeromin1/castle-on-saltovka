@@ -238,8 +238,14 @@
 }
 .stars-view {
 }
-.reply-btn {
+
+.reply-btn,
+.toggle-comments {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--grey);
 }
+
 .toggle-comments {
 }
 .comments {

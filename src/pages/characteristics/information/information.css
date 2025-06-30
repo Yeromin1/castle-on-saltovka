@@ -107,8 +107,6 @@
 /*----------- feedback-------------*/
 
 .review {
-  border-bottom: 1px solid #ccc;
-  padding: 10px 0;
 }
 
 .item-stars-view {
@@ -201,6 +199,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 16px;
+  border: 1px solid var(--stroke);
 }
 
 .container-item-name-date {
@@ -212,6 +212,7 @@
 .item-review-name {
   font-weight: 600;
   line-height: 1.62;
+  margin-bottom: 4px;
 }
 
 .item-review-date {
@@ -224,9 +225,44 @@
 .item-stars-view {
 }
 
+.container-text-review-reply {
+}
 .text-review-comment {
   font-size: 14px;
   line-height: 1.71;
+  padding: 12px 16px;
+}
+
+.list-reply {
+  display: flex;
+  align-items: center;
+}
+
+.item-reply {
+}
+
+.item-reply:nth-of-type(1),
+.item-reply:nth-of-type(3) {
+  margin-right: 4px;
+}
+
+.item-reply:nth-of-type(2) {
+  margin-right: 20px;
+}
+
+.icon-reply-btn {
+  fill: var(--main);
+}
+
+.icon-toggle-comments {
+  fill: var(--light-grey);
+}
+
+.reply-btn {
+}
+.item-comments {
+}
+.toggle-comments {
 }
 
 .icon-star {

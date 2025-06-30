@@ -102,12 +102,32 @@ function renderReviews() {
           ).join('')}
         </li>
       </ul>
-      <p class="text-review-comment">${review.comment}</p>
 
-      <button class="reply-btn" data-id="${review.id}">Відповісти</button>
-      <button class="toggle-comments" data-id="${
-        review.id
-      }">Коментарі (${commentCount})</button>
+      <div class="container-text-review-reply">
+        <p class="text-review-comment">${review.comment}</p>
+  
+        <ul class="list-reply">
+          <li class="item-reply">
+            <svg class="icon-reply-btn" width="24" height="24">
+              <use href="/img/icons.svg#icon-subdirectory"></use>
+            </svg>
+          </li>
+          <li class="item-reply">
+            <button class="reply-btn" data-id="${review.id}">
+              Відповісти
+            </button></li>
+          <li class="item-reply">
+            <svg class="icon-toggle-comments" width="24" height="24">
+              <use href="/img/icons.svg#icon-message"></use>
+            </svg>
+          </li>
+          <li class="item-comments">
+            <button class="toggle-comments" data-id="${review.id}">
+              ${commentCount} Коментарі
+            </button>
+          </li>
+        </ul>
+      </div>
 
       <div class="comments" style="display: none;">
         ${review.comments

@@ -100,7 +100,7 @@ function renderReviews() {
           ).join('')}
         </li>
       </ul>
-      <p>${review.comment}</p>
+      <p class="text-review-comment">${review.comment}</p>
 
       <a href="#" class="reply-btn" data-id="${review.id}">Відповісти</a> |
       <a href="#" class="toggle-comments" data-id="${

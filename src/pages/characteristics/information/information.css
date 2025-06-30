@@ -218,6 +218,11 @@
 .item-stars-view {
 }
 
+.text-review-comment {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
 .icon-star {
   stroke: var(--light-grey);
   stroke-width: 1.5;

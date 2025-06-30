@@ -85,8 +85,10 @@ function renderReviews() {
 
     el.innerHTML = `
       <ul class="list-review">
-        <li class="item-review-name">${review.name}</li>
-        <li class="item-review-date">${review.date}</li>
+        <div class="container-item-name-date">
+          <li class="item-review-name">${review.name}</li>
+          <li class="item-review-date">${review.date}</li>
+        </div>
         <li class="item-stars-view">
           ${Array.from(
             { length: 5 },

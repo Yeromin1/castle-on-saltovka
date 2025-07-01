@@ -66,7 +66,7 @@ export default defineConfig(({ command }) => {
       viteStaticCopy({
         targets: [
           {
-            src: 'src/img/*',
+            src: 'src/img/**/*.svg',
             dest: 'img',
           },
         ],

@@ -1,12 +1,12 @@
-import"./assets/menu-f265ad14.js";import{A as b}from"./assets/vendor-ef9e0552.js";document.getElementById("container-list-equipment");const d=document.getElementById("list-equipment"),u=document.getElementById("selected-equipment"),L=u.querySelector(".selected-equipment"),y=u.querySelector(".icon-close"),S=document.querySelectorAll(".item-equipment");u.addEventListener("click",e=>{e.stopPropagation(),d.classList.toggle("active"),y.classList.toggle("rotated")});S.forEach(e=>{e.addEventListener("click",t=>{t.stopPropagation(),L.textContent=e.textContent,d.classList.remove("active"),y.classList.remove("rotated")})});document.addEventListener("click",()=>{d.classList.remove("active"),y.classList.remove("rotated")});new b(".acc-container",{duration:300});document.querySelectorAll(".tab-btn").forEach(e=>{e.addEventListener("click",()=>{document.querySelectorAll(".tab-btn").forEach(t=>t.classList.remove("active")),document.querySelectorAll(".list-tab").forEach(t=>t.classList.remove("active")),e.classList.add("active"),document.getElementById(e.dataset.tab).classList.add("active")})});const c=document.getElementById("reviewModal"),q=document.getElementById("openModalBtn"),I=document.getElementById("closeModalBtn"),v=document.getElementById("reviewForm"),g=document.getElementById("reviewsContainer"),E=document.getElementById("showMoreBtn"),p=document.getElementById("starRating");let i=JSON.parse(localStorage.getItem("reviews"))||[],m=3,o=0;q.onclick=()=>c.style.display="flex";I.onclick=()=>c.style.display="none";window.onclick=e=>{e.target==c&&(c.style.display="none")};p.innerHTML="★".repeat(5).split("").map((e,t)=>`<span data-index="${t}">${e}</span>`).join("");p.addEventListener("click",e=>{e.target.tagName==="SPAN"&&(o=parseInt(e.target.dataset.index)+1,f())});function f(){[...p.children].forEach((e,t)=>e.classList.toggle("selected",t<o))}v.onsubmit=function(e){e.preventDefault();const t=document.getElementById("nameInput").value,n=document.getElementById("commentInput").value;if(o===0){alert("Поставте оцінку");return}const r={id:Date.now(),name:t,comment:n,rating:o,date:new Date().toLocaleDateString("uk-UA",{day:"numeric",month:"long",year:"numeric"}),comments:[]};i.unshift(r),localStorage.setItem("reviews",JSON.stringify(i)),c.style.display="none",v.reset(),o=0,f(),a()};function a(){g.innerHTML="",i.slice(0,m).forEach(t=>{const n=document.createElement("div");n.className="review";const r=t.comments.length;n.innerHTML=`
+import"./assets/menu-f265ad14.js";import{A as b}from"./assets/vendor-ef9e0552.js";document.getElementById("container-list-equipment");const d=document.getElementById("list-equipment"),u=document.getElementById("selected-equipment"),L=u.querySelector(".selected-equipment"),y=u.querySelector(".icon-close"),S=document.querySelectorAll(".item-equipment");u.addEventListener("click",e=>{e.stopPropagation(),d.classList.toggle("active"),y.classList.toggle("rotated")});S.forEach(e=>{e.addEventListener("click",t=>{t.stopPropagation(),L.textContent=e.textContent,d.classList.remove("active"),y.classList.remove("rotated")})});document.addEventListener("click",()=>{d.classList.remove("active"),y.classList.remove("rotated")});new b(".acc-container",{duration:300});document.querySelectorAll(".tab-btn").forEach(e=>{e.addEventListener("click",()=>{document.querySelectorAll(".tab-btn").forEach(t=>t.classList.remove("active")),document.querySelectorAll(".list-tab").forEach(t=>t.classList.remove("active")),e.classList.add("active"),document.getElementById(e.dataset.tab).classList.add("active")})});const a=document.getElementById("reviewModal"),q=document.getElementById("openModalBtn"),I=document.getElementById("closeModalBtn"),v=document.getElementById("reviewForm"),g=document.getElementById("reviewsContainer"),B=document.getElementById("showMoreBtn"),p=document.getElementById("starRating");let o=JSON.parse(localStorage.getItem("reviews"))||[],m=3,c=0;q.onclick=()=>a.style.display="flex";I.onclick=()=>a.style.display="none";window.onclick=e=>{e.target==a&&(a.style.display="none")};p.innerHTML="★".repeat(5).split("").map((e,t)=>`<span data-index="${t}">${e}</span>`).join("");p.addEventListener("click",e=>{e.target.tagName==="SPAN"&&(c=parseInt(e.target.dataset.index)+1,h())});function h(){[...p.children].forEach((e,t)=>e.classList.toggle("selected",t<c))}v.onsubmit=function(e){e.preventDefault();const t=document.getElementById("nameInput").value,s=document.getElementById("commentInput").value;if(c===0){alert("Поставте оцінку");return}const n={id:Date.now(),name:t,comment:s,rating:c,date:new Date().toLocaleDateString("uk-UA",{day:"numeric",month:"long",year:"numeric"}),comments:[]};o.unshift(n),localStorage.setItem("reviews",JSON.stringify(o)),a.style.display="none",v.reset(),c=0,h(),r()};function r(){g.innerHTML="",o.slice(0,m).forEach(s=>{const n=document.createElement("div");n.className="review";const E=s.comments.length;n.innerHTML=`
       <ul class="list-review">
         <div class="container-item-name-date">
-          <li class="item-review-name">${t.name}</li>
-          <li class="item-review-date">${t.date}</li>
+          <li class="item-review-name">${s.name}</li>
+          <li class="item-review-date">${s.date}</li>
         </div>
         <li class="item-stars-view">
-          ${Array.from({length:5},(s,l)=>`
-            <svg class="icon-star ${l<t.rating?"filled":"outlined"}" width="20" height="20">
+          ${Array.from({length:5},(l,i)=>`
+            <svg class="icon-star ${i<s.rating?"filled":"outlined"}" width="20" height="20">
               <use href="/img/icons.svg#icon-star"></use>
             </svg>
           `).join("")}
@@ -14,7 +14,7 @@ import"./assets/menu-f265ad14.js";import{A as b}from"./assets/vendor-ef9e0552.js
       </ul>
 
       <div class="container-text-review-reply">
-        <p class="text-review-comment">${t.comment}</p>
+        <p class="text-review-comment">${s.comment}</p>
 
         <ul class="list-reply">
           <li class="item-reply">
@@ -23,7 +23,7 @@ import"./assets/menu-f265ad14.js";import{A as b}from"./assets/vendor-ef9e0552.js
             </svg>
           </li>
           <li class="item-reply">
-            <button class="reply-btn" data-id="${t.id}">
+            <button class="reply-btn" data-id="${s.id}">
               Відповісти
             </button></li>
           <li class="item-reply">
@@ -32,21 +32,21 @@ import"./assets/menu-f265ad14.js";import{A as b}from"./assets/vendor-ef9e0552.js
             </svg>
           </li>
           <li class="item-comments">
-            <button class="toggle-comments" data-id="${t.id}">
-              ${r} Коментарі
+            <button class="toggle-comments" data-id="${s.id}">
+              ${E} Коментарі
             </button>
           </li>
         </ul>
       </div>
 
       <div class="comments" style="display: none;">
-        ${t.comments.map(s=>`<div class="comment">${s.name} ${s.text}</div>`).join("")}
+        ${s.comments.map(l=>`<div class="comment">${l.name} ${l.text}</div>`).join("")}
       </div>
 
       <div class="reply-form" style="display: none;">
         <input type="text" class="reply-name" placeholder="Ваше ім'я" />
-        <input type="text" class="reply-text" placeholder="Ваш коментар" />
+        <textarea type="text" class="reply-text" placeholder="Ваш коментар" ></textarea>
         <button class="submit-reply">Надіслати</button>
       </div>
-    `,n.querySelector(".reply-btn").addEventListener("click",s=>{s.preventDefault();const l=n.querySelector(".reply-form");l.style.display=l.style.display==="none"?"block":"none"}),n.querySelector(".toggle-comments").addEventListener("click",s=>{s.preventDefault();const l=n.querySelector(".comments");l.style.display=l.style.display==="none"?"block":"none"}),n.querySelector(".submit-reply").addEventListener("click",()=>{const s=n.querySelector(".reply-name").value.trim(),l=n.querySelector(".reply-text").value.trim();if(!s||!l)return alert("Введите имя и комментарий");const h=parseInt(n.querySelector(".reply-btn").dataset.id);i.find(w=>w.id===h).comments.push({name:s,text:l}),localStorage.setItem("reviews",JSON.stringify(i)),a()}),g.appendChild(n)}),E.style.display=i.length>m?"inline-block":"none"}E.onclick=()=>{m+=3,a()};a();
+    `,n.querySelector(".reply-btn").addEventListener("click",l=>{l.preventDefault();const i=n.querySelector(".reply-form");i.style.display=i.style.display==="none"?"block":"none"}),n.querySelector(".toggle-comments").addEventListener("click",l=>{l.preventDefault();const i=n.querySelector(".comments");i.style.display=i.style.display==="none"?"block":"none"}),n.querySelector(".submit-reply").addEventListener("click",()=>{const l=n.querySelector(".reply-name").value.trim(),i=n.querySelector(".reply-text").value.trim();if(!l||!i)return alert("Введите имя и комментарий");const f=parseInt(n.querySelector(".reply-btn").dataset.id);o.find(w=>w.id===f).comments.push({name:l,text:i}),localStorage.setItem("reviews",JSON.stringify(o)),r()}),g.appendChild(n)});const t=document.getElementById("showMoreContainer");t.style.display=o.length>m?"flex":"none"}B.onclick=()=>{m+=3,r()};r();
 //# sourceMappingURL=commonHelpers7.js.map

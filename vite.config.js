@@ -5,6 +5,8 @@ import glob from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 
+import { viteStaticCopy } from 'vite-plugin-static-copy';
+
 // Автоматичне збирання всіх HTML-файлів у src/pages/
 const getHtmlEntries = () => {
   const pagesDir = resolve(__dirname, 'src/pages');
@@ -58,6 +60,17 @@ export default defineConfig(({ command }) => {
         },
       },
     },
-    plugins: [injectHTML(), FullReload(['./src/**/*.html'])],
+    plugins: [
+      injectHTML(),
+      FullReload(['./src/**/*.html']),
+      viteStaticCopy({
+        targets: [
+          {
+            src: 'src/img/*',
+            dest: 'img',
+          },
+        ],
+      }),
+    ],
   };
 });

@@ -45,7 +45,7 @@ reviewForm.onsubmit = function (e) {
   const comment = document.getElementById('commentInput').value;
 
   if (currentRating === 0) {
-    alert('Поставьте оценку');
+    alert('Поставте оцінку');
     return;
   }
 
@@ -105,7 +105,7 @@ function renderReviews() {
 
       <div class="container-text-review-reply">
         <p class="text-review-comment">${review.comment}</p>
-  
+
         <ul class="list-reply">
           <li class="item-reply">
             <svg class="icon-reply-btn" width="24" height="24">
@@ -131,10 +131,7 @@ function renderReviews() {
 
       <div class="comments" style="display: none;">
         ${review.comments
-          .map(
-            c =>
-              `<div class="comment"><strong>${c.name}</strong>: ${c.text}</div>`
-          )
+          .map(c => `<div class="comment">${c.name} ${c.text}</div>`)
           .join('')}
       </div>
 

@@ -96,7 +96,7 @@ function renderReviews() {
             <svg class="icon-star ${
               i < review.rating ? 'filled' : 'outlined'
             }" width="20" height="20">
-              <use href="/img/icons.svg#icon-star"></use>
+              <use href="/castle-on-saltovka/img/icons.svg#icon-star"></use>
             </svg>
           `
           ).join('')}
@@ -173,9 +173,6 @@ function renderReviews() {
 
     reviewsContainer.appendChild(el);
   });
-
-  // showMoreBtn.style.display =
-  //   reviews.length > currentVisible ? 'inline-block' : 'none';
 
   const showMoreContainer = document.getElementById('showMoreContainer');
   showMoreContainer.style.display =

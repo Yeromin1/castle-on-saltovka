@@ -106,8 +106,12 @@
 
 /*----------- feedback-------------*/
 
-.review {
+.review:not(:last-child) {
   margin-bottom: 16px;
+}
+
+.review:last-child {
+  margin-bottom: 32px;
 }
 
 .item-stars-view {
@@ -313,5 +317,7 @@
 }
 .reply-name {
 }
+
 .reply-text {
+  width: 100%;
 }

@@ -137,7 +137,7 @@ function renderReviews() {
 
       <div class="reply-form" style="display: none;">
         <input type="text" class="reply-name" placeholder="Ваше ім'я" />
-        <input type="text" class="reply-text" placeholder="Ваш коментар" />
+        <textarea type="text" class="reply-text" placeholder="Ваш коментар" ></textarea>
         <button class="submit-reply">Надіслати</button>
       </div>
     `;
@@ -174,8 +174,12 @@ function renderReviews() {
     reviewsContainer.appendChild(el);
   });
 
-  showMoreBtn.style.display =
-    reviews.length > currentVisible ? 'inline-block' : 'none';
+  // showMoreBtn.style.display =
+  //   reviews.length > currentVisible ? 'inline-block' : 'none';
+
+  const showMoreContainer = document.getElementById('showMoreContainer');
+  showMoreContainer.style.display =
+    reviews.length > currentVisible ? 'flex' : 'none';
 }
 
 // Показать ещё
@@ -186,3 +190,5 @@ showMoreBtn.onclick = () => {
 
 // При загрузке страницы
 renderReviews();
+
+// localStorage.removeItem('reviews');

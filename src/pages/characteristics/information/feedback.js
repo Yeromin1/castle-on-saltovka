@@ -6,6 +6,8 @@ const reviewsContainer = document.getElementById('reviewsContainer');
 const showMoreBtn = document.getElementById('showMoreBtn');
 const starRating = document.getElementById('starRating');
 
+const svgImg = new URL('/img/icons.svg', import.meta.url);
+
 let reviews = JSON.parse(localStorage.getItem('reviews')) || [];
 let currentVisible = 3;
 let currentRating = 0;
@@ -96,7 +98,7 @@ function renderReviews() {
             <svg class="icon-star ${
               i < review.rating ? 'filled' : 'outlined'
             }" width="20" height="20">
-              <use href="/castle-on-saltovka/img/icons.svg#icon-star"></use>
+              <use href="${svgImg}#icon-star"></use>
             </svg>
           `
           ).join('')}

@@ -111,7 +111,7 @@ function renderReviews() {
         <ul class="list-reply">
           <li class="item-reply">
             <svg class="icon-reply-btn" width="24" height="24">
-              <use href="/img/icons.svg#icon-subdirectory"></use>
+              <use href="${svgImg}#icon-subdirectory"></use>
             </svg>
           </li>
           <li class="item-reply">
@@ -120,7 +120,7 @@ function renderReviews() {
             </button></li>
           <li class="item-reply">
             <svg class="icon-toggle-comments" width="24" height="24">
-              <use href="/img/icons.svg#icon-message"></use>
+              <use href="${svgImg}#icon-message"></use>
             </svg>
           </li>
           <li class="item-comments">

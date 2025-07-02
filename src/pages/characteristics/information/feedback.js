@@ -133,14 +133,21 @@ function renderReviews() {
 
       <div class="comments" style="display: none;">
         ${review.comments
-          .map(c => `<div class="comment">${c.name} ${c.text}</div>`)
+          .map(
+            c =>
+              `<ul class="comment">
+                <li class="comment-name">${c.name}</li>
+                <li class="item-review-date">${review.date}</li>
+                <li class="comment-text">${c.text}</li>
+              </ul>`
+          )
           .join('')}
       </div>
 
       <div class="reply-form" style="display: none;">
         <input type="text" class="reply-name" placeholder="Ваше ім'я" />
         <textarea type="text" class="reply-text" placeholder="Ваш коментар" ></textarea>
-        <button class="submit-reply">Надіслати</button>
+        <button class="submit-reply btn-categories">Надіслати</button>
       </div>
     `;
 

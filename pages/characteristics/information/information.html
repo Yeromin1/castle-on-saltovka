@@ -163,11 +163,21 @@
         <!-- Модальное окно -->
         <div id="reviewModal" class="modal-feedback">
           <div class="modal-content">
-            <span id="closeModalBtn">&times;</span>
-            <h3>Залишити відгук</h3>
+            <!-- <span id="closeModalBtn">&times;</span> -->
+            <div class="container-title-close-icon">
+              <h3 class="title-modal-feedback">Залишити відгук</h3>
+              <button
+                class="btn-close-modal-feedback"
+                type="button"
+                id="closeModalBtn"
+              >
+                <svg class="menu-close-icon" width="20" height="20">
+                  <use href="/castle-on-saltovka/assets/icons-e70d3d57.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
             <form id="reviewForm">
               <div class="stars" id="starRating"></div>
-              <!-- <div class="stars" id="starRating">★★★★★</div> -->
               <input
                 type="text"
                 class="input-feedback"
@@ -180,7 +190,9 @@
                 placeholder="Введіть Ваш коментар"
                 required
               ></textarea>
-              <button type="submit">Залишити відгук</button>
+              <button class="btn-categories" type="submit">
+                Залишити відгук
+              </button>
             </form>
           </div>
         </div>

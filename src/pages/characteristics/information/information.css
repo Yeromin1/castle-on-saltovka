@@ -159,12 +159,30 @@
   color: orange;
 }
 
-#closeModalBtn {
+/* #closeModalBtn {
   position: absolute;
   top: 10px;
   right: 15px;
   cursor: pointer;
   font-size: 24px;
+} */
+
+.container-title-close-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e7e9fc;
+  padding-bottom: 16px;
+}
+
+.title-modal-feedback {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.btn-close-modal-feedback {
+  height: 20px;
 }
 
 .container-feedback .btn-categories {
@@ -242,6 +260,7 @@
 .list-reply {
   display: flex;
   align-items: center;
+  padding-left: 16px;
 }
 
 .item-reply {

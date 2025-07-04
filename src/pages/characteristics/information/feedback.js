@@ -13,10 +13,21 @@ let currentVisible = 3;
 let currentRating = 0;
 
 // Открытие/закрытие модалки
-openModalBtn.onclick = () => (modal.style.display = 'flex');
-closeModalBtn.onclick = () => (modal.style.display = 'none');
+openModalBtn.onclick = () => {
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+};
+
+closeModalBtn.onclick = () => {
+  modal.style.display = 'none';
+  document.body.style.overflow = '';
+};
+
 window.onclick = e => {
-  if (e.target == modal) modal.style.display = 'none';
+  if (e.target == modal) {
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+  }
 };
 
 // Рейтинг

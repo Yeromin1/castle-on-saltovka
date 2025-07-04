@@ -141,15 +141,16 @@
 .modal-content input,
 .modal-content textarea {
   width: 100%;
-  margin: 10px 0;
-  padding: 8px;
+  margin-bottom: 17px;
+  padding: 12px 16px;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--text-disable);
 }
 
-/* #starRating {
-  font-size: 24px;
-  cursor: pointer;
-  user-select: none;
-} */
+.modal-content textarea {
+  height: 120px;
+}
 
 .container-title-close-icon {
   display: flex;
@@ -197,6 +198,23 @@
 .modal-content {
 }
 .stars {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.star-form-label,
+.name-form-label,
+.comment-text-label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.star-form-label {
+  margin-bottom: 8px;
 }
 
 .list-review {

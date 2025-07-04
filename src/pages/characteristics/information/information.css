@@ -145,26 +145,10 @@
   padding: 8px;
 }
 
-#starRating {
+/* #starRating {
   font-size: 24px;
   cursor: pointer;
   user-select: none;
-}
-
-#starRating span {
-  color: lightgray;
-}
-
-#starRating .selected {
-  color: orange;
-}
-
-/* #closeModalBtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  cursor: pointer;
-  font-size: 24px;
 } */
 
 .container-title-close-icon {
@@ -173,6 +157,7 @@
   align-items: center;
   border-bottom: 1px solid #e7e9fc;
   padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .title-modal-feedback {
@@ -297,7 +282,8 @@
   fill: none;
 }
 
-.icon-star.filled {
+.icon-star.filled,
+.stars span.selected svg {
   fill: orange;
   stroke: none;
 }

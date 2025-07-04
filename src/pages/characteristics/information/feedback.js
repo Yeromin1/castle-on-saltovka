@@ -20,23 +20,29 @@ window.onclick = e => {
 };
 
 // Рейтинг
-starRating.innerHTML = '★'
-  .repeat(5)
-  .split('')
-  .map((star, i) => `<span data-index="${i}">${star}</span>`)
-  .join('');
+starRating.innerHTML = Array.from(
+  { length: 5 },
+  (_, i) => `
+  <span data-index="${i}">
+    <svg class="icon-star" width="20" height="20">
+      <use href="${svgImg}#icon-star"></use>
+    </svg>
+  </span>
+`
+).join('');
 
 starRating.addEventListener('click', e => {
-  if (e.target.tagName === 'SPAN') {
-    currentRating = parseInt(e.target.dataset.index) + 1;
+  const span = e.target.closest('span');
+  if (span) {
+    currentRating = parseInt(span.dataset.index) + 1;
     updateStars();
   }
 });
 
 function updateStars() {
-  [...starRating.children].forEach((star, i) =>
-    star.classList.toggle('selected', i < currentRating)
-  );
+  [...starRating.children].forEach((star, i) => {
+    star.classList.toggle('selected', i < currentRating);
+  });
 }
 
 // Отправка отзыва

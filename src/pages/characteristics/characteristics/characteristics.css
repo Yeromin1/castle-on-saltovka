@@ -194,3 +194,177 @@
   transform: rotate(0deg);
   fill: var(--main);
 }
+
+@media (min-width: 768px) {
+  .characteristics .container {
+    display: flex;
+  }
+
+  /*-----img------- */
+  .characteristics {
+  }
+  .container {
+  }
+  .list-characteristics {
+  }
+  .item-characteristics {
+  }
+  .foto-overhead {
+  }
+  .gallery {
+  }
+  .container-code-acc {
+  }
+
+  /*---------code-number-------------*/
+  .number-characteristics {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 16px 0;
+  }
+
+  .title-characteristics {
+  }
+  .title-selection {
+  }
+  .list-selection {
+  }
+  .container-selection {
+  }
+  .item-selection {
+  }
+  .icon-checkbox {
+  }
+
+  /*---------color-------------*/
+  .container-color-equipment {
+    display: flex;
+    gap: 30px;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  .title-color {
+  }
+  .list-color {
+  }
+  .item-color {
+  }
+
+  .icon-item-color {
+    width: 40px;
+    height: 40px;
+  }
+
+  /*---------equipment-------------*/
+  .container-equipment {
+  }
+  .title-equipment {
+  }
+  .container-list-equipment {
+  }
+
+  .container-selected-close {
+    width: 288px;
+    height: 40px;
+  }
+
+  .selected-equipment {
+  }
+  .icon-close {
+  }
+  .list-equipment {
+  }
+  .item-equipment {
+  }
+
+  /*-----------acc-------------*/
+  .acc-container {
+  }
+  .ac {
+  }
+  .ac-header {
+  }
+  .ac-trigger {
+  }
+  .ac-panel {
+  }
+  .text-acc {
+  }
+}
+
+@media (min-width: 1158px) {
+  /*-----img------- */
+  .characteristics {
+  }
+  .container {
+  }
+  .list-characteristics {
+  }
+  .item-characteristics {
+  }
+  .foto-overhead {
+  }
+  .gallery {
+  }
+  .container-code-acc {
+  }
+
+  /*---------code-number-------------*/
+  .number-characteristics {
+  }
+  .title-characteristics {
+  }
+  .title-selection {
+  }
+  .list-selection {
+  }
+  .container-selection {
+  }
+  .item-selection {
+  }
+  .icon-checkbox {
+  }
+
+  /*---------color-------------*/
+  .title-color {
+  }
+  .list-color {
+  }
+  .item-color {
+  }
+  .icon-item-color {
+  }
+
+  /*---------equipment-------------*/
+  .container-equipment {
+  }
+  .title-equipment {
+  }
+  .container-list-equipment {
+  }
+  .container-selected-close {
+  }
+  .selected-equipment {
+  }
+  .icon-close {
+  }
+  .list-equipment {
+  }
+  .item-equipment {
+  }
+
+  /*-----------acc-------------*/
+  .acc-container {
+  }
+  .ac {
+  }
+  .ac-header {
+  }
+  .ac-trigger {
+  }
+  .ac-panel {
+  }
+  .text-acc {
+  }
+}

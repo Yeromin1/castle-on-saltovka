@@ -60,6 +60,7 @@ function updateStars() {
 reviewForm.onsubmit = function (e) {
   e.preventDefault();
   const name = document.getElementById('nameInput').value;
+
   const comment = document.getElementById('commentInput').value;
 
   if (currentRating === 0) {
@@ -123,7 +124,6 @@ function renderReviews() {
 
       <div class="container-text-review-reply">
         <p class="text-review-comment">${review.comment}</p>
-        <button class="more-toggle" type="button">...more</button>
 
         <ul class="list-reply">
           <li class="item-reply">
@@ -132,8 +132,9 @@ function renderReviews() {
             </svg>
           </li>
           <li class="item-reply">
-            <button class="reply-btn" data-id="${review.id}">Відповісти</button>
-          </li>
+            <button class="reply-btn" data-id="${review.id}">
+              Відповісти
+            </button></li>
           <li class="item-reply">
             <svg class="icon-toggle-comments" width="24" height="24">
               <use href="${svgImg}#icon-message"></use>
@@ -150,20 +151,19 @@ function renderReviews() {
       <div class="comments" style="display: none;">
         ${review.comments
           .map(
-            c => `
-          <ul class="comment">
-            <li class="comment-name">${c.name}</li>
-            <li class="item-review-date">${review.date}</li>
-            <li class="comment-text">${c.text}</li>
-          </ul>
-        `
+            c =>
+              `<ul class="comment">
+                <li class="comment-name">${c.name}</li>
+                <li class="item-review-date">${review.date}</li>
+                <li class="comment-text">${c.text}</li>
+              </ul>`
           )
           .join('')}
       </div>
 
       <div class="reply-form" style="display: none;">
         <input type="text" class="reply-name" placeholder="Ваше ім'я" />
-        <textarea type="text" class="reply-text" placeholder="Ваш коментар"></textarea>
+        <textarea type="text" class="reply-text" placeholder="Ваш коментар" ></textarea>
         <button class="submit-reply btn-categories">Надіслати</button>
       </div>
     `;

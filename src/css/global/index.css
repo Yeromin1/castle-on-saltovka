@@ -143,6 +143,10 @@ body {
   .item-nav-section-categories:nth-child(2n):not(:last-child) {
     display: block;
   }
+
+  .list-nav-section-categories {
+    padding: 20px 0 40px;
+  }
 }
 
 /*------------@media-1158px-------------*/

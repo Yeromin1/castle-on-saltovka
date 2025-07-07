@@ -106,6 +106,9 @@
 
 /*----------- feedback-------------*/
 
+.container-feedback {
+}
+
 .review:not(:last-child) {
   margin-bottom: 16px;
 }
@@ -145,7 +148,6 @@
   padding: 12px 16px;
   font-size: 14px;
   line-height: 1.71;
-  color: var(--text-disable);
 }
 
 .modal-content textarea {
@@ -176,8 +178,6 @@
   margin-bottom: 24px;
 }
 
-.container-feedback {
-}
 .btn-categories {
 }
 
@@ -194,6 +194,7 @@
   color: var(--grey);
 }
 
+/*----------- Модальное окно-------------*/
 .modal-feedback {
 }
 .modal-content {
@@ -218,6 +219,7 @@
   margin-bottom: 8px;
 }
 
+/*-----------JS review-------------*/
 .list-review {
   display: flex;
   justify-content: space-between;
@@ -227,9 +229,6 @@
 }
 
 .container-item-name-date {
-}
-
-.icon-star {
 }
 
 .item-review-name {
@@ -248,6 +247,21 @@
 .item-stars-view {
 }
 
+.icon-star {
+  stroke: var(--light-grey);
+  stroke-width: 1.5;
+  fill: none;
+}
+
+.icon-star.filled,
+.stars span.selected svg {
+  fill: orange;
+  stroke: none;
+}
+
+.review.rating {
+}
+
 .container-text-review-reply {
   border: 1px solid var(--stroke);
   border-top: none;
@@ -261,6 +275,7 @@
   overflow-wrap: break-word;
 }
 
+/*-----------JS reply-------------*/
 .list-reply {
   display: flex;
   align-items: center;
@@ -284,34 +299,6 @@
   fill: var(--main);
 }
 
-.icon-toggle-comments {
-  fill: var(--light-grey);
-}
-
-.reply-btn {
-}
-.item-comments {
-}
-.toggle-comments {
-}
-
-.icon-star {
-  stroke: var(--light-grey);
-  stroke-width: 1.5;
-  fill: none;
-}
-
-.icon-star.filled,
-.stars span.selected svg {
-  fill: orange;
-  stroke: none;
-}
-
-.review-name {
-}
-.stars-view {
-}
-
 .reply-btn,
 .toggle-comments {
   font-size: 14px;
@@ -319,6 +306,12 @@
   color: var(--grey);
 }
 
+.icon-toggle-comments {
+  fill: var(--light-grey);
+}
+
+.item-comments {
+}
 .toggle-comments {
 }
 
@@ -348,6 +341,9 @@
   overflow-wrap: break-word;
 }
 
+.reply-form {
+}
+
 .reply-form input {
   margin: 10px 0;
   padding: 8px 12px;
@@ -362,4 +358,279 @@
   height: 120px;
   padding: 8px 12px;
   margin-bottom: 10px;
+}
+
+.submit-reply {
+}
+.btn-categories {
+}
+
+@media (min-width: 768px) {
+  .container {
+  }
+  .tabs {
+  }
+  .tab-buttons {
+  }
+  .tab-btn {
+  }
+  .active {
+  }
+  .list-tab {
+  }
+  .item-tab {
+  }
+  .item-span-tab {
+  }
+
+  /*-----------description-------------*/
+  .list-tab {
+  }
+  .description-tab {
+  }
+  .gallery {
+  }
+  .text-description {
+  }
+  .title-description {
+  }
+  .list-description {
+  }
+  .item-container-description {
+  }
+  .item-description {
+  }
+  .icon-checkbox {
+  }
+
+  /*----------- feedback-------------*/
+  .container-feedback {
+  }
+  .list-tab {
+  }
+  .btn-categories {
+  }
+  .container-more-feedback {
+  }
+  .item-reply {
+  }
+  .icon-spinner-btn {
+  }
+  .btn-more-feedback {
+  }
+
+  /*----------- Модальное окно-------------*/
+  .modal-feedback {
+  }
+  .modal-content {
+  }
+  .container-title-close-icon {
+  }
+  .title-modal-feedback {
+  }
+  .btn-close-modal-feedback {
+  }
+  .menu-close-icon {
+  }
+  .star-form-label {
+  }
+  .stars {
+  }
+  .name-form-label {
+  }
+  .input-feedback {
+  }
+  .comment-text-label {
+  }
+  .btn-categories {
+  }
+
+  /*-----------JS review-------------*/
+  .icon-star {
+  }
+  .list-review {
+  }
+  .container-item-name-date {
+  }
+  .item-review-name {
+  }
+  .item-review-date {
+  }
+  .item-stars-view {
+  }
+  .review.rating {
+  }
+  .container-text-review-reply {
+  }
+  .text-review-comment {
+  }
+
+  /*-----------JS reply-------------*/
+  .list-reply {
+  }
+  .item-reply {
+  }
+  .icon-reply-btn {
+  }
+  .reply-btn {
+  }
+  .icon-toggle-comments {
+  }
+  .item-comments {
+  }
+  .toggle-comments {
+  }
+  .comments {
+  }
+  .comment {
+  }
+  .comment-name {
+  }
+  .comment-text {
+  }
+  .reply-form {
+  }
+  .reply-name {
+  }
+  .reply-text {
+  }
+  .submit-reply {
+  }
+  .btn-categories {
+  }
+}
+
+@media (min-width: 1158px) {
+  .container {
+  }
+  .tabs {
+  }
+  .tab-buttons {
+  }
+  .tab-btn {
+  }
+  .active {
+  }
+  .list-tab {
+  }
+  .item-tab {
+  }
+  .item-span-tab {
+  }
+
+  /*-----------description-------------*/
+  .list-tab {
+  }
+  .description-tab {
+  }
+  .gallery {
+  }
+  .text-description {
+  }
+  .title-description {
+  }
+  .list-description {
+  }
+  .item-container-description {
+  }
+  .item-description {
+  }
+  .icon-checkbox {
+  }
+
+  /*----------- feedback-------------*/
+  .container-feedback {
+  }
+  .list-tab {
+  }
+  .btn-categories {
+  }
+  .container-more-feedback {
+  }
+  .item-reply {
+  }
+  .icon-spinner-btn {
+  }
+  .btn-more-feedback {
+  }
+
+  /*----------- Модальное окно-------------*/
+  .modal-feedback {
+  }
+  .modal-content {
+  }
+  .container-title-close-icon {
+  }
+  .title-modal-feedback {
+  }
+  .btn-close-modal-feedback {
+  }
+  .menu-close-icon {
+  }
+  .star-form-label {
+  }
+  .stars {
+  }
+  .name-form-label {
+  }
+  .input-feedback {
+  }
+  .comment-text-label {
+  }
+  .btn-categories {
+  }
+
+  /*-----------JS review-------------*/
+  .icon-star {
+  }
+  .list-review {
+  }
+  .container-item-name-date {
+  }
+  .item-review-name {
+  }
+  .item-review-date {
+  }
+  .item-stars-view {
+  }
+  .review.rating {
+  }
+  .container-text-review-reply {
+  }
+  .text-review-comment {
+  }
+
+  /*-----------JS reply-------------*/
+  .list-reply {
+  }
+  .item-reply {
+  }
+  .icon-reply-btn {
+  }
+  .reply-btn {
+  }
+  .icon-toggle-comments {
+  }
+  .item-comments {
+  }
+  .toggle-comments {
+  }
+  .comments {
+  }
+  .comment {
+  }
+  .comment-name {
+  }
+  .comment-text {
+  }
+  .reply-form {
+  }
+  .reply-name {
+  }
+  .reply-text {
+  }
+  .submit-reply {
+  }
+  .btn-categories {
+  }
 }

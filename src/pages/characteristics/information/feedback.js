@@ -124,6 +124,7 @@ function renderReviews() {
 
       <div class="container-text-review-reply">
         <p class="text-review-comment">${review.comment}</p>
+        <button class="">...more</button>
 
         <ul class="list-reply">
           <li class="item-reply">
@@ -154,7 +155,7 @@ function renderReviews() {
             c =>
               `<ul class="comment">
                 <li class="comment-name">${c.name}</li>
-                <li class="item-review-date">${review.date}</li>
+                <li class="item-review-date">${c.date}</li>
                 <li class="comment-text">${c.text}</li>
               </ul>`
           )
@@ -191,7 +192,15 @@ function renderReviews() {
 
       const reviewId = parseInt(el.querySelector('.reply-btn').dataset.id);
       const review = reviews.find(r => r.id === reviewId);
-      review.comments.push({ name, text });
+      review.comments.push({
+        name,
+        text,
+        date: new Date().toLocaleDateString('uk-UA', {
+          day: 'numeric',
+          month: 'long',
+          year: 'numeric',
+        }),
+      });
 
       localStorage.setItem('reviews', JSON.stringify(reviews));
       renderReviews(); // перерисовать

@@ -118,6 +118,8 @@
 }
 
 .item-stars-view {
+  display: flex;
+  gap: 6px;
   color: orange;
 }
 
@@ -229,12 +231,14 @@
 }
 
 .container-item-name-date {
+  display: grid;
+  gap: 4px;
 }
 
 .item-review-name {
   font-weight: 600;
   line-height: 1.62;
-  margin-bottom: 4px;
+  text-transform: capitalize;
 }
 
 .item-review-date {
@@ -273,6 +277,7 @@
   padding: 12px 16px;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  text-transform: capitalize;
 }
 
 /*-----------JS reply-------------*/
@@ -332,6 +337,7 @@
 .comment-name {
   font-weight: 600;
   line-height: 1.62;
+  text-transform: capitalize;
 }
 
 .comment-text {
@@ -339,6 +345,7 @@
   max-width: 333px;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  text-transform: capitalize;
 }
 
 .reply-form {
@@ -408,9 +415,19 @@
   }
   .list-tab {
   }
-  .btn-categories {
+
+  .container-feedback .btn-categories:first-child {
+    display: none;
   }
-  .container-more-feedback {
+
+  .container-feedback-reviews {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container-icon-spinner-btn {
+  }
+  .btn-categories {
   }
   .item-reply {
   }
@@ -421,11 +438,29 @@
 
   /*----------- Модальное окно-------------*/
   .modal-feedback {
+    display: flex !important;
+    position: static;
+    background: var(--white);
+    justify-content: end;
+    align-items: normal;
   }
+
   .modal-content {
+    border: 1px solid var(--stroke);
+    width: auto;
   }
+
+  .modal-content input,
+  .modal-content textarea {
+  }
+
+  .modal-content textarea {
+  }
+
   .container-title-close-icon {
+    display: none;
   }
+
   .title-modal-feedback {
   }
   .btn-close-modal-feedback {
@@ -442,17 +477,26 @@
   }
   .comment-text-label {
   }
-  .btn-categories {
+  .container-feedback .btn-categories {
+    min-width: 100%;
   }
 
   /*-----------JS review-------------*/
   .icon-star {
   }
+
   .list-review {
+    padding: 16px 24px;
   }
+
   .container-item-name-date {
+    display: contents;
   }
+
   .item-review-name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.56;
   }
   .item-review-date {
   }

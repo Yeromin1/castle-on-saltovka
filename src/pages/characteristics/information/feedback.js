@@ -85,6 +85,7 @@ reviewForm.onsubmit = function (e) {
   localStorage.setItem('reviews', JSON.stringify(reviews));
 
   modal.style.display = 'none';
+  document.body.style.overflow = '';
   reviewForm.reset();
   currentRating = 0;
   updateStars();

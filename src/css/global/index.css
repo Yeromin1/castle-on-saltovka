@@ -153,6 +153,11 @@ body {
   .list-nav-section-categories {
     padding: 20px 0 40px;
   }
+
+  /*-------overhead---------*/
+  .price {
+    font-size: 20px;
+  }
 }
 
 /*------------@media-1158px-------------*/

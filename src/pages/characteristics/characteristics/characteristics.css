@@ -12,10 +12,12 @@
 
 .item-characteristics {
 }
+
 .foto-overhead {
   max-width: 250px;
   height: 100%;
 }
+
 .gallery {
 }
 
@@ -142,6 +144,23 @@
   background-color: #f7fbfe;
 }
 
+/*-----------favorites-------------*/
+.container-btn-favorites {
+}
+
+.btn-categories {
+  margin-bottom: 32px;
+}
+
+.btn-favorites {
+  display: none;
+}
+
+.icon-favorites {
+}
+.text-favorites {
+}
+
 /*-----------acc-------------*/
 .acc-container {
   margin-bottom: 27px;
@@ -209,8 +228,11 @@
   }
   .item-characteristics {
   }
+
   .foto-overhead {
+    height: auto;
   }
+
   .gallery {
   }
   .container-code-acc {
@@ -276,6 +298,35 @@
   .list-equipment {
   }
   .item-equipment {
+  }
+
+  /*-----------favorites-------------*/
+  .container-btn-favorites {
+    display: flex;
+    margin-bottom: 30px;
+    gap: 30px;
+  }
+
+  .container-btn-favorites .btn-categories {
+    min-width: 288px;
+    height: 50px;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .btn-favorites {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .icon-favorites {
+    fill: var(--grey);
+  }
+
+  .text-favorites {
+    font-size: 14px;
+    color: #4d4d4d;
   }
 
   /*-----------acc-------------*/

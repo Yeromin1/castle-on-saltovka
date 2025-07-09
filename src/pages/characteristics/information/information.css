@@ -680,8 +680,12 @@
   /*----------- Модальное окно-------------*/
   .modal-feedback {
   }
+
   .modal-content {
+    min-width: 388px;
+    height: 444px;
   }
+
   .container-title-close-icon {
   }
   .title-modal-feedback {
@@ -694,8 +698,12 @@
   }
   .stars {
   }
-  .name-form-label {
+
+  .name-form-label,
+  .comment-text-label {
+    margin-bottom: 8px;
   }
+
   .input-feedback {
   }
   .comment-text-label {
@@ -704,6 +712,10 @@
   }
 
   /*-----------JS review-------------*/
+  .review {
+    width: 700px;
+  }
+
   .icon-star {
   }
   .list-review {

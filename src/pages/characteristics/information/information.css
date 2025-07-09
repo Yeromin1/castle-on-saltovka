@@ -228,6 +228,8 @@
   align-items: center;
   padding: 16px;
   border: 1px solid var(--stroke);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .container-item-name-date {
@@ -269,6 +271,8 @@
 .container-text-review-reply {
   border: 1px solid var(--stroke);
   border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .text-review-comment {
@@ -393,8 +397,16 @@
   /*-----------description-------------*/
   .list-tab {
   }
-  .description-tab {
+
+  .container-img-text {
+    display: flex;
+    flex-direction: row-reverse;
   }
+
+  .description-tab {
+    min-width: 288px;
+  }
+
   .gallery {
   }
   .text-description {
@@ -426,7 +438,9 @@
   }
 
   .container-icon-spinner-btn {
+    min-width: 410px;
   }
+
   .btn-categories {
   }
   .item-reply {
@@ -447,7 +461,8 @@
 
   .modal-content {
     border: 1px solid var(--stroke);
-    width: auto;
+    min-width: 288px;
+    height: 425px;
   }
 
   .modal-content input,
@@ -455,6 +470,7 @@
   }
 
   .modal-content textarea {
+    margin-bottom: 24px;
   }
 
   .container-title-close-icon {
@@ -477,8 +493,10 @@
   }
   .comment-text-label {
   }
+
   .container-feedback .btn-categories {
     min-width: 100%;
+    margin-bottom: 0;
   }
 
   /*-----------JS review-------------*/
@@ -507,11 +525,14 @@
   .container-text-review-reply {
   }
   .text-review-comment {
+    padding: 16px 24px;
   }
 
   /*-----------JS reply-------------*/
   .list-reply {
+    padding: 0 0 24px 24px;
   }
+
   .item-reply {
   }
   .icon-reply-btn {

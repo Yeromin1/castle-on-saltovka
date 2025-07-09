@@ -341,7 +341,9 @@
 
   /*-----------acc-------------*/
   .acc-container {
+    margin-bottom: 35px;
   }
+
   .ac {
   }
   .ac-header {
@@ -372,6 +374,10 @@
   }
 
   /*---------code-number-------------*/
+  .characteristics .container {
+    gap: 30px;
+  }
+
   .number-characteristics {
   }
   .title-characteristics {
@@ -390,11 +396,16 @@
   /*---------color-------------*/
   .title-color {
   }
+
   .list-color {
+    height: 40px;
   }
+
   .item-color {
   }
   .icon-item-color {
+    width: 40px;
+    height: 40px;
   }
 
   /*---------equipment-------------*/
@@ -417,7 +428,9 @@
 
   /*-----------acc-------------*/
   .acc-container {
+    margin-bottom: 40px;
   }
+
   .ac {
   }
   .ac-header {

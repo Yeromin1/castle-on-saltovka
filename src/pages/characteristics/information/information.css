@@ -42,7 +42,7 @@
 
 .item-tab:nth-child(odd) {
   background: #fafafa;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 .item-span-tab {
@@ -382,16 +382,28 @@
   .tabs {
   }
   .tab-buttons {
+    gap: 40px;
   }
+
   .tab-btn {
+    font-size: 20px;
+    line-height: 1.5;
   }
+
   .active {
   }
   .list-tab {
   }
+
   .item-tab {
+    font-size: 16px;
+    line-height: 1.62;
   }
+
   .item-span-tab {
+    font-size: 14px;
+    line-height: 1.71;
+    width: 226px;
   }
 
   /*-----------description-------------*/
@@ -568,39 +580,85 @@
 @media (min-width: 1158px) {
   .container {
   }
+
   .tabs {
+    margin-bottom: 70px;
   }
+
   .tab-buttons {
+    gap: 60px;
+    margin-bottom: 40px;
   }
+
   .tab-btn {
   }
   .active {
   }
   .list-tab {
   }
-  .item-tab {
+
+  .container-item-tab-two {
+    display: flex;
+    gap: 30px;
   }
+
+  .container-item-tab {
+  }
+
+  .item-tab {
+    min-width: 544px;
+  }
+
   .item-span-tab {
+    width: 266px;
   }
 
   /*-----------description-------------*/
   .list-tab {
   }
+
   .description-tab {
+    min-width: 470px;
+    margin-bottom: 0;
   }
+
   .gallery {
   }
-  .text-description {
+
+  .text-description,
+  .item-description {
+    font-size: 16px;
+    line-height: 1.62;
   }
+
+  .text-description:nth-of-type(2) {
+    margin-bottom: 24px;
+  }
+
+  .text-description:last-child {
+    margin-bottom: 0;
+  }
+
   .title-description {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 16px;
   }
+
   .list-description {
   }
   .item-container-description {
   }
+
+  .item-container-description:last-child {
+    margin-bottom: 24px;
+  }
+
   .item-description {
   }
   .icon-checkbox {
+    width: 16px;
+    height: 16px;
   }
 
   /*----------- feedback-------------*/

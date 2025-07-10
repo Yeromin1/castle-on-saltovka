@@ -29,3 +29,27 @@ document.addEventListener('click', () => {
   listEquipment.classList.remove('active');
   iconClose.classList.remove('rotated'); // Сброс поворота
 });
+
+// Переключение картинок
+window.addEventListener('load', () => {
+  const mainPicture = document.getElementById('main-picture');
+  const mainImg = document.getElementById('main-image');
+  const thumbnails = document.querySelectorAll('.thumbnails li .thumbnail');
+
+  thumbnails.forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      const thumbImg = thumb.querySelector('img').src;
+      const thumbSrcset = thumb.querySelector('source').getAttribute('srcset');
+
+      mainImg.src = thumbImg;
+      const source = mainPicture.querySelector('source');
+      if (source) source.setAttribute('srcset', thumbSrcset);
+
+      thumbnails.forEach(t => t.classList.remove('active'));
+      thumb.classList.add('active');
+    });
+  });
+
+  // Пометить первую миниатюру как активную
+  if (thumbnails[0]) thumbnails[0].classList.add('active');
+});

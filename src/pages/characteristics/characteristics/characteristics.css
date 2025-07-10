@@ -383,6 +383,7 @@
 
   .foto-overhead {
     max-width: 580px;
+    height: 100%;
   }
 
   .foto-overhead {
@@ -401,6 +402,7 @@
   #main-image {
     border-radius: 5px;
     width: 470px;
+    height: 523px;
   }
 
   .thumbnail img {

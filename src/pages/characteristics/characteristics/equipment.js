@@ -34,22 +34,48 @@ document.addEventListener('click', () => {
 window.addEventListener('load', () => {
   const mainPicture = document.getElementById('main-picture');
   const mainImg = document.getElementById('main-image');
+  const mainLink = document.querySelector('.main-lightbox');
   const thumbnails = document.querySelectorAll('.thumbnails li .thumbnail');
 
   thumbnails.forEach(thumb => {
     thumb.addEventListener('click', () => {
-      const thumbImg = thumb.querySelector('img').src;
-      const thumbSrcset = thumb.querySelector('source').getAttribute('srcset');
+      const imgElement = thumb.querySelector('img');
+      const thumbImg = imgElement.src;
+      const thumbSrcset = thumb.querySelector('source')?.getAttribute('srcset');
+      const fullImgUrl = thumb.getAttribute('data-full') || thumbImg;
 
+      // Обновляем большое изображение
       mainImg.src = thumbImg;
-      const source = mainPicture.querySelector('source');
-      if (source) source.setAttribute('srcset', thumbSrcset);
+      mainImg.alt = imgElement.alt;
 
+      // Обновляем srcset
+      const source = mainPicture.querySelector('source');
+      if (source && thumbSrcset) {
+        source.setAttribute('srcset', thumbSrcset);
+      }
+
+      // Обновляем ссылку <a> вокруг главного изображения
+      if (mainLink) {
+        mainLink.href = fullImgUrl;
+      }
+
+      // Активный стиль
       thumbnails.forEach(t => t.classList.remove('active'));
       thumb.classList.add('active');
     });
   });
 
   // Пометить первую миниатюру как активную
-  if (thumbnails[0]) thumbnails[0].classList.add('active');
+  if (thumbnails[0]) {
+    thumbnails[0].classList.add('active');
+  }
+});
+
+//  Инициализация SimpleLightbox
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
+
+const lightbox = new SimpleLightbox('[data-gallery="gallery"]', {
+  captionsData: 'alt',
+  captionDelay: 250,
 });

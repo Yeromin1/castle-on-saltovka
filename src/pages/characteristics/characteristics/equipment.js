@@ -79,3 +79,22 @@ const lightbox = new SimpleLightbox('[data-gallery="gallery"]', {
   captionsData: 'alt',
   captionDelay: 250,
 });
+
+// document.querySelector('.main-lightbox').addEventListener('click', e => {
+//   e.preventDefault();
+
+//   const currentHref = e.currentTarget.getAttribute('href');
+//   const galleryLinks = Array.from(
+//     document.querySelectorAll('[data-gallery="gallery"]')
+//   );
+
+//   const index = galleryLinks.findIndex(
+//     link => link.getAttribute('href') === currentHref
+//   );
+
+//   if (index !== -1) {
+//     lightbox.open(index);
+//   } else {
+//     lightbox.open();
+//   }
+// });

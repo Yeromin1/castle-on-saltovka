@@ -244,10 +244,12 @@
 
   .item-characteristics-big {
     display: block;
+    margin-bottom: 15px;
   }
 
   .list-characteristics {
     overflow: hidden;
+    min-width: 250px;
   }
 
   .item-characteristics {
@@ -405,6 +407,8 @@
   }
 
   .item-characteristics-big {
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   .foto-overhead {
@@ -419,11 +423,6 @@
 
   .container-code-acc {
     max-width: 615px;
-  }
-
-  .item-characteristics-big {
-    text-align: center;
-    margin-bottom: 20px;
   }
 
   #main-image {

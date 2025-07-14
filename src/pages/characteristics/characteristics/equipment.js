@@ -1,100 +1,78 @@
-const containerListEquipment = document.getElementById(
-  'container-list-equipment'
-);
-const listEquipment = document.getElementById('list-equipment');
-const selectedEquipment = document.getElementById('selected-equipment');
-const selectedText = selectedEquipment.querySelector('.selected-equipment');
-const iconClose = selectedEquipment.querySelector('.icon-close'); // SVG стрелка
-const itemEquipment = document.querySelectorAll('.item-equipment');
-
-// Клик по блоку выбора
-selectedEquipment.addEventListener('click', e => {
-  e.stopPropagation();
-  listEquipment.classList.toggle('active');
-  iconClose.classList.toggle('rotated'); // Поворот стрелки
-});
-
-// Клик по элементу списка
-itemEquipment.forEach(item => {
-  item.addEventListener('click', e => {
-    e.stopPropagation();
-    selectedText.textContent = item.textContent;
-    listEquipment.classList.remove('active');
-    iconClose.classList.remove('rotated'); // Сброс поворота
-  });
-});
-
-// Клик вне выпадающего списка — закрыть
-document.addEventListener('click', () => {
-  listEquipment.classList.remove('active');
-  iconClose.classList.remove('rotated'); // Сброс поворота
-});
-
-// Переключение картинок
-window.addEventListener('load', () => {
-  const mainPicture = document.getElementById('main-picture');
-  const mainImg = document.getElementById('main-image');
-  const mainLink = document.querySelector('.main-lightbox');
-  const thumbnails = document.querySelectorAll('.thumbnails li .thumbnail');
-
-  thumbnails.forEach(thumb => {
-    thumb.addEventListener('click', () => {
-      const imgElement = thumb.querySelector('img');
-      const thumbImg = imgElement.src;
-      const thumbSrcset = thumb.querySelector('source')?.getAttribute('srcset');
-      const fullImgUrl = thumb.getAttribute('data-full') || thumbImg;
-
-      // Обновляем большое изображение
-      mainImg.src = thumbImg;
-      mainImg.alt = imgElement.alt;
-
-      // Обновляем srcset
-      const source = mainPicture.querySelector('source');
-      if (source && thumbSrcset) {
-        source.setAttribute('srcset', thumbSrcset);
-      }
-
-      // Обновляем ссылку <a> вокруг главного изображения
-      if (mainLink) {
-        mainLink.href = fullImgUrl;
-      }
-
-      // Активный стиль
-      thumbnails.forEach(t => t.classList.remove('active'));
-      thumb.classList.add('active');
-    });
-  });
-
-  // Пометить первую миниатюру как активную
-  if (thumbnails[0]) {
-    thumbnails[0].classList.add('active');
-  }
-});
-
-//  Инициализация SimpleLightbox
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-const lightbox = new SimpleLightbox('[data-gallery="gallery"]', {
-  captionsData: 'alt',
-  captionDelay: 250,
+window.addEventListener('load', () => {
+  const mainLink = document.querySelector('a.main-lightbox');
+  const mainPicture = document.getElementById('main-picture');
+  const mainImg = mainPicture.querySelector('img');
+  const mainSource = mainPicture.querySelector('source');
+  const thumbnails = document.querySelectorAll('picture.thumbnail');
+  const lightboxContainer = document.querySelector('.lightbox-gallery');
+
+  let lightbox;
+
+  function rebuildLightboxGallery(clickedIndex) {
+    const items = Array.from(thumbnails);
+    const reordered = [
+      ...items.slice(clickedIndex),
+      ...items.slice(0, clickedIndex),
+    ];
+
+    lightboxContainer.innerHTML = '';
+
+    reordered.forEach(thumb => {
+      const fullUrl = thumb.dataset.full;
+      const alt = thumb.querySelector('img')?.alt || '';
+      const a = document.createElement('a');
+      a.href = fullUrl;
+      a.setAttribute('data-gallery', 'gallery');
+      a.setAttribute('data-title', alt);
+      lightboxContainer.appendChild(a);
+    });
+
+    if (lightbox) {
+      lightbox.destroy();
+    }
+    lightbox = new SimpleLightbox('[data-gallery="gallery"]', {
+      captionsData: 'title',
+      captionDelay: 250,
+    });
+  }
+
+  function updateMainImage(index) {
+    const thumb = thumbnails[index];
+    if (!thumb) return;
+
+    const thumbSource = thumb.querySelector('source');
+    const thumbImg = thumb.querySelector('img');
+
+    if (mainSource && thumbSource) {
+      mainSource.srcset = thumbSource.srcset;
+      mainSource.media = thumbSource.media;
+    } else if (mainSource) {
+      mainSource.removeAttribute('srcset');
+      mainSource.removeAttribute('media');
+    }
+
+    mainImg.src = thumbImg.src;
+    mainImg.alt = thumbImg.alt;
+
+    mainLink.href = thumb.dataset.full;
+
+    thumbnails.forEach(t => t.classList.remove('active'));
+    thumb.classList.add('active');
+
+    rebuildLightboxGallery(index);
+  }
+
+  thumbnails.forEach((thumb, index) => {
+    thumb.addEventListener('click', e => {
+      e.preventDefault();
+      updateMainImage(index);
+    });
+  });
+
+  // Не нужно ловить клик на mainLink — пусть ссылка работает сама, и SimpleLightbox её перехватит.
+
+  updateMainImage(0);
 });
-
-// document.querySelector('.main-lightbox').addEventListener('click', e => {
-//   e.preventDefault();
-
-//   const currentHref = e.currentTarget.getAttribute('href');
-//   const galleryLinks = Array.from(
-//     document.querySelectorAll('[data-gallery="gallery"]')
-//   );
-
-//   const index = galleryLinks.findIndex(
-//     link => link.getAttribute('href') === currentHref
-//   );
-
-//   if (index !== -1) {
-//     lightbox.open(index);
-//   } else {
-//     lightbox.open();
-//   }
-// });

@@ -268,7 +268,8 @@
 
   #main-image {
     border-radius: 5px;
-    max-width: 260px;
+    width: 260px;
+    height: 260px;
   }
 
   .thumbnail img {
@@ -444,7 +445,7 @@
   }
 
   #main-image {
-    max-width: 470px;
+    width: 470px;
     height: 523px;
   }
 

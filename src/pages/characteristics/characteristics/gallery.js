@@ -54,7 +54,7 @@ window.addEventListener('load', () => {
       mainSource.removeAttribute('media');
     }
 
-    mainImg.src = thumbImg.full;
+    mainImg.src = thumbImg.src;
     mainImg.alt = thumbImg.alt;
 
     mainLink.href = thumb.dataset.full;

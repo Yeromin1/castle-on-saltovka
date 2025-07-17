@@ -1,6 +1,8 @@
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
+import goldenSoftOffice from '/img/pages/home/popular/mobile/GoldenSoftOffice@2x.jpg';
+
 window.addEventListener('load', () => {
   const mainLink = document.querySelector('a.main-lightbox');
   const mainPicture = document.getElementById('main-picture');
@@ -10,16 +12,18 @@ window.addEventListener('load', () => {
 
   let lightbox;
 
-  const basePath = window.location.pathname.includes('/castle-on-saltovka/')
-    ? '/castle-on-saltovka'
-    : '';
+  const fullImages = [goldenSoftOffice];
 
-  const fullImages = [
-    `${basePath}/img/pages/home/popular/mobile/GoldenSoftOffice@2x.jpg`,
-    `${basePath}/img/pages/home/popular/mobile/GoldenSoft2Hotel@2x.jpg`,
-    `${basePath}/img/pages/home/popular/mobile/GoldenSoft2Office@2x.jpg`,
-    `${basePath}/img/pages/home/popular/mobile/GoldenSoftHotel@2x.jpg`,
-  ];
+  // const basePath = window.location.pathname.includes('/castle-on-saltovka/')
+  //   ? '/castle-on-saltovka'
+  //   : '';
+
+  // const fullImages = [
+  //   `${basePath}/img/pages/home/popular/mobile/GoldenSoftOffice@2x.jpg`,
+  //   `${basePath}/img/pages/home/popular/mobile/GoldenSoft2Hotel@2x.jpg`,
+  //   `${basePath}/img/pages/home/popular/mobile/GoldenSoft2Office@2x.jpg`,
+  //   `${basePath}/img/pages/home/popular/mobile/GoldenSoftHotel@2x.jpg`,
+  // ];
 
   // Присваиваем data-full динамически
   thumbnails.forEach((thumb, index) => {

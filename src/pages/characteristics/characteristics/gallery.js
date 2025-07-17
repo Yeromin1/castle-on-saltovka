@@ -7,9 +7,20 @@ window.addEventListener('load', () => {
   const mainImg = mainPicture.querySelector('img');
   const mainSource = mainPicture.querySelector('source');
   const thumbnails = document.querySelectorAll('picture.thumbnail');
-  const lightboxContainer = document.querySelector('.lightbox-gallery');
 
   let lightbox;
+
+  const fullImages = [
+    `/img/pages/home/popular/mobile/GoldenSoftOffice@2x.jpg`,
+    `/img/pages/home/popular/mobile/GoldenSoft2Hotel@2x.jpg`,
+    `/img/pages/home/popular/mobile/GoldenSoft2Office@2x.jpg`,
+    `/img/pages/home/popular/mobile/GoldenSoftHotel@2x.jpg`,
+  ];
+
+  // Присваиваем data-full динамически
+  thumbnails.forEach((thumb, index) => {
+    thumb.dataset.full = fullImages[index];
+  });
 
   function rebuildLightboxGallery(clickedIndex) {
     const items = Array.from(thumbnails);

@@ -11,8 +11,8 @@ window.addEventListener('load', () => {
   let lightbox;
 
   const fullImages = [
-    `/img/pages/home/popular/mobile/GoldenSoftOffice@2x.jpg`,
-    `/img/pages/home/popular/mobile/GoldenSoft2Hotel@2x.jpg`,
+    `https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843_1280.jpg`,
+    `../../../img/pages/home/popular/mobile/GoldenSoft2Hotel@2x.jpg`,
     `/img/pages/home/popular/mobile/GoldenSoft2Office@2x.jpg`,
     `/img/pages/home/popular/mobile/GoldenSoftHotel@2x.jpg`,
   ];

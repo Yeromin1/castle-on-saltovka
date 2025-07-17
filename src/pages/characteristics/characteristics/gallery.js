@@ -1,29 +1,18 @@
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-import goldenSoftOffice from '/img/pages/home/popular/mobile/GoldenSoftOffice@2x.jpg';
+import products from '/data/products.js';
 
 window.addEventListener('load', () => {
   const mainLink = document.querySelector('a.main-lightbox');
   const mainPicture = document.getElementById('main-picture');
-  const mainImg = mainPicture.querySelector('img');
+  const mainImg = document.getElementById('main-image');
   const mainSource = mainPicture.querySelector('source');
   const thumbnails = document.querySelectorAll('picture.thumbnail');
 
   let lightbox;
 
-  const fullImages = [goldenSoftOffice];
-
-  // const basePath = window.location.pathname.includes('/castle-on-saltovka/')
-  //   ? '/castle-on-saltovka'
-  //   : '';
-
-  // const fullImages = [
-  //   `${basePath}/img/pages/home/popular/mobile/GoldenSoftOffice@2x.jpg`,
-  //   `${basePath}/img/pages/home/popular/mobile/GoldenSoft2Hotel@2x.jpg`,
-  //   `${basePath}/img/pages/home/popular/mobile/GoldenSoft2Office@2x.jpg`,
-  //   `${basePath}/img/pages/home/popular/mobile/GoldenSoftHotel@2x.jpg`,
-  // ];
+  const fullImages = [products];
 
   // Присваиваем data-full динамически
   thumbnails.forEach((thumb, index) => {

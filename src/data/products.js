@@ -7,7 +7,7 @@ const products = [
     price: 1000,
     desktop: {
       '1x': '/img/pages/home/popular/mobile/GoldenSoftOffice@1x.jpg',
-      '2x': '/img/pages/home/popular/mobile/GoldenSoftOffice@2x.jpg',
+      '2x': '/castle-on-saltovka/img/pages/home/popular/mobile/GoldenSoftOffice@2x.jpg',
     },
     tablet: {
       '1x': '/img/pages/home/popular/mobile/GoldenSoftOffice@1x.jpg',

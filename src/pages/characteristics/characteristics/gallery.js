@@ -18,7 +18,10 @@ window.addEventListener('load', () => {
   let lightbox;
 
   // const fullImages = [img1, img2, img3, img4];
-  const fullImages = products.map(product => product.desktop['2x']);
+  // const fullImages = products.map(product => product.desktop['2x']);
+  const fullImages = products.map(
+    product => new URL(product.desktop['2x'], import.meta.url).href
+  );
 
   // Присваиваем каждому thumbnail соответствующий full image
   thumbnails.forEach((thumb, index) => {

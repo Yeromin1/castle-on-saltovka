@@ -29,7 +29,10 @@ const products = [
     price: 1000,
     desktop: {
       '1x': '/img/pages/home/popular/mobile/GoldenSoft2Hotel@1x.jpg',
-      '2x': '/img/pages/home/popular/mobile/GoldenSoft2Hotel@2x.jpg',
+      '2x': new URL(
+        '/img/pages/home/popular/mobile/GoldenSoft2Hotel@2x.jpg',
+        import.meta.url
+      ).href,
     },
     tablet: {
       '1x': '/img/pages/home/popular/mobile/GoldenSoft2Hotel@1x.jpg',
@@ -48,7 +51,10 @@ const products = [
     price: 1000,
     desktop: {
       '1x': '/img/pages/home/popular/mobile/GoldenSoft2Office@1x.jpg',
-      '2x': '/img/pages/home/popular/mobile/GoldenSoft2Office@2x.jpg',
+      '2x': new URL(
+        '/img/pages/home/popular/mobile/GoldenSoft2Office@2x.jpg',
+        import.meta.url
+      ).href,
     },
     tablet: {
       '1x': '/img/pages/home/popular/mobile/GoldenSoft2Office@1x.jpg',
@@ -67,7 +73,10 @@ const products = [
     price: 1000,
     desktop: {
       '1x': '/img/pages/home/popular/mobile/GoldenSoftHotel@1x.jpg',
-      '2x': '/img/pages/home/popular/mobile/GoldenSoftHotel@2x.jpg',
+      '2x': new URL(
+        '/img/pages/home/popular/mobile/GoldenSoftHotel@2x.jpg',
+        import.meta.url
+      ).href,
     },
     tablet: {
       '1x': '/img/pages/home/popular/mobile/GoldenSoftHotel@1x.jpg',

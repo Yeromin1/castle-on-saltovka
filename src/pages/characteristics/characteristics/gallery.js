@@ -1,7 +1,12 @@
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-import products from '../../../data/products.js';
+import products from '/data/products.js';
+// Импорт изображений
+// import img1 from '/img/pages/characteristics/overhead-electronic/mobile/1ectangle2x.png';
+// import img2 from '/img/pages/home/popular/mobile/GoldenSoft2Hotel@2x.jpg';
+// import img3 from '/img/pages/catalog/overhead-electronic/Desktop/3Rectangle2x.png';
+// import img4 from '/img/pages/home/popular/mobile/GoldenSoftHotel@2x.jpg';
 
 window.addEventListener('load', () => {
   const mainLink = document.querySelector('a.main-lightbox');
@@ -12,6 +17,7 @@ window.addEventListener('load', () => {
 
   let lightbox;
 
+  // const fullImages = [img1, img2, img3, img4];
   const fullImages = products.map(product => product.desktop['2x']);
 
   // Присваиваем каждому thumbnail соответствующий full image

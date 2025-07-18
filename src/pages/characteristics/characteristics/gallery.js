@@ -17,11 +17,20 @@ window.addEventListener('load', () => {
 
   let lightbox;
 
-  // const fullImages = [img1, img2, img3, img4];
-  // const fullImages = products.map(product => product.desktop['2x']);
+  // Получаем базовый URL, учёт имени репозитория (например, для GitHub Pages)
+  const baseUrl = import.meta.env.BASE_URL || '/';
+
+  // Формируем массив абсолютных URL к изображениям для lightbox
   const fullImages = products.map(
-    product => new URL(product.desktop['2x'], import.meta.url).href
+    product =>
+      new URL(
+        baseUrl + product.desktop['2x'].replace(/^\//, ''),
+        import.meta.url
+      ).href
   );
+
+  // const fullImages = [img1, img2, img3, img4];
+  // const fullImages = products.map(product => product.desktop['2x']); работает
 
   // Присваиваем каждому thumbnail соответствующий full image
   thumbnails.forEach((thumb, index) => {

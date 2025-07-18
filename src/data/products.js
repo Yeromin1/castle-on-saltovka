@@ -7,7 +7,10 @@ const products = [
     price: 1000,
     desktop: {
       '1x': '/img/pages/home/popular/mobile/GoldenSoftOffice@1x.jpg',
-      '2x': '/img/pages/home/popular/mobile/GoldenSoftOffice@2x.jpg',
+      '2x': new URL(
+        '/img/pages/home/popular/mobile/GoldenSoftOffice@2x.jpg',
+        import.meta.url
+      ).href,
     },
     tablet: {
       '1x': '/img/pages/home/popular/mobile/GoldenSoftOffice@1x.jpg',

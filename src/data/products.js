@@ -6,19 +6,34 @@ const products = [
     description: 'Golden Soft для офісу',
     price: 1000,
     desktop: {
-      '1x': '/img/pages/home/popular/mobile/GoldenSoftOffice@1x.jpg',
+      '1x': new URL(
+        '/img/pages/home/popular/mobile/GoldenSoftOffice@1x.jpg',
+        import.meta.url
+      ).href,
       '2x': new URL(
         '/img/pages/home/popular/mobile/GoldenSoftOffice@2x.jpg',
         import.meta.url
       ).href,
     },
     tablet: {
-      '1x': '/img/pages/home/popular/mobile/GoldenSoftOffice@1x.jpg',
-      '2x': '/img/pages/home/popular/mobile/GoldenSoftOffice@2x.jpg',
+      '1x': new URL(
+        '/img/pages/home/popular/mobile/GoldenSoftOffice@1x.jpg',
+        import.meta.url
+      ).href,
+      '2x': new URL(
+        '/img/pages/home/popular/mobile/GoldenSoftOffice@2x.jpg',
+        import.meta.url
+      ).href,
     },
     mobile: {
-      '1x': '/img/pages/home/popular/mobile/GoldenSoftOffice@1x.jpg',
-      '2x': '/img/pages/home/popular/mobile/GoldenSoftOffice@2x.jpg',
+      '1x': new URL(
+        '/img/pages/home/popular/mobile/GoldenSoftOffice@1x.jpg',
+        import.meta.url
+      ).href,
+      '2x': new URL(
+        '/img/pages/home/popular/mobile/GoldenSoftOffice@2x.jpg',
+        import.meta.url
+      ).href,
     },
   },
   {
@@ -28,19 +43,34 @@ const products = [
     description: 'Golden Soft для готелю',
     price: 1000,
     desktop: {
-      '1x': '/img/pages/home/popular/mobile/GoldenSoft2Hotel@1x.jpg',
+      '1x': new URL(
+        '/img/pages/home/popular/mobile/GoldenSoft2Hotel@1x.jpg',
+        import.meta.url
+      ).href,
       '2x': new URL(
         '/img/pages/home/popular/mobile/GoldenSoft2Hotel@2x.jpg',
         import.meta.url
       ).href,
     },
     tablet: {
-      '1x': '/img/pages/home/popular/mobile/GoldenSoft2Hotel@1x.jpg',
-      '2x': '/img/pages/home/popular/mobile/GoldenSoft2Hotel@2x.jpg',
+      '1x': new URL(
+        '/img/pages/home/popular/mobile/GoldenSoft2Hotel@1x.jpg',
+        import.meta.url
+      ).href,
+      '2x': new URL(
+        '/img/pages/home/popular/mobile/GoldenSoft2Hotel@2x.jpg',
+        import.meta.url
+      ).href,
     },
     mobile: {
-      '1x': '/img/pages/home/popular/mobile/GoldenSoft2Hotel@1x.jpg',
-      '2x': '/img/pages/home/popular/mobile/GoldenSoft2Hotel@2x.jpg',
+      '1x': new URL(
+        '/img/pages/home/popular/mobile/GoldenSoft2Hotel@1x.jpg',
+        import.meta.url
+      ).href,
+      '2x': new URL(
+        '/img/pages/home/popular/mobile/GoldenSoft2Hotel@2x.jpg',
+        import.meta.url
+      ).href,
     },
   },
   {
@@ -50,19 +80,34 @@ const products = [
     description: 'Golden Soft для офісу',
     price: 1000,
     desktop: {
-      '1x': '/img/pages/home/popular/mobile/GoldenSoft2Office@1x.jpg',
+      '1x': new URL(
+        '/img/pages/home/popular/mobile/GoldenSoft2Office@1x.jpg',
+        import.meta.url
+      ).href,
       '2x': new URL(
         '/img/pages/home/popular/mobile/GoldenSoft2Office@2x.jpg',
         import.meta.url
       ).href,
     },
     tablet: {
-      '1x': '/img/pages/home/popular/mobile/GoldenSoft2Office@1x.jpg',
-      '2x': '/img/pages/home/popular/mobile/GoldenSoft2Office@2x.jpg',
+      '1x': new URL(
+        '/img/pages/home/popular/mobile/GoldenSoft2Office@1x.jpg',
+        import.meta.url
+      ).href,
+      '2x': new URL(
+        '/img/pages/home/popular/mobile/GoldenSoft2Office@2x.jpg',
+        import.meta.url
+      ).href,
     },
     mobile: {
-      '1x': '/img/pages/home/popular/mobile/GoldenSoft2Office@1x.jpg',
-      '2x': '/img/pages/home/popular/mobile/GoldenSoft2Office@2x.jpg',
+      '1x': new URL(
+        '/img/pages/home/popular/mobile/GoldenSoft2Office@1x.jpg',
+        import.meta.url
+      ).href,
+      '2x': new URL(
+        '/img/pages/home/popular/mobile/GoldenSoft2Office@2x.jpg',
+        import.meta.url
+      ).href,
     },
   },
   {
@@ -72,19 +117,34 @@ const products = [
     description: 'Golden Soft для офісу',
     price: 1000,
     desktop: {
-      '1x': '/img/pages/home/popular/mobile/GoldenSoftHotel@1x.jpg',
+      '1x': new URL(
+        '/img/pages/home/popular/mobile/GoldenSoftHotel@1x.jpg',
+        import.meta.url
+      ).href,
       '2x': new URL(
         '/img/pages/home/popular/mobile/GoldenSoftHotel@2x.jpg',
         import.meta.url
       ).href,
     },
     tablet: {
-      '1x': '/img/pages/home/popular/mobile/GoldenSoftHotel@1x.jpg',
-      '2x': '/img/pages/home/popular/mobile/GoldenSoftHotel@2x.jpg',
+      '1x': new URL(
+        '/img/pages/home/popular/mobile/GoldenSoftHotel@1x.jpg',
+        import.meta.url
+      ).href,
+      '2x': new URL(
+        '/img/pages/home/popular/mobile/GoldenSoftHotel@2x.jpg',
+        import.meta.url
+      ).href,
     },
     mobile: {
-      '1x': '/img/pages/home/popular/mobile/GoldenSoftHotel@1x.jpg',
-      '2x': '/img/pages/home/popular/mobile/GoldenSoftHotel@2x.jpg',
+      '1x': new URL(
+        '/img/pages/home/popular/mobile/GoldenSoftHotel@1x.jpg',
+        import.meta.url
+      ).href,
+      '2x': new URL(
+        '/img/pages/home/popular/mobile/GoldenSoftHotel@2x.jpg',
+        import.meta.url
+      ).href,
     },
   },
 ];

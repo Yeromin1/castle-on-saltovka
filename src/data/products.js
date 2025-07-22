@@ -2,9 +2,14 @@ const products = [
   {
     id: 1,
     category: 'Накладні електронні замки',
-    name: 'Дверний Замок Golden Soft для офісу',
-    description: 'Golden Soft для офісу',
+    title: 'Дверний Замок Golden Soft для офісу',
+    text: {
+      text1:
+        'Замок дверний електронний Golden Soft GS-200Z-5 має розкішний глянсовий блиск, чіткі лінії, красиві форми.',
+      text2: "Підходить для встановлення на дерев'яні/міжкімнатні двері.",
+    },
     price: 1000,
+    description: 'Golden Soft для офісу',
     desktop: {
       '1x': new URL(
         '/img/pages/home/popular/mobile/GoldenSoftOffice@1x.jpg',
@@ -40,8 +45,13 @@ const products = [
     id: 2,
     category: 'Накладні електронні замки',
     name: 'Варіативний замок Golden Soft для готелю',
-    description: 'Golden Soft для готелю',
+    text: {
+      text1:
+        'Замок дверний електронний Golden Soft GS-200Z-5 має розкішний глянсовий блиск, чіткі лінії, красиві форми.',
+      text2: "Підходить для встановлення на дерев'яні/міжкімнатні двері.",
+    },
     price: 1000,
+    description: 'Golden Soft для готелю',
     desktop: {
       '1x': new URL(
         '/img/pages/home/popular/mobile/GoldenSoft2Hotel@1x.jpg',
@@ -77,8 +87,13 @@ const products = [
     id: 3,
     category: 'Накладні електронні замки',
     name: 'Дверний Замок Golden Soft для офісу',
-    description: 'Golden Soft для офісу',
+    text: {
+      text1:
+        'Замок дверний електронний Golden Soft GS-200Z-5 має розкішний глянсовий блиск, чіткі лінії, красиві форми.',
+      text2: "Підходить для встановлення на дерев'яні/міжкімнатні двері.",
+    },
     price: 1000,
+    description: 'Golden Soft для офісу',
     desktop: {
       '1x': new URL(
         '/img/pages/home/popular/mobile/GoldenSoft2Office@1x.jpg',
@@ -114,8 +129,13 @@ const products = [
     id: 4,
     category: 'Накладні електронні замки',
     name: 'Дверний Замок Golden Soft для офісу',
-    description: 'Golden Soft для офісу',
+    text: {
+      text1:
+        'Замок дверний електронний Golden Soft GS-200Z-5 має розкішний глянсовий блиск, чіткі лінії, красиві форми.',
+      text2: "Підходить для встановлення на дерев'яні/міжкімнатні двері.",
+    },
     price: 1000,
+    description: 'Golden Soft для офісу',
     desktop: {
       '1x': new URL(
         '/img/pages/home/popular/mobile/GoldenSoftHotel@1x.jpg',

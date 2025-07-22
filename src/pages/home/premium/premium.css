@@ -103,6 +103,19 @@
   transform: translate(-50%, -50%);
 }
 
+/*--------swiper---------- */
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: '';
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: static;
+}
+
 @media screen and (min-width: 768px) {
   .img-model-price {
     display: flex;

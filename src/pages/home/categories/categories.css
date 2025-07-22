@@ -16,6 +16,7 @@
 .text-categories {
   font-size: 14px;
   line-height: 1.71;
+  max-width: 160px;
 }
 
 .link-item-categories {
@@ -52,6 +53,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.55;
+    max-width: 130px;
   }
 
   .link-item-categories {

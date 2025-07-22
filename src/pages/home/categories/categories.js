@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const ITEMS_TO_SHOW = 4;
   let currentIndex = 0;
 
-  // Скрываем все элементы, кроме первых ITEMS_TO_SHOW
+  // Скрываем все элементы, кроме первых
   const updateVisibility = () => {
     items.forEach((item, index) => {
       item.style.display = index < currentIndex ? 'block' : 'none';

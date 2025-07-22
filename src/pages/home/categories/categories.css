@@ -18,7 +18,7 @@
   line-height: 1.71;
 }
 
-.btn-item-categories {
+.link-item-categories {
   display: none;
 }
 
@@ -54,8 +54,10 @@
     line-height: 1.55;
   }
 
-  .btn-item-categories {
-    display: block;
+  .link-item-categories {
+    display: grid;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     width: 130px;
     height: 30px;
@@ -91,7 +93,7 @@
     bottom: 80px;
   }
 
-  .btn-item-categories {
+  .link-item-categories {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -102,7 +104,7 @@
     /* transition-delay: 100ms; */
   }
 
-  .btn-item-categories:hover {
+  .link-item-categories:hover {
     background-color: #2e81d0;
     color: white;
     border: none;

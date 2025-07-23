@@ -10,10 +10,17 @@
 
 .foto-categories {
   margin-bottom: 12px;
+  border-radius: 10px;
+  width: 161px;
+  height: 161px;
 }
 
 .text-categories {
   max-width: 155px;
+}
+
+.link-item-categories {
+  display: none;
 }
 
 .btn-categories {
@@ -29,6 +36,11 @@
     font-size: 33px;
     line-height: 1.41;
     margin-bottom: 40px;
+  }
+
+  .foto-categories {
+    width: 230px;
+    height: 200px;
   }
 
   .list-categories {
@@ -49,6 +61,11 @@
   .title-categories {
     font-size: 44px;
     margin-bottom: 64px;
+  }
+
+  .foto-categories {
+    width: 257px;
+    height: 240px;
   }
 
   .list-categories {

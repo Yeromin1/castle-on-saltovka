@@ -11,6 +11,9 @@
 
 .foto-categories {
   margin-bottom: 12px;
+  border-radius: 10px;
+  width: 161px;
+  height: 161px;
 }
 
 .text-categories {
@@ -24,7 +27,7 @@
 }
 
 #btn-view-all {
-  display: none;
+  display: none !important;
 }
 
 @media (min-width: 768px) {
@@ -48,6 +51,8 @@
 
   .foto-categories {
     margin: 0;
+    width: 350px;
+    height: 320px;
   }
 
   .text-categories {
@@ -92,6 +97,7 @@
 
   .foto-categories {
     width: 545px;
+    height: 540px;
   }
 
   .text-categories {

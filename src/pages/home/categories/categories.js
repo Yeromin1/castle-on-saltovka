@@ -29,3 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   button.addEventListener('click', showMoreItems);
 });
+
+// Отменяет переход вверх <a href="#"></a>
+document.querySelectorAll('a[href="#"]').forEach(link => {
+  link.addEventListener('click', function (event) {
+    event.preventDefault();
+  });
+});

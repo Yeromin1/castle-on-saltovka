@@ -1,0 +1,2 @@
+import"./assets/menu-f265ad14.js";document.addEventListener("DOMContentLoaded",()=>{const t=document.querySelectorAll(".item-categories"),e=document.querySelector("#btn-view-all"),o=8;let n=0;const c=()=>{t.forEach((s,i)=>{s.style.display=i<n?"block":"none"}),n>=t.length?e.style.display="none":e.style.display="block"},l=()=>{n+=o,c()};n=o,c(),e.addEventListener("click",l)});document.querySelectorAll('a[href="#"]').forEach(t=>{t.addEventListener("click",function(e){e.preventDefault()})});
+//# sourceMappingURL=commonHelpers4.js.map

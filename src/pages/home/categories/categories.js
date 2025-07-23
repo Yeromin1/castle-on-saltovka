@@ -32,19 +32,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Заменяем href на "#"
 document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.link-item').forEach(link => {
-    if (
-      link.getAttribute('href') ===
-      '/castle-on-saltovka/pages/catalog/overhead-electronic/overhead-electronic.html'
-    ) {
-      link.setAttribute('href', '#');
-    }
-  });
-
-  // Отменяем переход по всем ссылкам href="#"
-  document.querySelectorAll('a[href="#"]').forEach(link => {
-    link.addEventListener('click', function (event) {
-      event.preventDefault();
+  if (window.matchMedia('(min-width: 768px)').matches) {
+    document.querySelectorAll('.link-item').forEach(link => {
+      if (
+        link.getAttribute('href') ===
+        '/castle-on-saltovka/pages/catalog/overhead-electronic/overhead-electronic.html'
+      ) {
+        link.setAttribute('href', '#');
+      }
     });
-  });
+
+    // Отменяем переход по всем ссылкам href="#"
+    document.querySelectorAll('a[href="#"]').forEach(link => {
+      link.addEventListener('click', function (event) {
+        event.preventDefault();
+      });
+    });
+  }
 });

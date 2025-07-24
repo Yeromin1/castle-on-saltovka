@@ -26,6 +26,7 @@
 }
 
 .btn-close-filter {
+  transform: rotate(180deg);
 }
 
 .icon-close {

@@ -1,6 +1,6 @@
 const listEquipment = document.getElementById('list-equipment');
 const selectedEquipment = document.getElementById('selected-equipment');
-const selectedText = selectedEquipment.querySelector('.selected-equipment ');
+const selectedText = selectedEquipment.querySelector('.selected-equipment');
 const iconclose = selectedEquipment.querySelector('.icon-close'); // svG стрелка
 const itemEquipment = document.querySelectorAll('.item-equipment');
 

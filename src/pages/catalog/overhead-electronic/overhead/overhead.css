@@ -4,6 +4,11 @@
   align-items: center;
   border: 1px solid var(--light-grey);
   padding: 7px 16px;
+  line-height: 1.62;
+}
+
+.container-selected-close:focus {
+  border: 1px solid var(--main);
 }
 
 .icon-close {
@@ -30,6 +35,12 @@
 .item-equipment,
 .container-selected-close {
   cursor: pointer;
+}
+
+.item-equipment {
+  padding: 8px 16px;
+  font-size: 12px;
+  line-height: 1.67;
 }
 
 .item-equipment:hover {

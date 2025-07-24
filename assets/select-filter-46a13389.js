@@ -1,2 +1,2 @@
 const t=document.getElementById("list-equipment"),c=document.getElementById("selected-equipment"),n=c.querySelector(".selected-equipment"),s=c.querySelector(".icon-close"),i=document.querySelectorAll(".item-equipment");c.addEventListener("click",e=>{e.stopPropagation(),t.classList.toggle("active"),s.classList.toggle("rotated")});i.forEach(e=>{e.addEventListener("click",o=>{o.stopPropagation(),n.textContent=e.textContent,t.classList.remove("active"),s.classList.remove("rotated")})});document.addEventListener("click",()=>{t.classList.remove("active"),s.classList.remove("rotated")});
-//# sourceMappingURL=select-filter-eeb8ca68.js.map
+//# sourceMappingURL=select-filter-46a13389.js.map

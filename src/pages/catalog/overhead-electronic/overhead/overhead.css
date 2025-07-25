@@ -16,6 +16,10 @@
   border: 1px solid var(--main);
 }
 
+/* .container-selected-close.active .icon-close {
+  fill: var(--main);
+} */
+
 .container-selected-close.active {
   color: var(--black);
 }

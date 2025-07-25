@@ -157,6 +157,10 @@
     fill: var(--light-grey);
   }
 
+  .icon-filter-animation {
+    fill: var(--main);
+  }
+
   .filter-content {
   }
   .price-inputs {
@@ -182,5 +186,16 @@
     width: 288px;
     margin: 0 0 24px;
     font-size: 16px;
+  }
+
+  .filter-button .btn-categories:hover {
+    background-color: #56a9f8;
+    color: var(--white);
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+  }
+
+  .filter-button .btn-categories:active {
+    background: #2e81d0;
   }
 }

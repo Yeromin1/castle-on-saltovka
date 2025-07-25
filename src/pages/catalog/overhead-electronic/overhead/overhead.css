@@ -122,6 +122,16 @@
 }
 
 @media (min-width: 768px) {
+  .container-list-equipment {
+    display: grid;
+    justify-content: end;
+  }
+
+  .container-selected-close {
+    width: 194px;
+    height: 40px;
+  }
+
   .btn-categories {
     display: none;
   }

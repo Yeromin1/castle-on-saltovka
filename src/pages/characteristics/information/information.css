@@ -221,6 +221,14 @@
   margin-bottom: 8px;
 }
 
+.text-review-comment.clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* показывать 2 строки */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-height: calc(1.5em * 2); /* если line-height: 1.5em */
+}
+
 /*-----------JS review-------------*/
 .list-review {
   display: flex;

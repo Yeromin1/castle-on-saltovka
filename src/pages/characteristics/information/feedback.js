@@ -125,7 +125,7 @@ function renderReviews() {
 
       <div class="container-text-review-reply">
         <p class="text-review-comment">${review.comment}</p>
-        <button class="">...more</button>
+        <button class="more">...more</button>
 
         <ul class="list-reply">
           <li class="item-reply">
@@ -134,9 +134,8 @@ function renderReviews() {
             </svg>
           </li>
           <li class="item-reply">
-            <button class="reply-btn" data-id="${review.id}">
-              Відповісти
-            </button></li>
+            <button class="reply-btn" data-id="${review.id}">Відповісти</button>
+          </li>
           <li class="item-reply">
             <svg class="icon-toggle-comments" width="24" height="24">
               <use href="${svgImg}#icon-message"></use>
@@ -153,31 +152,52 @@ function renderReviews() {
       <div class="comments" style="display: none;">
         ${review.comments
           .map(
-            c =>
-              `<ul class="comment">
-                <li class="comment-name">${c.name}</li>
-                <li class="item-review-date">${c.date}</li>
-                <li class="comment-text">${c.text}</li>
-              </ul>`
+            c => `
+          <ul class="comment">
+            <li class="comment-name">${c.name}</li>
+            <li class="item-review-date">${c.date}</li>
+            <li class="comment-text">${c.text}</li>
+          </ul>
+        `
           )
           .join('')}
       </div>
 
       <div class="reply-form" style="display: none;">
         <input type="text" class="reply-name" placeholder="Ваше ім'я" />
-        <textarea type="text" class="reply-text" placeholder="Ваш коментар" ></textarea>
+        <textarea type="text" class="reply-text" placeholder="Ваш коментар"></textarea>
         <button class="submit-reply btn-categories">Надіслати</button>
       </div>
     `;
 
-    // Кнопка "Ответить"
+    // === ⬇️ ЛОГИКА КНОПКИ "...more" ВНЕ innerHTML ===
+    // const commentText = el.querySelector('.text-review-comment');
+    // const moreBtn = el.querySelector('.more');
+    // commentText.classList.add('clamp');
+
+    // requestAnimationFrame(() => {
+    //   const lineHeight = parseFloat(getComputedStyle(commentText).lineHeight);
+    //   const maxHeight = lineHeight * 2;
+
+    //   if (commentText.scrollHeight > maxHeight) {
+    //     moreBtn.style.display = 'inline';
+    //     moreBtn.addEventListener('click', () => {
+    //       commentText.classList.remove('clamp');
+    //       moreBtn.style.display = 'none';
+    //     });
+    //   } else {
+    //     moreBtn.style.display = 'none';
+    //   }
+    // });
+
+    // Кнопка "Відповісти"
     el.querySelector('.reply-btn').addEventListener('click', e => {
       e.preventDefault();
       const form = el.querySelector('.reply-form');
       form.style.display = form.style.display === 'none' ? 'block' : 'none';
     });
 
-    // Кнопка "Комментарии"
+    // Кнопка "Коментарі"
     el.querySelector('.toggle-comments').addEventListener('click', e => {
       e.preventDefault();
       const commentBlock = el.querySelector('.comments');
@@ -189,7 +209,7 @@ function renderReviews() {
     el.querySelector('.submit-reply').addEventListener('click', () => {
       const name = el.querySelector('.reply-name').value.trim();
       const text = el.querySelector('.reply-text').value.trim();
-      if (!name || !text) return alert('Введите имя и комментарий');
+      if (!name || !text) return alert('Введіть ім`я та коментар');
 
       const reviewId = parseInt(el.querySelector('.reply-btn').dataset.id);
       const review = reviews.find(r => r.id === reviewId);
@@ -204,7 +224,7 @@ function renderReviews() {
       });
 
       localStorage.setItem('reviews', JSON.stringify(reviews));
-      renderReviews(); // перерисовать
+      renderReviews(); // Перерисовка
     });
 
     reviewsContainer.appendChild(el);

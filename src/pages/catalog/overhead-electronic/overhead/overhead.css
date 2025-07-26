@@ -143,6 +143,11 @@
     line-height: 1.62;
   }
 
+  .btn-reset:hover {
+    background-color: #56a9f8;
+    color: var(--white);
+  }
+
   .container-selected-close {
     width: 194px;
     height: 40px;

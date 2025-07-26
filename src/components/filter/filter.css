@@ -29,6 +29,10 @@
   transform: rotate(180deg);
 }
 
+.btn-show {
+  margin-bottom: 16px;
+}
+
 .icon-close {
   fill: #161c24;
   transform: rotate(90deg);
@@ -83,7 +87,7 @@
 .price-slider {
 }
 
-.filter-button .btn-categories:not(:last-child) {
+/* .filter-button .btn-categories:not(:last-child) {
   margin-bottom: 15px;
 }
 
@@ -94,7 +98,7 @@
   font-weight: 400;
   line-height: 1.62;
   margin-bottom: 24px;
-}
+} */
 
 .filter-button {
 }
@@ -118,7 +122,7 @@
 
   .filter-container {
     border: 1px solid var(--light-grey);
-    border-radius: 2px;
+    border-radius: 4px;
     padding: 24px;
     width: 288px;
     gap: 12px;
@@ -175,11 +179,25 @@
 
   .filter-button {
   }
+
   .btn-categories {
   }
 
+  .btn-show {
+    display: block !important;
+    width: 250px;
+    height: 40px;
+    margin-bottom: 24px;
+  }
+
+  .btn-reset-two {
+    display: none !important;
+  }
+
   .filter-button .btn-categories:not(:last-child) {
-    display: none;
+  }
+
+  #btn-reset-filters {
   }
 
   .filter-button .btn-categories:last-child {

@@ -27,7 +27,7 @@
     <script type="module" crossorigin src="/castle-on-saltovka/commonHelpers3.js"></script>
     <link rel="modulepreload" crossorigin href="/castle-on-saltovka/assets/menu-f265ad14.js">
     <link rel="modulepreload" crossorigin href="/castle-on-saltovka/assets/select-filter-c4848f9b.js">
-    <link rel="stylesheet" href="/castle-on-saltovka/assets/overhead-electronic-fdce031a.css">
+    <link rel="stylesheet" href="/castle-on-saltovka/assets/overhead-electronic-07b18687.css">
   </head>
 
   <body>
@@ -216,12 +216,12 @@
         </button>
         <div class="filter-content" id="price-content" hidden>
           <div class="price-inputs">
-            <input type="text" placeholder="від" value="79 000" />
-            <input type="text" placeholder="до" value="24 500" />
+            <input type="text" placeholder="від" value="0" />
+            <input type="text" placeholder="до" value="100000" />
           </div>
           <div class="price-slider">
-            <input type="range" min="0" max="100000" value="24500" />
-            <input type="range" min="0" max="100000" value="79000" />
+            <input type="range" min="0" max="100000" value="0" />
+            <input type="range" min="0" max="100000" value="100000" />
           </div>
         </div>
       </div>
@@ -414,6 +414,7 @@
         type="button"
         class="btn-categories btn-show"
         id="btn-show-categories"
+        filter-menu-close
       >
         Показати
       </button>

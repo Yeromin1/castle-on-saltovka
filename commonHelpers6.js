@@ -21,7 +21,7 @@ import"./assets/menu-f265ad14.js";import{S as q,A}from"./assets/vendor-f7826fb8.
 
       <div class="container-text-review-reply">
         <p class="text-review-comment">${c.comment}</p>
-        <button class="">...more</button>
+        <button class="more">...more</button>
 
         <ul class="list-reply">
           <li class="item-reply">
@@ -30,9 +30,8 @@ import"./assets/menu-f265ad14.js";import{S as q,A}from"./assets/vendor-f7826fb8.
             </svg>
           </li>
           <li class="item-reply">
-            <button class="reply-btn" data-id="${c.id}">
-              Відповісти
-            </button></li>
+            <button class="reply-btn" data-id="${c.id}">Відповісти</button>
+          </li>
           <li class="item-reply">
             <svg class="icon-toggle-comments" width="24" height="24">
               <use href="${x}#icon-message"></use>
@@ -47,17 +46,19 @@ import"./assets/menu-f265ad14.js";import{S as q,A}from"./assets/vendor-f7826fb8.
       </div>
 
       <div class="comments" style="display: none;">
-        ${c.comments.map(l=>`<ul class="comment">
-                <li class="comment-name">${l.name}</li>
-                <li class="item-review-date">${l.date}</li>
-                <li class="comment-text">${l.text}</li>
-              </ul>`).join("")}
+        ${c.comments.map(l=>`
+          <ul class="comment">
+            <li class="comment-name">${l.name}</li>
+            <li class="item-review-date">${l.date}</li>
+            <li class="comment-text">${l.text}</li>
+          </ul>
+        `).join("")}
       </div>
 
       <div class="reply-form" style="display: none;">
         <input type="text" class="reply-name" placeholder="Ваше ім'я" />
-        <textarea type="text" class="reply-text" placeholder="Ваш коментар" ></textarea>
+        <textarea type="text" class="reply-text" placeholder="Ваш коментар"></textarea>
         <button class="submit-reply btn-categories">Надіслати</button>
       </div>
-    `,t.querySelector(".reply-btn").addEventListener("click",l=>{l.preventDefault();const a=t.querySelector(".reply-form");a.style.display=a.style.display==="none"?"block":"none"}),t.querySelector(".toggle-comments").addEventListener("click",l=>{l.preventDefault();const a=t.querySelector(".comments");a.style.display=a.style.display==="none"?"block":"none"}),t.querySelector(".submit-reply").addEventListener("click",()=>{const l=t.querySelector(".reply-name").value.trim(),a=t.querySelector(".reply-text").value.trim();if(!l||!a)return alert("Введите имя и комментарий");const b=parseInt(t.querySelector(".reply-btn").dataset.id);m.find(p=>p.id===b).comments.push({name:l,text:a,date:new Date().toLocaleDateString("uk-UA",{day:"numeric",month:"long",year:"numeric"})}),localStorage.setItem("reviews",JSON.stringify(m)),h()}),R.appendChild(t)});const s=document.getElementById("showMoreContainer");s.style.display=m.length>w?"flex":"none"}M.onclick=()=>{w+=3,h()};h();
+    `,t.querySelector(".reply-btn").addEventListener("click",l=>{l.preventDefault();const a=t.querySelector(".reply-form");a.style.display=a.style.display==="none"?"block":"none"}),t.querySelector(".toggle-comments").addEventListener("click",l=>{l.preventDefault();const a=t.querySelector(".comments");a.style.display=a.style.display==="none"?"block":"none"}),t.querySelector(".submit-reply").addEventListener("click",()=>{const l=t.querySelector(".reply-name").value.trim(),a=t.querySelector(".reply-text").value.trim();if(!l||!a)return alert("Введіть ім`я та коментар");const b=parseInt(t.querySelector(".reply-btn").dataset.id);m.find(p=>p.id===b).comments.push({name:l,text:a,date:new Date().toLocaleDateString("uk-UA",{day:"numeric",month:"long",year:"numeric"})}),localStorage.setItem("reviews",JSON.stringify(m)),h()}),R.appendChild(t)});const s=document.getElementById("showMoreContainer");s.style.display=m.length>w?"flex":"none"}M.onclick=()=>{w+=3,h()};h();
 //# sourceMappingURL=commonHelpers6.js.map

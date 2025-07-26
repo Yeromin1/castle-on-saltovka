@@ -27,7 +27,7 @@
     <script type="module" crossorigin src="/castle-on-saltovka/commonHelpers3.js"></script>
     <link rel="modulepreload" crossorigin href="/castle-on-saltovka/assets/menu-f265ad14.js">
     <link rel="modulepreload" crossorigin href="/castle-on-saltovka/assets/select-filter-c4848f9b.js">
-    <link rel="stylesheet" href="/castle-on-saltovka/assets/overhead-electronic-684506fd.css">
+    <link rel="stylesheet" href="/castle-on-saltovka/assets/overhead-electronic-75909edb.css">
   </head>
 
   <body>
@@ -410,8 +410,19 @@
       </div>
     </div>
     <div class="filter-button">
-      <button type="button" class="btn-categories">Показати</button>
-      <button type="button" class="btn-categories">Скинути фільтри</button>
+      <button
+        type="button"
+        class="btn-categories btn-show"
+        id="btn-show-categories"
+      >
+        Показати
+      </button>
+      <button
+        type="button"
+        class="btn-categories btn-reset-filters btn-reset-two"
+      >
+        Скинути фільтри
+      </button>
     </div>
   </div>
 </section>
@@ -437,6 +448,9 @@
     </div> -->
 
     <div class="container-list-equipment">
+      <button type="button" class="btn-categories btn-reset btn-reset-filters">
+        Скинути фільтри
+      </button>
       <div
         class="container-selected-close"
         id="selected-equipment"
@@ -847,7 +861,7 @@
             <p class="text-overhead">
               Варіативний замок Golden Soft для готелю
             </p>
-            <p class="price">1000 грн.</p>
+            <p class="price">5000 грн.</p>
           </div>
         </a>
       </li>

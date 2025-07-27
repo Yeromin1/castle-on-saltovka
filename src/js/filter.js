@@ -19,7 +19,7 @@ document.querySelectorAll('.filter-toggle').forEach(button => {
 document
   .getElementById('btn-show-categories')
   ?.addEventListener('click', () => {
-    const inputs = document.querySelectorAll('.price-inputs input');
+    const inputs = document.querySelectorAll('.container-price-inputs input');
     if (inputs.length < 2) return;
 
     const from = parseInt(inputs[0].value.replace(/\D/g, ''), 10);
@@ -46,9 +46,9 @@ document
 // === СБРОС ФИЛЬТРАЦИИ (все кнопки .btn-reset-filters) ===
 document.querySelectorAll('.btn-reset-filters').forEach(button => {
   button.addEventListener('click', () => {
-    const inputs = document.querySelectorAll('.price-inputs input');
+    const inputs = document.querySelectorAll('.container-price-inputs input');
     const ranges = document.querySelectorAll(
-      '.price-slider input[type="range"]'
+      '.container-price-slider input[type="range"]'
     );
 
     if (inputs.length === 2 && ranges.length === 2) {
@@ -75,9 +75,11 @@ document.querySelectorAll('.btn-reset-filters').forEach(button => {
 
 // === СИНХРОНИЗАЦИЯ input[type=text] <=> input[type=range] ===
 document.addEventListener('DOMContentLoaded', () => {
-  const priceInputs = document.querySelectorAll('.price-inputs input');
+  const priceInputs = document.querySelectorAll(
+    '.container-price-inputs input'
+  );
   const priceRanges = document.querySelectorAll(
-    '.price-slider input[type="range"]'
+    '.container-price-slider input[type="range"]'
   );
 
   if (priceInputs.length !== 2 || priceRanges.length !== 2) return;

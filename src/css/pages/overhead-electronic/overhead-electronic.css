@@ -49,13 +49,13 @@
     height: 40px;
   }
 
-  .list-overhead {
+  /* .list-overhead {
     margin-bottom: 0;
   }
 
   .item-overhead:last-child {
     margin-bottom: 24px;
-  }
+  } */
 
   .title-overhead {
     font-size: 28px;
@@ -90,10 +90,6 @@
 
   .item-overhead {
     width: 270px;
-  }
-
-  .list-overhead {
-    gap: 24px 19px;
   }
 
   .cont-overhead {

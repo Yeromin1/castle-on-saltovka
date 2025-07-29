@@ -38,6 +38,15 @@
 }
 
 /*---------code-number-------------*/
+.container-number-btn-favorites {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-favorites {
+  fill: var(--grey);
+}
+
 .number-characteristics {
   font-size: 12px;
   line-height: 1.75;
@@ -307,6 +316,10 @@
     margin: 0 0 16px 0;
   }
 
+  .container-code-acc .btn-favorites {
+    display: none;
+  }
+
   .title-characteristics {
   }
   .title-selection {
@@ -371,7 +384,7 @@
   }
 
   .container-btn-favorites .btn-categories {
-    min-width: 288px;
+    width: 288px;
     height: 50px;
     font-size: 16px;
     margin: 0;
@@ -381,6 +394,10 @@
     display: flex;
     gap: 8px;
     align-items: center;
+  }
+
+  .container-btn-favorites .btn-favorites {
+    display: flex;
   }
 
   .icon-favorites {

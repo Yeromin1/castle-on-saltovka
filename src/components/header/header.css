@@ -44,8 +44,6 @@
   fill: #454f5b;
 }
 
-
-
 .modal-menu-overlay .container {
 }
 
@@ -83,6 +81,7 @@
 }
 
 .menu-button-heart {
+  position: relative;
 }
 
 .menu-icon {
@@ -169,6 +168,37 @@
   height: 100%;
 }
 
+/*-----------mobal-basket-------------*/
+.cart-count {
+  display: none;
+  position: absolute;
+  background-color: #1e90ff;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  top: 15px;
+  right: 0;
+}
+
+.cart-modal {
+  position: fixed;
+  max-width: 375px;
+  padding: 0 30px;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 1000;
+}
+
+.hidden {
+  display: none;
+}
+
+.basket-btn-close {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media (min-width: 768px) {
   .menu {
     display: none;
@@ -198,6 +228,11 @@
   .menu-button-basket,
   .menu-button-heart {
     padding: 23px 0;
+  }
+
+  /*-----------mobal-basket-------------*/
+  .cart-count {
+    top: 20px;
   }
 }
 

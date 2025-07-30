@@ -7,14 +7,19 @@ const checkoutButton = document.getElementById('checkout-button');
 const continueButton = document.getElementById('continue-button');
 const wholesaleWarning = document.getElementById('wholesale-warning');
 
+// 🔧 Данные товара
 const PRODUCT = {
   id: 'JA182765',
   name: 'Дверной Замок Golden Soft для офиса',
-  price: 33000,
+  price: 1000,
   quantity: 1,
+  image: new URL(
+    '/img/pages/catalog/overhead-electronic/Desktop/2Rectangle1x.png',
+    import.meta.url
+  ).href,
 };
 
-// ✅ ФУНКЦИЯ для отображения/скрытия счётчика
+// ✅ Обновление счётчика корзины
 function updateCartCount(count) {
   if (!cartCount) return;
 
@@ -27,10 +32,10 @@ function updateCartCount(count) {
   }
 }
 
+// ✅ Обработчик добавления товара
 document
   .querySelector('.btn-categories-basket')
   .addEventListener('click', () => {
-    // Проверяем, есть ли товар в корзине
     const existingProduct = cart.find(item => item.id === PRODUCT.id);
     if (existingProduct) {
       existingProduct.quantity++;
@@ -41,34 +46,50 @@ document
     updateCartUI();
   });
 
+// ✅ Открытие/закрытие модалки
 document.getElementById('cart-button').addEventListener('click', () => {
   cartModal.classList.toggle('hidden');
 });
 
+// ✅ Обновление корзины
 function updateCartUI() {
-  // Получаем общее количество товаров в корзине
   const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
-  // Обновляем счётчик через отдельную функцию
   updateCartCount(totalCount);
 
-  // Обновляем список товаров в корзине
   cartItemsList.innerHTML = '';
+
   cart.forEach(item => {
     const li = document.createElement('li');
-    li.textContent = `${item.name} x${item.quantity} — ${
-      item.quantity * item.price
-    }₽`;
+    li.className = 'cart-item';
+    li.innerHTML = `
+      <img src="${item.image}" alt="${item.name}" class="cart-item-image" />
+      <div class="cart-item-info">
+        <div class="container-name-remove">
+          <p class="cart-item-name">${item.name}</p>
+          <button class="remove-item" data-id="${item.id}">Удалить</button>
+        </div>
+        <div class="container-quantity-price">
+          <div class="cart-item-quantity">
+            <button class="qty-btn minus" data-id="${item.id}" ${
+      item.quantity === 1 ? 'disabled' : ''
+    }>–</button>
+
+            <span class="qty-count">${item.quantity}</span>
+            <button class="qty-btn plus" data-id="${item.id}">+</button>
+          </div>
+          <p class="cart-item-price">${item.price.toLocaleString()} грн.</p>
+        </div>
+      </div>
+    `;
     cartItemsList.appendChild(li);
   });
 
-  // Обновляем итоговую сумму
   const totalPrice = cart.reduce(
     (sum, item) => sum + item.quantity * item.price,
     0
   );
-  cartTotal.textContent = `Итого: ${totalPrice.toLocaleString()}₽`;
+  cartTotal.textContent = `Итого: ${totalPrice.toLocaleString()} грн.`;
 
-  // Показываем или скрываем кнопки и предупреждение о оптовой покупке
   if (totalPrice > 100000) {
     checkoutButton.style.display = 'none';
     continueButton.style.display = 'none';
@@ -78,4 +99,38 @@ function updateCartUI() {
     continueButton.style.display = 'inline-block';
     wholesaleWarning.classList.add('hidden');
   }
+
+  // 👇 Повесим события на кнопки + - удалить
+  document.querySelectorAll('.qty-btn.plus').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.id;
+      const product = cart.find(p => p.id === id);
+      if (product) product.quantity++;
+      updateCartUI();
+    });
+  });
+
+  document.querySelectorAll('.qty-btn.minus').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.id;
+      const product = cart.find(p => p.id === id);
+      if (product && product.quantity > 1) {
+        product.quantity--;
+      } else {
+        // Удаляем, если нажали минус при 1 шт.
+        const index = cart.findIndex(p => p.id === id);
+        if (index !== -1) cart.splice(index, 1);
+      }
+      updateCartUI();
+    });
+  });
+
+  document.querySelectorAll('.remove-item').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.id;
+      const index = cart.findIndex(p => p.id === id);
+      if (index !== -1) cart.splice(index, 1);
+      updateCartUI();
+    });
+  });
 }

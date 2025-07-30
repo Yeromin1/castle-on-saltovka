@@ -66,7 +66,7 @@
     <div id="cart-modal" class="cart-modal hidden">
       <div class="cart-content">
         <div class="basket-btn-close">
-          <h2 class="basket-title">Корзина</h2>
+          <h4 class="basket-title">Корзина</h4>
           <button class="btn-close" type="button" data-menu-close>
             <svg class="menu-close-icon" width="24" height="24">
               <use href="/img/icons.svg#icon-close"></use>
@@ -74,15 +74,19 @@
           </button>
         </div>
 
-        <ul id="cart-items"></ul>
-        <p id="cart-total">Итого: 0₽</p>
+        <ul id="cart-items" class="cart-items-list"></ul>
+        <p id="cart-total"></p>
         <div id="cart-actions">
-          <button id="checkout-button">Оформить заказ</button>
-          <button id="continue-button">Продолжить покупки</button>
+          <button id="checkout-button" class="order-basket">
+            Оформить заказ
+          </button>
+          <button id="continue-button" class="continue-shopping">
+            Продолжить покупки
+          </button>
         </div>
         <p id="wholesale-warning" class="hidden">
-          К сожалению, оформления товара свыше 100 000₽ доступно только оптом,
-          пожалуйста перейдите на страницу оптовой продажи
+          К сожалению, оформления товара свыше 100 000 грн. доступно только
+          оптом, пожалуйста перейдите на страницу оптовой продажи
         </p>
       </div>
     </div>

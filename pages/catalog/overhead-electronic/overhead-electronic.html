@@ -27,7 +27,7 @@
     <script type="module" crossorigin src="/castle-on-saltovka/commonHelpers3.js"></script>
     <link rel="modulepreload" crossorigin href="/castle-on-saltovka/assets/menu-f265ad14.js">
     <link rel="modulepreload" crossorigin href="/castle-on-saltovka/assets/select-filter-c4848f9b.js">
-    <link rel="stylesheet" href="/castle-on-saltovka/assets/overhead-electronic-548aa93f.css">
+    <link rel="stylesheet" href="/castle-on-saltovka/assets/overhead-electronic-87ac1ea6.css">
   </head>
 
   <body>
@@ -96,31 +96,34 @@
 
   <!---------mobal-basket------------>
   <div class="container">
-    <div id="cart-modal" class="cart-modal hidden">
-      <div class="cart-content">
-        <div class="basket-btn-close">
-          <h4 class="basket-title">Корзина</h4>
-          <button class="btn-close" type="button" data-menu-close>
-            <svg class="menu-close-icon" width="24" height="24">
-              <use href="/castle-on-saltovka/assets/icons-e70d3d57.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
+    <div id="cart-overlay" class="cart-overlay hidden">
+      <div id="cart-modal" class="cart-modal hidden">
+        <div class="cart-content">
+          <div class="basket-btn-close">
+            <h4 class="basket-title">Корзина</h4>
+            <button class="btn-close" type="button" id="cart-close-btn">
+              <svg class="menu-close-icon" width="24" height="24">
+                <use href="/castle-on-saltovka/assets/icons-e70d3d57.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
 
-        <ul id="cart-items" class="cart-items-list"></ul>
-        <p id="cart-total"></p>
-        <div id="cart-actions">
-          <button id="checkout-button" class="order-basket">
-            Оформить заказ
-          </button>
-          <button id="continue-button" class="continue-shopping">
-            Продолжить покупки
-          </button>
+          <ul id="cart-items" class="cart-items-list"></ul>
+          <p id="wholesale-warning" class="hidden">
+            К сожалению, оформления товара свыше 100 000 грн. доступно только
+            оптом, пожалуйста перейдите на страницу оптовой продажи
+          </p>
+          <p id="cart-total"></p>
+
+          <div id="cart-actions">
+            <button id="checkout-button" class="order-basket">
+              Оформить заказ
+            </button>
+            <button id="continue-button" class="continue-shopping">
+              Продолжить покупки
+            </button>
+          </div>
         </div>
-        <p id="wholesale-warning" class="hidden">
-          К сожалению, оформления товара свыше 100 000 грн. доступно только
-          оптом, пожалуйста перейдите на страницу оптовой продажи
-        </p>
       </div>
     </div>
   </div>

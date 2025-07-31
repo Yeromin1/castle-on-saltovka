@@ -6,14 +6,17 @@ const cartTotal = document.getElementById('cart-total');
 const checkoutButton = document.getElementById('checkout-button');
 const continueButton = document.getElementById('continue-button');
 const wholesaleWarning = document.getElementById('wholesale-warning');
+const wholesaleSales = document.getElementById('wholesale-sales');
 const cartCloseBtn = document.getElementById('cart-close-btn');
+
+const svgImg = new URL('/img/icons.svg', import.meta.url);
 
 const cart = [];
 
 // Данные товара
 const PRODUCT = {
   id: 'JA182765',
-  name: 'Дверной Замок Golden Soft для офиса',
+  name: 'Дверний Замок Golden Soft для офісу',
   price: 1000,
   quantity: 1,
   image: new URL(
@@ -26,7 +29,7 @@ const PRODUCT = {
 function updateCartCount(count) {
   if (!cartCount) return;
   cartCount.textContent = count > 0 ? count : '';
-  cartCount.style.display = count > 0 ? 'inline-block' : 'none';
+  cartCount.style.display = count > 0 ? 'block' : 'none';
 }
 
 // ✅ Обработчик добавления товара
@@ -52,6 +55,7 @@ cartCloseBtn.addEventListener('click', () => {
   cartModal.classList.add('hidden');
   cartOverlay.classList.add('hidden');
 });
+
 // ✅ закрытие модалки при клике по затемнённому фону
 cartOverlay.addEventListener('click', e => {
   if (e.target === cartOverlay) {
@@ -74,7 +78,11 @@ function updateCartUI() {
       <div class="cart-item-info">
         <div class="container-name-remove">
           <p class="cart-item-name">${item.name}</p>
-          <button class="remove-item" data-id="${item.id}">Удалить</button>
+          <button class="remove-item" data-id="${item.id}">
+            <svg class="basket-delete-svg" width="24" height="24">
+              <use href="${svgImg}#icon-delete"></use>
+            </svg> Видалити
+          </button>
         </div>
         <div class="container-quantity-price">
           <div class="cart-item-quantity">
@@ -96,18 +104,20 @@ function updateCartUI() {
     0
   );
   cartTotal.innerHTML = `
-    <span class="cart-label">Итого:</span>
+    <span class="cart-label">Разом:</span>
     <span class="cart-amount">${totalPrice.toLocaleString()} грн.</span>
   `;
 
-  if (totalPrice > 100000) {
+  if (totalPrice > 1000) {
     checkoutButton.style.display = 'none';
     continueButton.style.display = 'none';
     wholesaleWarning.classList.remove('hidden');
+    wholesaleSales.classList.remove('hidden');
   } else {
-    checkoutButton.style.display = 'inline-block';
-    continueButton.style.display = 'inline-block';
+    checkoutButton.style.display = 'block';
+    continueButton.style.display = 'block';
     wholesaleWarning.classList.add('hidden');
+    wholesaleSales.classList.add('hidden');
   }
 
   // События на + / – / удалить

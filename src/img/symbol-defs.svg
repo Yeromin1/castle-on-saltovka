@@ -1,0 +1,11 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-delete" viewBox="0 0 32 32">
+<path fill="none" stroke="#4295e4" style="stroke: var(--color1, #4295e4)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M5.333 8h21.333l-2.107 18.96c-0.072 0.653-0.383 1.255-0.872 1.693s-1.123 0.68-1.779 0.68h-11.819c-0.656 0-1.29-0.242-1.779-0.68s-0.799-1.041-0.872-1.693l-2.107-18.96z"></path>
+<path fill="none" stroke="#4295e4" style="stroke: var(--color1, #4295e4)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M9.793 4.196c0.216-0.457 0.557-0.844 0.984-1.115s0.922-0.415 1.428-0.415h7.589c0.506-0 1.001 0.143 1.429 0.414s0.769 0.658 0.985 1.115l1.792 3.804h-16l1.793-3.804z"></path>
+<path fill="none" stroke="#4295e4" style="stroke: var(--color1, #4295e4)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M2.667 8h26.667"></path>
+<path fill="none" stroke="#4295e4" style="stroke: var(--color1, #4295e4)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M13.333 14.667v6.667"></path>
+<path fill="none" stroke="#4295e4" style="stroke: var(--color1, #4295e4)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M18.667 14.667v6.667"></path>
+</symbol>
+</defs>
+</svg>

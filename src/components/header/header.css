@@ -197,6 +197,7 @@
 .cart-modal {
   position: fixed;
   width: 343px;
+  max-height: 630px;
   padding: 24px 16px;
   background-color: white;
 }
@@ -237,25 +238,58 @@
 }
 
 .title-offer {
+  font-weight: 400;
+  line-height: 1.62;
+  margin-bottom: 8px;
 }
+
 .list-offer {
+  max-height: 195px;
+  overflow: overlay;
+  display: grid;
+  gap: 16px;
 }
 
 .item-offer {
+  display: flex;
+  gap: 8px;
+}
+
+.img-offer {
   width: 70px;
   height: 73px;
 }
 
-.img-offer {
+.container-text-price {
+  display: grid;
+  gap: 23px;
 }
+
 .text-offer {
+  font-size: 12px;
+  line-height: 1.5;
 }
+
 .price-offer {
+  font-size: 12px;
+  display: grid;
+  align-items: end;
+}
+
+.btn-offer {
+  display: grid;
+  align-items: start;
+}
+
+.img-plus {
+  fill: var(--main);
 }
 
 #cart-actions {
   display: grid;
   gap: 16px;
+  padding-top: 25px;
+  box-shadow: 0 -4px 4px -4px rgba(0, 0, 0, 0.25);
 }
 
 .order-basket {

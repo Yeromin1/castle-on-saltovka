@@ -6,6 +6,7 @@ const cartTotal = document.getElementById('cart-total');
 const checkoutButton = document.getElementById('checkout-button');
 const continueButton = document.getElementById('continue-button');
 const wholesaleWarning = document.getElementById('wholesale-warning');
+const wholesaleWarningCopy = document.getElementById('wholesale-warning-copy');
 const wholesaleSales = document.getElementById('wholesale-sales');
 const cartCloseBtn = document.getElementById('cart-close-btn');
 
@@ -108,16 +109,34 @@ function updateCartUI() {
     <span class="cart-amount">${totalPrice.toLocaleString()} грн.</span>
   `;
 
+  const isDesktop = window.matchMedia('(min-width: 1158px)').matches;
+
   if (totalPrice > 1000) {
     checkoutButton.style.display = 'none';
     continueButton.style.display = 'none';
-    wholesaleWarning.classList.remove('hidden');
+
+    if (!isDesktop) {
+      wholesaleWarning.classList.remove('hidden');
+    }
+
     wholesaleSales.classList.remove('hidden');
+
+    if (isDesktop) {
+      wholesaleWarningCopy.classList.remove('hidden');
+    }
   } else {
     checkoutButton.style.display = 'block';
     continueButton.style.display = 'block';
-    wholesaleWarning.classList.add('hidden');
+
+    if (!isDesktop) {
+      wholesaleWarning.classList.add('hidden');
+    }
+
     wholesaleSales.classList.add('hidden');
+
+    if (isDesktop) {
+      wholesaleWarningCopy.classList.add('hidden');
+    }
   }
 
   // События на + / – / удалить

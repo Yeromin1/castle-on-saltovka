@@ -530,6 +530,11 @@
   .cart-items-list {
   }
 
+  #wholesale-warning {
+    font-size: 14px;
+    line-height: 1.57;
+  }
+
   #cart-total {
     justify-content: start;
     gap: 8px;
@@ -714,5 +719,101 @@
   .menu-item-width {
   }
   .menu-mobal-link-contacts {
+  }
+
+  /*-----------mobal-basket-------------*/
+  .container {
+  }
+  .cart-overlay {
+  }
+  .hidden {
+  }
+
+  .cart-modal {
+    width: 850px;
+  }
+
+  .cart-content {
+  }
+  .basket-btn-close {
+  }
+  .basket-title {
+  }
+  .btn-close {
+  }
+  .menu-close-icon {
+  }
+  .cart-items-list {
+  }
+  .wholesale-warning {
+  }
+  .container-offers {
+  }
+  .container-offer {
+  }
+  .title-offer {
+  }
+  .list-offer {
+  }
+  .item-offer {
+  }
+  .container-img-text-price {
+  }
+  .img-offer {
+  }
+  .container-text-price {
+  }
+  .text-offer {
+  }
+  .price-offer {
+  }
+  .btn-offer {
+  }
+  .img-plus {
+  }
+  .text-plus {
+  }
+  .order-basket {
+  }
+  .continue-shopping {
+  }
+
+  .container-wholesale-sales {
+    display: flex;
+    gap: 16px;
+  }
+
+  .wholesale-warning-copy {
+  }
+
+  .cart-item-image {
+  }
+  .cart-item-info {
+  }
+  .container-name-remove {
+  }
+  .cart-item-name {
+  }
+  .remove-item {
+  }
+  .basket-delete-svg {
+  }
+  .container-quantity-price {
+  }
+  .cart-item-quantity {
+  }
+  .qty-btn {
+  }
+  .minus {
+  }
+  .qty-count {
+  }
+  .plus {
+  }
+  .cart-item-price {
+  }
+  .cart-label {
+  }
+  .cart-amount {
   }
 }

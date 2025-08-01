@@ -30,7 +30,7 @@
     
     <script type="module" crossorigin src="/castle-on-saltovka/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/castle-on-saltovka/assets/menu-f265ad14.js">
-    <link rel="stylesheet" href="/castle-on-saltovka/assets/index-19a4fe05.css">
+    <link rel="stylesheet" href="/castle-on-saltovka/assets/index-4a315660.css">
   </head>
 
   <body>
@@ -112,7 +112,7 @@
           </div>
 
           <ul id="cart-items" class="cart-items-list"></ul>
-          <p id="wholesale-warning" class="hidden">
+          <p id="wholesale-warning" class="wholesale-warning hidden">
             На жаль, оформлення товару понад 100 000 грн. доступно тільки оптом,
             будь ласка, перейдіть на сторінку оптового продажу
           </p>
@@ -263,9 +263,19 @@
               <button id="continue-button" class="continue-shopping">
                 Продовжити покупки
               </button>
-              <button id="wholesale-sales" class="order-basket hidden">
-                Оптовий продаж
-              </button>
+              <div class="container-wholesale-sales">
+                <button id="wholesale-sales" class="order-basket hidden">
+                  Оптовий продаж
+                </button>
+
+                <p
+                  id="wholesale-warning-copy"
+                  class="wholesale-warning-copy hidden"
+                >
+                  На жаль, оформлення товару понад 100 000 грн. доступно тільки
+                  оптом, будь ласка, перейдіть на сторінку оптового продажу
+                </p>
+              </div>
             </div>
           </div>
         </div>

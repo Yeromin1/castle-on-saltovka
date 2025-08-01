@@ -196,8 +196,7 @@
 
 .cart-modal {
   position: fixed;
-  /* max-width: auto;
-  max-height: auto; */
+  width: 343px;
   padding: 24px 16px;
   background-color: white;
 }
@@ -387,6 +386,7 @@
 .remove-item {
   font-size: 12px;
   cursor: pointer;
+  color: var(--main);
 }
 
 .basket-delete-svg {
@@ -506,7 +506,7 @@
   }
 
   .cart-modal {
-    /* width: 650px; */
+    width: 650px;
     padding: 24px 40px;
   }
 

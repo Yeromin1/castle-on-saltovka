@@ -220,6 +220,8 @@
 
 .cart-items-list {
   margin-bottom: 16px;
+  max-height: 235px;
+  overflow: overlay;
 }
 
 #wholesale-warning {
@@ -243,7 +245,7 @@
 }
 
 .list-offer {
-  max-height: 195px;
+  max-height: 150px;
   overflow: overlay;
   display: grid;
   gap: 16px;

@@ -1,6 +1,6 @@
 const cartCount = document.getElementById('cart-count');
 const cartModal = document.getElementById('cart-modal');
-const cartOverlay = document.getElementById('cart-overlay'); // overlay подложка
+const cartOverlay = document.getElementById('cart-overlay');
 const cartItemsList = document.getElementById('cart-items');
 const cartTotal = document.getElementById('cart-total');
 const checkoutButton = document.getElementById('checkout-button');
@@ -12,9 +12,11 @@ const cartCloseBtn = document.getElementById('cart-close-btn');
 
 const svgImg = new URL('/img/icons.svg', import.meta.url);
 
-const cart = [];
+// ✅ Загрузка корзины из localStorage
+const storedCart = localStorage.getItem('cart');
+const cart = storedCart ? JSON.parse(storedCart) : [];
 
-// Данные товара
+// ✅ Данные товара
 const PRODUCT = {
   id: 'JA182765',
   name: 'Дверний Замок Golden Soft для офісу',
@@ -25,6 +27,11 @@ const PRODUCT = {
     import.meta.url
   ).href,
 };
+
+// ✅ Сохраняем корзину в localStorage
+function saveCartToLocalStorage() {
+  localStorage.setItem('cart', JSON.stringify(cart));
+}
 
 // ✅ Обновление счётчика корзины
 function updateCartCount(count) {
@@ -57,7 +64,6 @@ cartCloseBtn.addEventListener('click', () => {
   cartOverlay.classList.add('hidden');
 });
 
-// ✅ закрытие модалки при клике по затемнённому фону
 cartOverlay.addEventListener('click', e => {
   if (e.target === cartOverlay) {
     cartModal.classList.add('hidden');
@@ -139,7 +145,7 @@ function updateCartUI() {
     }
   }
 
-  // События на + / – / удалить
+  // Обработчики + / – / удалить
   document.querySelectorAll('.qty-btn.plus').forEach(btn => {
     btn.onclick = () => {
       const product = cart.find(p => p.id === btn.dataset.id);
@@ -168,4 +174,10 @@ function updateCartUI() {
       updateCartUI();
     };
   });
+
+  // ✅ Сохраняем корзину после обновления
+  saveCartToLocalStorage();
 }
+
+// ✅ Инициализация UI при загрузке
+updateCartUI();

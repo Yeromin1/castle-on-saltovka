@@ -55,6 +55,10 @@
   .btn-categories {
     margin: 0 auto 70px;
   }
+
+  .item-categories:hover {
+    transform: scale(1.05);
+  }
 }
 
 @media (min-width: 1158px) {

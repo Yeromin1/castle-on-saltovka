@@ -94,9 +94,17 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="cart-item-quantity">
               <button class="qty-btn minus" data-id="${item.id}" ${
         item.quantity === 1 ? 'disabled' : ''
-      }>–</button>
+      }>
+                <svg class="qty-minus" width="16" height="16">
+                  <use href="${svgImg}#icon-minus"></use>
+                </svg>
+              </button>
               <span class="qty-count">${item.quantity}</span>
-              <button class="qty-btn plus" data-id="${item.id}">+</button>
+              <button class="qty-btn plus" data-id="${item.id}">
+              <svg class="qty-plus" width="16" height="16">
+                <use href="${svgImg}#icon-plus"></use>
+              </svg>
+              </button>
             </div>
             <p class="cart-item-price">${item.price.toLocaleString()} грн.</p>
           </div>

@@ -229,6 +229,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Закрытие корзины при клике на "Продовжити покупки"
+  continueButton.addEventListener('click', () => {
+    cartModal.classList.add('hidden');
+    cartOverlay.classList.add('hidden');
+  });
+
   // Инициализация UI при загрузке
   updateCartUI();
 });

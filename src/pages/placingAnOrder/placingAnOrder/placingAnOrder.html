@@ -5,7 +5,7 @@
     <form class="form-placing-order" name="issue_report_form" autocomplete="on">
       <p class="text-placing-order">1. Контактні дані</p>
       <label class="label-placing-order">
-        Ім'я
+        <span class="span-placing-order">Ім'я</span>
         <input
           class="input-placing-order"
           type="text"
@@ -56,12 +56,7 @@
         Кур'єр на вашу адресу
       </label>
       <label>
-        <input
-          type="radio"
-          name="delivery"
-          value="Самовивіз з Нової Пошти"
-          checked
-        />
+        <input type="radio" name="delivery" value="Самовивіз з Нової Пошти" />
         Самовивіз з Нової Пошти
       </label>
 
@@ -98,6 +93,15 @@
         <input type="radio" name="payment" value="Оплатити зараз" />
         Оплатити зараз
       </label>
+
+      <label for="user-comment">Коментар</label>
+      <textarea
+        name="user-comment"
+        rows="5"
+        class="form-textarea"
+        placeholder="Напишіть коментар"
+        id="user-comment"
+      ></textarea>
     </form>
   </div>
 </section>

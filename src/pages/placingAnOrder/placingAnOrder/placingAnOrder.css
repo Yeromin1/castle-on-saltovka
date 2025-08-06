@@ -14,3 +14,34 @@
 }
 
 /*--------placingAnOrder---------- */
+.placing-order .container {
+  padding: 26px 16px;
+}
+
+.placing-order {
+}
+.container {
+}
+
+.title-placing-order {
+  font-size: 22px;
+  line-height: 1.55;
+  margin-bottom: 16px;
+}
+
+.form-placing-order {
+  display: grid;
+  gap: 16px;
+}
+
+.text-placing-order {
+  line-height: 1.62;
+  margin-bottom: 12px;
+}
+
+.label-placing-order {
+}
+.input-placing-order {
+}
+.form-textarea {
+}

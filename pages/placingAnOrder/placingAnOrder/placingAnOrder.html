@@ -1,0 +1,103 @@
+<section class="placing-order">
+  <div class="container">
+    <h2 class="title-placing-order">Оформлення замовлення</h2>
+
+    <form class="form-placing-order" name="issue_report_form" autocomplete="on">
+      <p class="text-placing-order">1. Контактні дані</p>
+      <label class="label-placing-order">
+        Ім'я
+        <input
+          class="input-placing-order"
+          type="text"
+          name="user-name"
+          placeholder="Ваше ім'я"
+          required
+        />
+      </label>
+
+      <label class="label-placing-order">
+        Прізвище
+        <input
+          class="input-placing-order"
+          type="text"
+          name="user-nickname"
+          placeholder="Ваше прізвище"
+          required
+        />
+      </label>
+
+      <label class="label-placing-order">
+        Телефон
+        <input
+          class="input-placing-order"
+          type="tel"
+          name="user-phone"
+          placeholder="Ваш номер телефону"
+          required
+        />
+      </label>
+
+      <label class="label-placing-order">
+        E-mail
+        <input
+          class="input-placing-order"
+          type="email"
+          name="user-email"
+          placeholder="Ваш E-mail"
+          required
+        />
+      </label>
+    </form>
+
+    <form>
+      <p class="text-placing-order">2. Доставка</p>
+      <label>
+        <input type="radio" name="delivery" value="red" />
+        Кур'єр на вашу адресу
+      </label>
+      <label>
+        <input
+          type="radio"
+          name="delivery"
+          value="Самовивіз з Нової Пошти"
+          checked
+        />
+        Самовивіз з Нової Пошти
+      </label>
+
+      <label>
+        <input
+          type="radio"
+          name="delivery"
+          value="Самовивіз з поштоматів Нової Пошти"
+        />
+        Самовивіз з поштоматів Нової Пошти
+      </label>
+
+      <label>
+        <input type="radio" name="delivery" value="Самовивіз з Meest ПОШТА" />
+        Самовивіз з Meest ПОШТА
+      </label>
+
+      <label>
+        <input type="radio" name="delivery" value="Самовивіз з УКРПОШТИ" />
+        Самовивіз з УКРПОШТИ
+      </label>
+
+      <p class="text-placing-order">3. Оплата</p>
+      <label>
+        <input
+          type="radio"
+          name="payment"
+          value="Оплата під час отримання товару"
+        />
+        Оплата під час отримання товару
+      </label>
+
+      <label>
+        <input type="radio" name="payment" value="Оплатити зараз" />
+        Оплатити зараз
+      </label>
+    </form>
+  </div>
+</section>

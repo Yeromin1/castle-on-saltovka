@@ -223,17 +223,20 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('cart-button').addEventListener('click', () => {
     cartModal.classList.remove('hidden');
     cartOverlay.classList.remove('hidden');
+    document.body.classList.add('no-scroll');
   });
 
   cartCloseBtn.addEventListener('click', () => {
     cartModal.classList.add('hidden');
     cartOverlay.classList.add('hidden');
+    document.body.classList.remove('no-scroll');
   });
 
   cartOverlay.addEventListener('click', e => {
     if (e.target === cartOverlay) {
       cartModal.classList.add('hidden');
       cartOverlay.classList.add('hidden');
+      document.body.classList.remove('no-scroll');
     }
   });
 
@@ -241,6 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
   continueButton.addEventListener('click', () => {
     cartModal.classList.add('hidden');
     cartOverlay.classList.add('hidden');
+    document.body.classList.remove('no-scroll');
   });
 
   // Инициализация UI при загрузке

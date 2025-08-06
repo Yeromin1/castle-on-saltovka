@@ -1,0 +1,14 @@
+/*--------header---------- */
+.menu-heart-basket,
+.menu {
+  display: none;
+}
+
+.header-address {
+  display: block;
+  padding: 25px 0px;
+}
+
+.container-logo {
+  display: block;
+}

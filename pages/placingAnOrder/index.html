@@ -24,7 +24,9 @@
     <title>Оформлення замовлення</title>
 
     
-    <link rel="stylesheet" href="/castle-on-saltovka/assets/index-ee905f77.css">
+    <script type="module" crossorigin src="/castle-on-saltovka/commonHelpers14.js"></script>
+    <link rel="modulepreload" crossorigin href="/castle-on-saltovka/assets/modulepreload-polyfill-3cfb730f.js">
+    <link rel="stylesheet" href="/castle-on-saltovka/assets/index-a5fe4d9a.css">
   </head>
 
   <body>
@@ -110,7 +112,7 @@
             На жаль, оформлення товару понад 100 000 грн. доступно тільки оптом,
             будь ласка, перейдіть на сторінку оптового продажу
           </p>
-          <p id="cart-total"></p>
+          <p id="cart-total" class="cart-total"></p>
 
           <div class="container-offers">
             <div class="container-offer">
@@ -438,34 +440,43 @@
       </div>
 
       <p class="text-placing-order">3. Оплата</p>
-      <label>
-        <input
-          type="radio"
-          name="payment"
-          value="Оплата під час отримання товару"
-        />
-        <span class="">Оплата під час отримання товару</span>
-      </label>
+      <div class="container-payment">
+        <label class="label-payment">
+          <input
+            type="radio"
+            name="payment"
+            value="Оплата під час отримання товару"
+          />
+          <span class="span-payment">Оплата під час отримання товару</span>
+        </label>
 
-      <label>
-        <input type="radio" name="payment" value="Оплатити зараз" />
-        Оплатити зараз
-      </label>
+        <label class="label-payment">
+          <input type="radio" name="payment" value="Оплатити зараз" />
+          <span class="span-payment">Оплатити зараз</span>
+        </label>
+      </div>
 
-      <label for="user-comment">Коментар</label>
-      <textarea
-        name="user-comment"
-        rows="5"
-        class="form-textarea"
-        placeholder="Напишіть коментар"
-        id="user-comment"
-      ></textarea>
+      <div class="container-comment">
+        <label for="user-comment" class="label-comment">Коментар</label>
+        <textarea
+          name="user-comment"
+          rows="5"
+          class="form-textarea"
+          placeholder="Напишіть коментар"
+          id="user-comment"
+        ></textarea>
+      </div>
     </form>
+
+    <div class="order-cart-preview">
+      <p id="order-cart-total"></p>
+      <ul id="order-cart-list"></ul>
+    </div>
   </div>
 </section>
 
     </main>
 
-    <!-- <script type="module" src="/js/gallery.js"></script> -->
+    
   </body>
 </html>

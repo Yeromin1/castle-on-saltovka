@@ -30,8 +30,12 @@
 }
 
 .form-placing-order {
+}
+
+.container-label {
   display: grid;
   gap: 16px;
+  margin-bottom: 24px;
 }
 
 .text-placing-order {
@@ -40,8 +44,39 @@
 }
 
 .label-placing-order {
+  display: grid;
+  gap: 4px;
 }
+
+.span-placing-order {
+  font-size: 12px;
+  line-height: 1.67;
+  color: var(--grey);
+}
+
 .input-placing-order {
+  border: 1px solid #ebecec;
+  height: 44px;
+  font-size: 14px;
+  padding: 10px 12px;
 }
+
 .form-textarea {
+}
+
+.container-delivery {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.label-delivery {
+  display: flex;
+  gap: 8px;
+}
+
+.span-delivery {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--grey);
 }

@@ -19,16 +19,18 @@ document.addEventListener('DOMContentLoaded', () => {
       li.innerHTML = `
           <img src="${item.image}" alt="${item.name}" class="order-cart-img" />
           <div class="order-cart-info">
-            <p class="order-cart-name">${item.name}</p>
-            <div class="order-cart-controls">
-              <button class="qty-btn minus" data-id="${item.id}" ${
+            <div class="container-cart-name-price">
+              <p class="order-cart-name">${item.name}</p>
+              <div class="order-cart-controls">
+                <p class="order-cart-price">${item.price.toLocaleString()} грн.</p>
+                <button class="qty-btn minus" data-id="${item.id}" ${
         item.quantity === 1 ? 'disabled' : ''
       }>−</button>
-              <span class="qty-count">${item.quantity}</span>
-              <button class="qty-btn plus" data-id="${item.id}">+</button>
-              <button class="remove-item" data-id="${item.id}">Видалити</button>
+                <span class="qty-count">${item.quantity}</span>
+                <button class="qty-btn plus" data-id="${item.id}">+</button>
+              </div>
             </div>
-            <p class="order-cart-price">${item.price.toLocaleString()} грн.</p>
+            <button class="remove-item" data-id="${item.id}">Видалити</button>
           </div>
         `;
       orderCartList.appendChild(li);

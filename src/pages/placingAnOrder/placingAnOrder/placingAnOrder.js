@@ -79,4 +79,20 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   updateUI();
+
+  document.getElementById('edit-cart-btn').addEventListener('click', () => {
+    const items = document.querySelectorAll('.order-cart-item');
+    const isEditMode = items[0]?.classList.contains('edit-mode');
+
+    items.forEach(item => {
+      if (isEditMode) {
+        item.classList.remove('edit-mode');
+      } else {
+        item.classList.add('edit-mode');
+      }
+    });
+
+    const btn = document.getElementById('edit-cart-btn');
+    btn.textContent = isEditMode ? 'Редагувати' : '';
+  });
 });

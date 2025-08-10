@@ -119,6 +119,28 @@
   gap: 6px;
 }
 
+.remove-item {
+  display: none;
+}
+
+.order-cart-item.edit-mode .remove-item {
+  display: block;
+}
+
+.edit-cart-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 auto;
+}
+
+.edit-cart-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--main);
+}
+
 /*--------placingAnOrder.js---------- */
 .order-cart-img {
   width: 70px;
@@ -137,6 +159,7 @@
 }
 
 .container-cart-name-price {
+  max-width: 180px;
 }
 
 .order-cart-controls {
@@ -164,6 +187,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 12px;
 }
 
 .order-cart-total {

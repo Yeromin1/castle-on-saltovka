@@ -1,9 +1,33 @@
 document.addEventListener('DOMContentLoaded', () => {
   const orderCartList = document.getElementById('order-cart-list');
   const orderCartTotal = document.getElementById('order-cart-total');
+  const editBtn = document.getElementById('edit-cart-btn');
+
+  const svgImg = new URL('/img/icons.svg', import.meta.url);
 
   const storedCart = localStorage.getItem('cart');
   const cart = storedCart ? JSON.parse(storedCart) : [];
+
+  let isEditMode = false;
+
+  editBtn.addEventListener('click', () => {
+    isEditMode = !isEditMode;
+
+    const textSpan = editBtn.querySelector('.edit-cart-text');
+    const svgIcon = editBtn.querySelector('svg');
+
+    if (textSpan && svgIcon) {
+      if (isEditMode) {
+        textSpan.style.display = 'none';
+        svgIcon.style.display = 'none';
+      } else {
+        textSpan.style.display = '';
+        svgIcon.style.display = '';
+      }
+    }
+
+    updateUI();
+  });
 
   function saveCart() {
     localStorage.setItem('cart', JSON.stringify(cart));
@@ -16,8 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
     cart.forEach(item => {
       const li = document.createElement('li');
       li.className = 'order-cart-item';
+      if (isEditMode) {
+        li.classList.add('edit-mode');
+      }
+
       li.innerHTML = `
-          <img src="${item.image}" alt="${item.name}" class="order-cart-img" />
+        <img src="${item.image}" alt="${item.name}" class="order-cart-img" />
           <div class="order-cart-info">
             <div class="container-cart-name-price">
               <p class="order-cart-name">${item.name}</p>
@@ -25,20 +53,33 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p class="order-cart-price">${item.price.toLocaleString()} грн.</p>
                 <button class="qty-btn minus" data-id="${item.id}" ${
         item.quantity === 1 ? 'disabled' : ''
-      }>−</button>
+      }>
+                  <svg class="qty-minus" width="16" height="16">
+                    <use href="${svgImg}#icon-minus"></use>
+                  </svg>
+                </button>
                 <span class="qty-count">${item.quantity}</span>
-                <button class="qty-btn plus" data-id="${item.id}">+</button>
-              </div>
+                <button class="qty-btn plus" data-id="${item.id}">
+                  <svg class="qty-plus" width="16" height="16">
+                    <use href="${svgImg}#icon-plus"></use>
+                  </svg>
+                </button>
             </div>
-            <button class="remove-item" data-id="${item.id}">Видалити</button>
           </div>
-        `;
-      orderCartList.appendChild(li);
+          <button class="remove-item" data-id="${item.id}">Видалити</button>
+        </div>
+      `;
 
+      orderCartList.appendChild(li);
       total += item.price * item.quantity;
     });
 
-    orderCartTotal.innerHTML = `<div class="container-order-cart-total"><span class="order-cart-total">Загальна сума:</span> <span class="order-cart-total-price">${total.toLocaleString()} грн.</span></div>`;
+    orderCartTotal.innerHTML = `
+      <div class="container-order-cart-total">
+        <span class="order-cart-total">Загальна сума:</span>
+        <span class="order-cart-total-price">${total.toLocaleString()} грн.</span>
+      </div>
+    `;
 
     saveCart();
     attachEvents();
@@ -65,7 +106,6 @@ document.addEventListener('DOMContentLoaded', () => {
       };
     });
 
-    // Обработчик кнопки Видалити
     document.querySelectorAll('.remove-item').forEach(btn => {
       btn.onclick = () => {
         const id = btn.dataset.id;
@@ -79,20 +119,4 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   updateUI();
-
-  document.getElementById('edit-cart-btn').addEventListener('click', () => {
-    const items = document.querySelectorAll('.order-cart-item');
-    const isEditMode = items[0]?.classList.contains('edit-mode');
-
-    items.forEach(item => {
-      if (isEditMode) {
-        item.classList.remove('edit-mode');
-      } else {
-        item.classList.add('edit-mode');
-      }
-    });
-
-    const btn = document.getElementById('edit-cart-btn');
-    btn.textContent = isEditMode ? 'Редагувати' : '';
-  });
 });

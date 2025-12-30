@@ -38,6 +38,7 @@
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 16px;
+  color: var(--black);
 }
 
 .button-addition {

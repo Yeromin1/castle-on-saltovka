@@ -1,4 +1,4 @@
-import prices from '../../../data/prices.js';
+import prices from '/data/prices.js';
 
 const priceText = document.querySelectorAll('.text-price-five');
 

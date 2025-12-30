@@ -9,12 +9,7 @@
   href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css"
   crossorigin="anonymous"
 />
-<!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&family=Roboto:wght@100;300;400;500;700&display=swap"
-  rel="stylesheet"
-/> -->
+
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
@@ -30,8 +25,9 @@
     
     <script type="module" crossorigin src="/castle-on-saltovka/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/castle-on-saltovka/assets/modulepreload-polyfill-3cfb730f.js">
+    <link rel="modulepreload" crossorigin href="/castle-on-saltovka/assets/prices-68bf09fc.js">
     <link rel="modulepreload" crossorigin href="/castle-on-saltovka/assets/menu-c3cd60f7.js">
-    <link rel="stylesheet" href="/castle-on-saltovka/assets/index-b40e1b8f.css">
+    <link rel="stylesheet" href="/castle-on-saltovka/assets/index-77cecb16.css">
   </head>
 
   <body>
@@ -397,9 +393,8 @@
               <p class="model-text">
                 Підходить для встановлення на дерев'яні/міжкімнатні двері.
               </p>
-              <p class="price">
+              <p class="price" data-id="1">
                 <span class="price-text">Ціна</span>
-                <span class="price-sum">5000 грн.</span>
               </p>
 
               <button type="button" class="button-addition">
@@ -436,19 +431,18 @@
 
             <div class="model-price">
               <h3 class="model">
-                <span>Golden Soft</span> GS-200Z-5 для офісу
+                <span>Golden Soft</span> GS-200Z-6 для офісу
               </h3>
 
               <p class="model-text">
-                Замок дверний електронний Golden Soft GS-200Z-5 має розкішний
+                Замок дверний електронний Golden Soft GS-200Z-6 має розкішний
                 глянсовий блиск, чіткі лінії, красиві форми.
               </p>
               <p class="model-text">
                 Підходить для встановлення на дерев'яні/міжкімнатні двері.
               </p>
-              <p class="price">
+              <p class="price" data-id="2">
                 <span class="price-text">Ціна</span>
-                <span class="price-sum">5000 грн.</span>
               </p>
 
               <button type="button" class="button-addition">
@@ -485,19 +479,18 @@
 
             <div class="model-price">
               <h3 class="model">
-                <span>Golden Soft</span> GS-200Z-5 для офісу
+                <span>Golden Soft</span> GS-200Z-7 для офісу
               </h3>
 
               <p class="model-text">
-                Замок дверний електронний Golden Soft GS-200Z-5 має розкішний
+                Замок дверний електронний Golden Soft GS-200Z-7 має розкішний
                 глянсовий блиск, чіткі лінії, красиві форми.
               </p>
               <p class="model-text">
                 Підходить для встановлення на дерев'яні/міжкімнатні двері.
               </p>
-              <p class="price">
+              <p class="price" data-id="3">
                 <span class="price-text">Ціна</span>
-                <span class="price-sum">5000 грн.</span>
               </p>
 
               <button type="button" class="button-addition">
@@ -1216,9 +1209,8 @@
           width="288"
           class="foto-five"
         />
-        <div class="text-price-five">
+        <div class="text-price-five" data-id="3">
           <p class="text-five">Дверний Замок Golden Soft для готелю</p>
-          <p class="price-five">1000 грн.</p>
         </div>
       </li>
       <li class="item-five">
@@ -1229,9 +1221,8 @@
           width="288"
           class="foto-five"
         />
-        <div class="text-price-five">
+        <div class="text-price-five" data-id="2">
           <p class="text-five">Дверний Замок Golden Soft для готелю</p>
-          <p class="price-five">1000 грн.</p>
         </div>
       </li>
       <li class="item-five">
@@ -1242,9 +1233,8 @@
           width="288"
           class="foto-five"
         />
-        <div class="text-price-five">
+        <div class="text-price-five" data-id="1">
           <p class="text-five">Дверний Замок Golden Soft для готелю</p>
-          <p class="price-five">1000 грн.</p>
         </div>
       </li>
       <li class="item-five">
@@ -1255,9 +1245,8 @@
           width="288"
           class="foto-five"
         />
-        <div class="text-price-five">
+        <div class="text-price-five" data-id="4">
           <p class="text-five">Дверний Замок Golden Soft для готелю</p>
-          <p class="price-five">1000 грн.</p>
         </div>
       </li>
     </ul>
@@ -1431,6 +1420,7 @@
       crossorigin="anonymous"
       async
     ></script>
+    
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     

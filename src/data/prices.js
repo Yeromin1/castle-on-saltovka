@@ -18,4 +18,3 @@ const prices = [
 ];
 
 export default prices;
-// === ПРИМЕНЕНИЕ ФИЛЬТРАЦИИ ===

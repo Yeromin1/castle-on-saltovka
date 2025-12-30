@@ -1,6 +1,6 @@
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
 
-import prices from '../../../data/prices.js';
+import prices from '../premium/premium.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.premium-swiper', {

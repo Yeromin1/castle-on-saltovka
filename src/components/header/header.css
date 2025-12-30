@@ -188,6 +188,9 @@
   z-index: 999;
 }
 
+.modal-menu-overlay {
+}
+
 .cart-count {
   display: none;
   position: absolute;

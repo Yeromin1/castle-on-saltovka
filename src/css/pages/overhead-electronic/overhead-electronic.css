@@ -1,5 +1,6 @@
 @import url('../../global/reset.css');
 @import url('../../global/index.css');
+@import url('../../global/base.css');
 @import url('../../../components/header/header.css');
 @import url('../../../components/page-route/page-route.css');
 @import url('../../../components/filter/filter.css');

@@ -9,6 +9,7 @@
 }
 
 .model {
+  font-weight: 600;
   font-size: 22px;
   line-height: 1.55;
   display: flex;
@@ -44,8 +45,8 @@
   height: 50px;
   font-weight: 500;
   font-size: 16px;
-  color: white;
-  background-color: #4295e4;
+  color: var(--white);
+  background-color: var(--main);
   border-radius: 4px;
   margin-bottom: 32px;
 }
@@ -64,7 +65,7 @@
 
 .icon-chevron-left:active,
 .icon-chevron-tright:active {
-  fill: #c4cdd5;
+  fill: var(--light-grey);
 }
 
 .anime-ball-hoop {
@@ -127,7 +128,7 @@
     display: block;
     font-size: 14px;
     line-height: 1.71;
-    color: #454f5b;
+    color: var(--grey);
     max-width: 280px;
     margin-bottom: 16px;
   }
@@ -152,9 +153,9 @@
   }
 
   .container-anime .button:hover {
-    background-color: #4295e4;
+    background-color: var(--main);
     border-radius: 3px;
-    fill: #ffffff;
+    fill: var(--white);
   }
 }
 

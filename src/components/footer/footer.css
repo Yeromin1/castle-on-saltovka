@@ -33,7 +33,7 @@
 }
 
 .link-network .icon {
-  fill: #ffffff;
+  fill: var(--white);
 }
 
 .container-nav-address {
@@ -52,7 +52,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1.5;
-  color: #ffffff;
+  color: var(--white);
   margin-bottom: 12px;
 }
 
@@ -74,7 +74,7 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 1.71;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .contacts {
@@ -104,7 +104,7 @@
 .text-contacts {
   font-weight: 300;
   font-size: 12px;
-  color: #c4cdd5;
+  color: var(--light-grey);
 }
 
 .link-contacts {

@@ -69,7 +69,7 @@
 
 .icon-filter {
   transform: rotate(-90deg);
-  fill: #454f5b;
+  fill: var(--grey);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -104,7 +104,7 @@
 
 .btn-reset-filters {
   color: black;
-  background-color: white;
+  background-color: var(--white);
   border: 1px solid var(--light-blue);
   font-weight: 400;
   line-height: 1.62;
@@ -225,7 +225,7 @@
   }
 
   .filter-button .btn-categories:active {
-    background: #2e81d0;
+    background: var(--blue);
   }
 
   .price-inputs,

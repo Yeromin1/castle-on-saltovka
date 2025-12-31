@@ -1,5 +1,6 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import validator from 'validator';
 
 const form = document.querySelector('.form-callback');
 
@@ -7,9 +8,9 @@ form.addEventListener('submit', function (event) {
   event.preventDefault();
 
   const userName = form.elements.userName.value.trim().toUpperCase();
-  const phone = form.elements.phone.value.trim();
+  const phoneRaw = form.elements.phone.value.trim();
 
-  if (userName === '' || phone === '') {
+  if (userName === '' || phoneRaw === '') {
     iziToast.error({
       title: 'Помилка',
       message: 'Усі поля форми мають бути заповнені',
@@ -18,8 +19,8 @@ form.addEventListener('submit', function (event) {
     return;
   }
 
+  // Имя — только буквы
   const isValidName = [...userName].every(char => isNaN(char));
-  const isValidPhone = [...phone].every(char => !isNaN(char));
 
   if (!isValidName) {
     iziToast.warning({
@@ -30,10 +31,13 @@ form.addEventListener('submit', function (event) {
     return;
   }
 
-  if (!isValidPhone) {
+  const phone = phoneRaw.replace(/[^\d+]/g, '');
+
+  // ВАЛИДАЦИЯ ДЛЯ ВСЕХ СТРАН
+  if (!validator.isMobilePhone(phone, 'uk-UA')) {
     iziToast.warning({
       title: 'Невірний телефон',
-      message: 'Телефон повинен містити тільки цифри',
+      message: 'Введіть коректний номер телефону +XXXXXXXXXXX',
       position: 'topCenter',
     });
     return;

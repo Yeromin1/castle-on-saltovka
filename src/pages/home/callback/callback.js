@@ -1,3 +1,6 @@
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
+
 const form = document.querySelector('.form-callback');
 
 form.addEventListener('submit', function (event) {
@@ -7,30 +10,47 @@ form.addEventListener('submit', function (event) {
   const phone = form.elements.phone.value.trim();
 
   if (userName === '' || phone === '') {
-    alert('Усі поля форми мають бути заповнені');
+    iziToast.error({
+      title: 'Помилка',
+      message: 'Усі поля форми мають бути заповнені',
+      position: 'topCenter',
+    });
     return;
   }
 
   const isValidName = [...userName].every(char => isNaN(char));
-
   const isValidPhone = [...phone].every(char => !isNaN(char));
 
   if (!isValidName) {
-    alert('Імʼя повинно містити тільки букви');
+    iziToast.warning({
+      title: 'Невірне імʼя',
+      message: 'Імʼя повинно містити тільки букви',
+      position: 'topCenter',
+    });
     return;
   }
 
   if (!isValidPhone) {
-    alert('Телефон повинен містити тільки цифри');
+    iziToast.warning({
+      title: 'Невірний телефон',
+      message: 'Телефон повинен містити тільки цифри',
+      position: 'topCenter',
+    });
     return;
   }
 
   const formData = {
-    userName: userName,
-    phone: phone,
+    userName,
+    phone,
   };
 
   console.log(formData);
+
+  iziToast.success({
+    title: 'Готово',
+    message: 'Ми скоро Вам передзвонимо 😊',
+    position: 'topCenter',
+  });
 
   form.reset();
 });

@@ -19,6 +19,7 @@
   "dependencies": {
     "accordion-js": "^3.4.1",
     "basiclightbox": "^5.0.4",
+    "izitoast": "^1.4.0",
     "simplelightbox": "^2.14.3",
     "star-rating.js": "^4.3.1",
     "swiper": "^11.2.10",

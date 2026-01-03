@@ -94,7 +94,7 @@
 }
 
 .description-overhead {
-  padding: 10px 0px;
+  padding: 10px;
   box-shadow: inset -1px 0 0 0 var(--stroke), inset 1px 0 0 0 var(--stroke),
     inset 0 -1px 0 0 var(--stroke);
   background-color: var(--white);
@@ -112,11 +112,9 @@
   line-height: 171%;
   color: var(--grey);
   margin-bottom: 10px;
-  padding-left: 10px;
 }
 
-.price {
-  padding-left: 10px;
+.description-overhead .price {
 }
 
 @media (min-width: 768px) {

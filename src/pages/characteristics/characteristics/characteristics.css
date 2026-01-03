@@ -182,8 +182,12 @@
 }
 
 /*-----------price-------------*/
-.price {
+.div-price {
   margin-bottom: 16px;
+}
+
+.div-price .price {
+  font-size: 18px;
 }
 
 /*-----------favorites-------------*/
@@ -374,6 +378,11 @@
   .list-equipment {
   }
   .item-equipment {
+  }
+
+  /*-----------price-------------*/
+  .div-price .price {
+    font-size: 22px;
   }
 
   /*-----------favorites-------------*/

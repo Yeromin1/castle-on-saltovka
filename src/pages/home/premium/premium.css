@@ -8,6 +8,9 @@
   border-radius: 5px;
 }
 
+.anime-ball-hoop {
+}
+
 .model {
   font-weight: 600;
   font-size: 22px;
@@ -34,7 +37,7 @@
   margin-bottom: 4px;
 }
 
-.price-sum {
+.price .price-sum {
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 16px;
@@ -134,7 +137,7 @@
     margin-bottom: 16px;
   }
 
-  .price-sum {
+  .price .price-sum {
     font-size: 21px;
   }
 
@@ -175,7 +178,7 @@
     font-size: 44px;
   }
 
-  .price-sum {
+  .price .price-sum {
     font-size: 24px;
   }
 

@@ -17,4 +17,17 @@ const prices = [
   },
 ];
 
-export default prices;
+const priceText = document.querySelectorAll(
+  '.price, .text-price-five, .description-overhead, .div-price'
+);
+
+priceText.forEach(el => {
+  const id = +el.dataset.id;
+  const product = prices.find(price => price.id === id);
+  if (!product) return;
+
+  el.insertAdjacentHTML(
+    'beforeend',
+    `<span class="price-sum price-five price">${product.price} грн.</span>`
+  );
+});

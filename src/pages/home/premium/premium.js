@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
 const priceText = document.querySelectorAll('.price');
 
 priceText.forEach(el => {
-  // const id = +el.dataset.id;
-  const product = prices.find(price => price.id === +el.dataset.id);
+  const id = +el.dataset.id;
+  const product = prices.find(price => price.id === id);
   if (!product) return;
 
   el.insertAdjacentHTML(

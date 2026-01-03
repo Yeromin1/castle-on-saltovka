@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const cartCount = document.getElementById('cart-count');
+  const cartCountEls = document.querySelectorAll('.cart-count');
   const cartModal = document.getElementById('cart-modal');
   const cartOverlay = document.getElementById('cart-overlay');
   const cartItemsList = document.getElementById('cart-items');
@@ -64,10 +64,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Обновление счётчика корзины
-  function updateCartCount(count) {
-    if (!cartCount) return;
-    cartCount.textContent = count > 0 ? count : '';
-    cartCount.style.display = count > 0 ? 'block' : 'none';
+
+  function updateCartCount() {
+    const total = cart.reduce((sum, item) => sum + item.quantity, 0);
+
+    cartCountEls.forEach(el => {
+      el.textContent = total || '';
+      el.style.display = total ? 'flex' : 'none';
+    });
   }
 
   // Обновление UI корзины
@@ -220,11 +224,15 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Открытие/закрытие модалки корзины
-  document.getElementById('cart-button').addEventListener('click', () => {
-    cartModal.classList.remove('hidden');
-    cartOverlay.classList.remove('hidden');
-    document.body.classList.add('no-scroll');
-  });
+  document
+    .querySelectorAll('#cart-button, .mobal-menu-button.hopping-cart')
+    .forEach(btn => {
+      btn.addEventListener('click', () => {
+        cartModal.classList.remove('hidden');
+        cartOverlay.classList.remove('hidden');
+        document.body.classList.add('no-scroll');
+      });
+    });
 
   cartCloseBtn.addEventListener('click', () => {
     cartModal.classList.add('hidden');

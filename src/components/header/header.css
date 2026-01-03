@@ -76,6 +76,10 @@
   fill: #454f5b;
 }
 
+.hopping-cart .cart-count {
+  top: -2px;
+}
+
 .hopping-cart {
   right: 64px;
 }

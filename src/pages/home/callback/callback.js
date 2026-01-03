@@ -33,7 +33,7 @@ form.addEventListener('submit', function (event) {
 
   const phone = phoneRaw.replace(/[^\d+]/g, '');
 
-  // ВАЛИДАЦИЯ ДЛЯ ВСЕХ СТРАН
+  // ВАЛИДАЦИЯ ДЛЯ ВСЕХ СТРАН или uk-UA
   if (!validator.isMobilePhone(phone, 'uk-UA')) {
     iziToast.warning({
       title: 'Невірний телефон',

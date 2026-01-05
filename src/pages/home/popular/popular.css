@@ -2,8 +2,11 @@
   padding-bottom: 36px;
 }
 
+.item-five {
+  width: 288px !important;
+}
+
 .container-titie-five {
-  margin-bottom: 24px;
 }
 
 .btn-popular {
@@ -14,11 +17,12 @@
   font-size: 22px;
   line-height: 1.55;
   text-align: center;
+  margin-bottom: 24px;
 }
 
 .list-five {
   display: flex;
-  overflow: overlay;
+  /* overflow: overlay; */
   gap: 30px;
 }
 
@@ -50,26 +54,16 @@
     padding-bottom: 60px;
   }
 
-  .container-titie-five {
-    margin-bottom: 44px;
-  }
-
   .title-five {
     font-size: 33px;
     line-height: 1.41;
+    margin-bottom: 44px;
   }
 }
 
 @media (min-width: 1158px) {
   .section-popular {
     padding-bottom: 96px;
-  }
-
-  .container-titie-five {
-    margin-bottom: 64px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
 
   .container-btn-popular {
@@ -89,21 +83,25 @@
     transition-timing-function: ease-in-out;
   }
 
-  .btn-popular .icon-chevron-tright:hover,
-  .btn-popular .icon-chevron-left:hover {
+  .btn-popular .icon-chevron-tright:is(:hover, :active),
+  .btn-popular .icon-chevron-left:is(:hover, :active) {
     background-color: #4295e4;
     border-radius: 3px;
     fill: #ffffff;
   }
 
-  .btn-popular .icon-chevron-left:active,
-  .btn-popular .icon-chevron-tright:active {
-    fill: #c4cdd5;
-  }
-
   .title-five {
     font-size: 44px;
     text-align: left;
+    margin-bottom: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* неактивная кнопка */
+  .popular-swiper .swiper-button-disabled {
+    fill: var(--light-grey);
   }
 }
 

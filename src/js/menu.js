@@ -4,8 +4,7 @@ document
   .forEach(button => {
     button.addEventListener('click', () => {
       const targetMenu = button.hasAttribute('filter-menu-open')
-        ? // Додати атрибут data-menu на бекдроп модалки
-          document.querySelector('[filter-menu]')
+        ? document.querySelector('[filter-menu]')
         : document.querySelector('[data-menu]');
 
       if (targetMenu) {
@@ -21,8 +20,7 @@ document
   .forEach(button => {
     button.addEventListener('click', () => {
       const targetMenu = button.hasAttribute('filter-menu-close')
-        ? // Додати атрибут data-menu на бекдроп модалки
-          document.querySelector('[filter-menu]')
+        ? document.querySelector('[filter-menu]')
         : document.querySelector('[data-menu]');
 
       if (targetMenu) {

@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nextEl: '.popular-swiper .swiper-button-next',
       prevEl: '.popular-swiper .swiper-button-prev',
     },
-    slidesPerView: 'auto',
+    slidesPerView: 1,
     breakpoints: {
       1158: {
         slidesPerView: 3,

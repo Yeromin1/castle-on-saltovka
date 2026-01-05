@@ -6,9 +6,6 @@
   width: 288px !important;
 }
 
-.container-titie-five {
-}
-
 .btn-popular {
   display: none;
 }
@@ -22,7 +19,6 @@
 
 .list-five {
   display: flex;
-  /* overflow: auto; */
   gap: 30px;
 }
 

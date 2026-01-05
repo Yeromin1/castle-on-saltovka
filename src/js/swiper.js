@@ -14,15 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Popular swiper
-  // const popularSwiper = new Swiper('.popular-swiper', {
-  //   loop: false,
-  //   slidesPerView: 3,
-  //   navigation: {
-  //     nextEl: '.popular-swiper .swiper-button-next',
-  //     prevEl: '.popular-swiper .swiper-button-prev',
-  //   },
-  // });
-
   const popularSwiper = new Swiper('.popular-swiper', {
     loop: false,
     navigation: {
@@ -30,9 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
       prevEl: '.popular-swiper .swiper-button-prev',
     },
     slidesPerView: 1,
+    centeredSlides: true,
     breakpoints: {
       1158: {
         slidesPerView: 3,
+        centeredSlides: false,
       },
     },
   });

@@ -22,7 +22,7 @@
 
 .list-five {
   display: flex;
-  /* overflow: overlay; */
+  /* overflow: auto; */
   gap: 30px;
 }
 
@@ -69,6 +69,13 @@
   .container-btn-popular {
     display: flex;
     gap: 40px;
+    position: absolute;
+    top: 2%;
+    right: -4%;
+  }
+
+  .swiper {
+    position: relative;
   }
 
   .btn-popular {
